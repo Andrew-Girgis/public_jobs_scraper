@@ -2,8 +2,7 @@
 
 ## Executive Summary
 
-This research project systematically collects and analyzes technical government job postings across Canada, the United Kingdom, and Australia to understand differences in position classifications, compensation structures, and qualification requirements. The automated data collection system currently covers seven Canadian jurisdictions (federal and provincial), with 158 validated technical positions across 44 job categories. International expansion to the UK and Australian public sectors is planned for Q1 2026, enabling comprehensive cross-jurisdictional comparative analysis.
-
+This research project systematically collects and analyzes technical government job postings across Canada, the United Kingdom, and Australia to understand differences in position classifications, compensation structures, and qualification requirements. The automated data collection system currently covers seven Canadian jurisdictions (federal and provincial), with 158 validated technical positions across 44 job categories.
 ---
 
 ## Research Objective
@@ -154,7 +153,7 @@ public_jobs_scraper/
 │   ├── MAN/                      ← Manitoba
 │   ├── ONT/                      ← Ontario
 │   ├── NS/                       ← Nova Scotia
-│   └── [UK, AUS]/                ← International modules (Q1 2026)
+│   └── [UK, AUS]/                ← International modules
 │
 ├── data/                         ← Generated job data (local only, not in git)
 │   ├── BC/jobs_json/
@@ -207,7 +206,7 @@ Match rates vary by jurisdiction based on job board structure and posting specif
 
 ## Next Steps
 
-### Near-Term Development (Q1 2026)
+### Near-Term Development
 
 **United Kingdom Integration**:
 - Adapt collection system for UK Civil Service job boards

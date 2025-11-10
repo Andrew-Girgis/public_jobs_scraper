@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This research project systematically collects and analyzes technical government job postings across Canada, the United Kingdom, and Australia to understand differences in position classifications, compensation structures, and qualification requirements. The automated data collection system currently covers six Canadian jurisdictions (federal and provincial), capturing approximately 975 technical positions across 44 job categories. International expansion to the UK and Australian public sectors is planned for Q1 2026, enabling comprehensive cross-jurisdictional comparative analysis.
+This research project systematically collects and analyzes technical government job postings across Canada, the United Kingdom, and Australia to understand differences in position classifications, compensation structures, and qualification requirements. The automated data collection system currently covers seven Canadian jurisdictions (federal and provincial), with 158 validated technical positions across 44 job categories. International expansion to the UK and Australian public sectors is planned for Q1 2026, enabling comprehensive cross-jurisdictional comparative analysis.
 
 ---
 
@@ -24,27 +24,21 @@ By systematically collecting and standardizing job posting data, this research e
 
 ### Active Data Collection (Canada)
 
-The project currently collects data from six Canadian jurisdictions:
+The project currently collects data from seven Canadian jurisdictions:
 
-| Jurisdiction | Status | Average Positions per Search |
-|-------------|--------|------------------------------|
-| Government of Canada (Federal) | Active | ~200 positions |
-| British Columbia | Active | ~400 positions |
-| Alberta | Active | ~150 positions |
-| Manitoba | Active | ~50 positions |
-| Ontario | Active | ~100 positions |
-| Nova Scotia | Active | ~75 positions |
-
-**Total Canadian Coverage**: Approximately 975 technical government positions
-
-### Planned Expansion (International)
-
-| Jurisdiction | Status | Expected Launch |
+| Jurisdiction | Status | Jobs Collected |
 |-------------|--------|----------------|
-| United Kingdom | In Development | Q1 2026 |
-| Australia | In Development | Q1 2026 |
+| Government of Canada (Federal) | Active | 27 positions |
+| Manitoba | Active | 28 positions |
+| Alberta | Active | 27 positions |
+| Saskatchewan | Active | 23 positions |
+| Ontario | Active | 21 positions |
+| British Columbia | Active | 18 positions |
+| Nova Scotia | Active | 14 positions |
 
----
+**Total Canadian Dataset**: 158 relevant technical government positions
+
+*Note: These numbers represent jobs that passed the intelligent matching filter (80+ relevance score). The system reviews significantly more postings but retains only those genuinely matching technical job categories.*
 
 ## How It Works
 
@@ -154,6 +148,7 @@ public_jobs_scraper/
 │   ├── GOC/                      ← Government of Canada (Federal)
 │   ├── BC/                       ← British Columbia
 │   ├── AB/                       ← Alberta
+│   ├── SAS/                      ← Saskatchewan
 │   ├── MAN/                      ← Manitoba
 │   ├── ONT/                      ← Ontario
 │   ├── NS/                       ← Nova Scotia

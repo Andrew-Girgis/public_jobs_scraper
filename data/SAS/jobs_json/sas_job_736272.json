@@ -1,0 +1,65 @@
+{
+  "job_posting": {
+    "source": {
+      "jurisdiction": "Saskatchewan",
+      "job_board": "Government of Saskatchewan",
+      "url": "https://govskpsc.taleo.net/careersection/10180/jobdetail.ftl?job=736272&lang=en"
+    },
+    "metadata": {
+      "job_title": "Senior Trade Policy Analyst",
+      "employment_type": "Permanent Full-time",
+      "location": "SK-Rgna-Regina",
+      "ministry": "090 Trade and Export Development",
+      "salary_range": "$8,650 - $11,243",
+      "salary_min": 8650.0,
+      "salary_max": 11243.0,
+      "salary_frequency": "Monthly",
+      "grade": "MCP.08.",
+      "hours_of_work": "M - Monthly Out of Scope",
+      "number_of_openings": 1,
+      "closing_date": null
+    },
+    "ministry_description": "Are you interested in reducing barriers to internal trade? Do you have experience working successfully in federal, provincial, and territorial settings to advance Saskatchewan's priorities? Have you worked in a fast paced, dynamic environment?TheMinistry of Trade and Export Developmenthas an exciting and challenging opportunity for a diplomatic, creative and detail-oriented individual with excellent interpersonal skills to fill the position of Senior Trade Policy Analyst.",
+    "the_opportunity": {
+      "intro": "Within the Ministry’s Strategic Policy and Analysis Branch, the Trade Policy Unit focuses on advancing Saskatchewan’s interests in both internal and international trade policy, including trade agreement negotiation and implementation, market access, and trade disputes.",
+      "responsibilities": ""
+    },
+    "responsibilities_breakdown": {
+      "strategic_leadership_planning": "",
+      "technical_oversight": "",
+      "information_knowledge_management": "",
+      "stakeholder_engagement_collaboration": "",
+      "team_resource_management": ""
+    },
+    "qualifications": {
+      "the_ideal_candidate": "",
+      "intro": null,
+      "required_qualifications": [],
+      "education_requirements": "Typically, the knowledge and skills for this position will have been acquired through completion of a Master’s level education in an applicable field combined with relevant experience. Professional experience in government (provincial or federal) will be an asset, as will direct trade policy, dispute management and negotiation skills."
+    },
+    "benefits": {
+      "what_we_offer": "- Dynamic, challenging work for talented individuals.\n- A competitive salary.\n- Comprehensive benefits package including health, dental and pension.\n- Vacation, Scheduled Days Off (SDO) and other types of leave (maternity/paternity/adoption leave, family/personal leave, sick leave).\n- Inclusive work environments.\n- Advancement opportunities.\n- Flexible work arrangements.",
+      "benefits_list": [
+        "Dynamic, challenging work for talented individuals.",
+        "A competitive salary.",
+        "Comprehensive benefits package including health, dental and pension.",
+        "Vacation, Scheduled Days Off (SDO) and other types of leave (maternity/paternity/adoption leave, family/personal leave, sick leave).",
+        "Inclusive work environments.",
+        "Advancement opportunities.",
+        "Flexible work arrangements."
+      ]
+    },
+    "additional": {
+      "diversity_statement": "We are committed to workplace diversity.",
+      "additional_notes": null
+    },
+    "full_description": "Are you interested in reducing barriers to internal trade? Do you have experience working successfully in federal, provincial, and territorial settings to advance Saskatchewan's priorities? Have you worked in a fast paced, dynamic environment?\nThe\nMinistry of Trade and Export Development\nhas an exciting and challenging opportunity for a diplomatic, creative and detail-oriented individual with excellent interpersonal skills to fill the position of Senior Trade Policy Analyst.\nThe Opportunity\nWithin the Ministry’s Strategic Policy and Analysis Branch, the Trade Policy Unit focuses on advancing Saskatchewan’s interests in both internal and international trade policy, including trade agreement negotiation and implementation, market access, and trade disputes.\nAs part of the Trade Policy Unit, you will be responsible for:\nRepresenting Saskatchewan on Federal-Provincial-Territorial committees and working collaboratively with other jurisdictions to advance Saskatchewan’s trade priorities.\nFacilitating collaboration with other ministries and agencies, conducting research, and providing analysis and advice on Saskatchewan’s interests related to trade agreement negotiation and implementation, and other policy matters that impact trade.\nOpening markets for Saskatchewan exporters through dispute resolution procedures in international and internal trade agreements.\nAdvising and collaborating with other ministries and agencies to advance their objectives consistent with Saskatchewan’s trade obligations.\nTo be successful in this role, you will bring:\nCommunication skills to explain verbally and in writing complex policy issues clearly and credibly to a variety of audiences.\nInterpersonal and negotiation skills to advance government objectives in interprovincial, federal-provincial-territorial and international forums.\nResearch and strategic thinking skills to analyze issues, identify options, solutions and implications for Saskatchewan and make recommendations.\nKnowledge of the Saskatchewan economy, its industrial and resource base, and its trade and investment capabilities and requirements.\nTypically, the knowledge and skills for this position will have been acquired through completion of a Master’s level education in an applicable field combined with relevant experience. Professional experience in government (provincial or federal) will be an asset, as will direct trade policy, dispute management and negotiation skills.\nThis position may be required to travel within and outside of Canada.\nT\nhe Ministry of Trade and Export Development supports a values-based culture that includes respect and integrity, serving citizens, excellence and innovation, and acting as one team. You must be a team player, able to both lead and collaborate, with a reputation for integrity, service excellence and innovation.\nWhat we offer:\nDynamic, challenging work for talented individuals.\nA competitive salary.\nComprehensive benefits package including health, dental and pension.\nVacation, Scheduled Days Off (SDO) and other types of leave (maternity/paternity/adoption leave, family/personal leave, sick leave).\nInclusive work environments.\nAdvancement opportunities.\nFlexible work arrangements."
+  },
+  "scraping_metadata": {
+    "job_id": "736272",
+    "scraped_at": "2025-11-09T14:45:46.809660",
+    "search_keyword": "Data Analyst",
+    "matched_keyword": "Policy Analyst",
+    "match_score": 100
+  }
+}

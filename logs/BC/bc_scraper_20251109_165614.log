@@ -1,0 +1,17 @@
+[2025-11-09 16:56:14] INFO: ================================================================================
+[2025-11-09 16:56:14] INFO: BC Public Service Job Scraper
+[2025-11-09 16:56:14] INFO: ================================================================================
+[2025-11-09 16:56:14] INFO: Headless mode: True
+[2025-11-09 16:56:14] INFO: Results per page: 100
+[2025-11-09 16:56:14] INFO: 
+[2025-11-09 16:56:14] INFO: Loaded 44 keywords from list-of-jobs.txt
+[2025-11-09 16:56:15] INFO: 📍 STEP 1: Searching for jobs
+[2025-11-09 16:56:15] INFO: --------------------------------------------------------------------------------
+[2025-11-09 16:56:15] INFO: 🔍 Navigating to BC Public Service job search...
+[2025-11-09 16:56:20] INFO: 🔍 Searching with 44 keywords...
+[2025-11-09 16:56:53] ERROR: Future exception was never retrieved
+future: <Future finished exception=TargetClosedError('Target page, context or browser has been closed')>
+playwright._impl._errors.TargetClosedError: Target page, context or browser has been closed
+[2025-11-09 16:56:53] ERROR: Future exception was never retrieved
+future: <Future finished exception=TargetClosedError('Target page, context or browser has been closed')>
+playwright._impl._errors.TargetClosedError: Target page, context or browser has been closed

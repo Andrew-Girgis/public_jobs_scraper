@@ -1,0 +1,13 @@
+[2025-11-09 01:26:00] INFO: ================================================================================
+[2025-11-09 01:26:00] INFO: Ontario (ONT) Job Scraper Starting
+[2025-11-09 01:26:00] INFO: ================================================================================
+[2025-11-09 01:26:00] INFO: Launching Chromium browser (headless=False)
+[2025-11-09 01:26:01] INFO: Starting Ontario job scraping workflow
+[2025-11-09 01:26:01] INFO: Loaded 43 job keywords from /Users/agirgis/Downloads/public_jobs_scraper/list-of-jobs.txt
+[2025-11-09 01:26:01] INFO: Navigating to https://www.gojobs.gov.on.ca/Search.aspx
+[2025-11-09 01:26:03] INFO: Scrolling page like a human
+[2025-11-09 01:26:05] INFO: Page scrolled successfully
+[2025-11-09 01:26:05] INFO: Selecting search filters
+[2025-11-09 01:26:06] INFO: Opened job category dropdown
+[2025-11-09 01:26:07] INFO: ✓ Selected 'All job categories' checkbox
+[2025-11-09 01:26:07] INFO: Closing browser

@@ -1,0 +1,383 @@
+2025-11-09 18:44:37,380 - INFO - ================================================================================
+2025-11-09 18:44:37,380 - INFO - Alberta Scraper - TEST RUN
+2025-11-09 18:44:37,380 - INFO - ================================================================================
+2025-11-09 18:44:37,380 - INFO - Test keywords: ['data analyst', 'business analyst', 'policy analyst']
+2025-11-09 18:44:37,380 - INFO - Running with VISIBLE browser (headless=False)
+2025-11-09 18:44:37,380 - INFO - 
+2025-11-09 18:44:38,770 - INFO - Starting job search...
+2025-11-09 18:44:38,771 - INFO - Searching for keyword: 'data analyst'
+2025-11-09 18:44:45,634 - INFO - Processing page 1 for keyword: 'data analyst'
+2025-11-09 18:44:45,669 - INFO - Found 25 jobs on page 1
+2025-11-09 18:44:45,672 - INFO - Navigating to page 2 by clicking pagination link
+2025-11-09 18:44:48,836 - INFO - Processing page 2 for keyword: 'data analyst'
+2025-11-09 18:44:48,873 - INFO - Found 25 jobs on page 2
+2025-11-09 18:44:48,876 - INFO - Navigating to page 3 by clicking pagination link
+2025-11-09 18:44:52,092 - INFO - Processing page 3 for keyword: 'data analyst'
+2025-11-09 18:44:52,117 - INFO - Found 4 jobs on page 3
+2025-11-09 18:44:52,119 - INFO - No more pages found for keyword: 'data analyst'
+2025-11-09 18:44:52,119 - INFO - Found 54 total jobs for keyword: 'data analyst'
+2025-11-09 18:44:52,119 - INFO - Searching for keyword: 'business analyst'
+2025-11-09 18:44:57,806 - INFO - Processing page 1 for keyword: 'business analyst'
+2025-11-09 18:44:57,848 - INFO - Found 25 jobs on page 1
+2025-11-09 18:44:57,851 - INFO - Navigating to page 2 by clicking pagination link
+2025-11-09 18:45:01,004 - INFO - Processing page 2 for keyword: 'business analyst'
+2025-11-09 18:45:01,039 - INFO - Found 25 jobs on page 2
+2025-11-09 18:45:01,041 - INFO - Navigating to page 3 by clicking pagination link
+2025-11-09 18:45:04,203 - INFO - Processing page 3 for keyword: 'business analyst'
+2025-11-09 18:45:04,237 - INFO - Found 19 jobs on page 3
+2025-11-09 18:45:04,239 - INFO - No more pages found for keyword: 'business analyst'
+2025-11-09 18:45:04,239 - INFO - Found 69 total jobs for keyword: 'business analyst'
+2025-11-09 18:45:04,239 - INFO - Searching for keyword: 'policy analyst'
+2025-11-09 18:45:10,007 - INFO - Processing page 1 for keyword: 'policy analyst'
+2025-11-09 18:45:10,036 - INFO - Found 25 jobs on page 1
+2025-11-09 18:45:10,038 - INFO - Navigating to page 2 by clicking pagination link
+2025-11-09 18:45:13,202 - INFO - Processing page 2 for keyword: 'policy analyst'
+2025-11-09 18:45:13,238 - INFO - Found 25 jobs on page 2
+2025-11-09 18:45:13,240 - INFO - Navigating to page 3 by clicking pagination link
+2025-11-09 18:45:16,402 - INFO - Processing page 3 for keyword: 'policy analyst'
+2025-11-09 18:45:16,429 - INFO - Found 25 jobs on page 3
+2025-11-09 18:45:16,432 - INFO - Navigating to page 4 by clicking pagination link
+2025-11-09 18:45:19,596 - INFO - Processing page 4 for keyword: 'policy analyst'
+2025-11-09 18:45:19,632 - INFO - Found 25 jobs on page 4
+2025-11-09 18:45:19,634 - INFO - Navigating to page 5 by clicking pagination link
+2025-11-09 18:45:22,785 - INFO - Processing page 5 for keyword: 'policy analyst'
+2025-11-09 18:45:22,815 - INFO - Found 25 jobs on page 5
+2025-11-09 18:45:22,818 - INFO - Navigating to page 6 by clicking pagination link
+2025-11-09 18:45:25,972 - INFO - Processing page 6 for keyword: 'policy analyst'
+2025-11-09 18:45:26,002 - INFO - Found 18 jobs on page 6
+2025-11-09 18:45:26,004 - INFO - No more pages found for keyword: 'policy analyst'
+2025-11-09 18:45:26,004 - INFO - Found 143 total jobs for keyword: 'policy analyst'
+2025-11-09 18:45:26,004 - INFO - Total unique jobs found: 143
+2025-11-09 18:45:26,004 - INFO - 
+2025-11-09 18:45:26,004 - INFO - ================================================================================
+2025-11-09 18:45:26,004 - INFO - Search Results Summary
+2025-11-09 18:45:26,004 - INFO - ================================================================================
+2025-11-09 18:45:26,004 - INFO - Keywords searched: 3
+2025-11-09 18:45:26,004 - INFO - Unique jobs found: 143
+2025-11-09 18:45:26,004 - INFO - 
+2025-11-09 18:45:26,004 - INFO - Starting detailed job scraping...
+2025-11-09 18:45:26,004 - INFO - 
+2025-11-09 18:45:26,004 - INFO - [1/143] Scraping job 597090317: Project Data Analyst
+2025-11-09 18:45:28,258 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597090317.html
+2025-11-09 18:45:28,281 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597090317.json
+2025-11-09 18:45:29,282 - INFO - [2/143] Scraping job 597006917: Land Analyst
+2025-11-09 18:45:31,473 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597006917.html
+2025-11-09 18:45:31,488 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597006917.json
+2025-11-09 18:45:32,493 - INFO - [3/143] Scraping job 597203917: Senior Data Analyst
+2025-11-09 18:45:34,689 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597203917.html
+2025-11-09 18:45:34,711 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597203917.json
+2025-11-09 18:45:35,716 - INFO - [4/143] Scraping job 597197417: Data Analyst
+2025-11-09 18:45:37,923 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597197417.html
+2025-11-09 18:45:37,937 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597197417.json
+2025-11-09 18:45:38,942 - INFO - [5/143] Scraping job 596917117: Senior Budget Analyst
+2025-11-09 18:45:41,128 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596917117.html
+2025-11-09 18:45:41,158 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596917117.json
+2025-11-09 18:45:42,163 - INFO - [6/143] Scraping job 597190817: Program Reporting Analyst
+2025-11-09 18:45:44,407 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597190817.html
+2025-11-09 18:45:44,428 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597190817.json
+2025-11-09 18:45:45,433 - INFO - [7/143] Scraping job 597082817: Environmental GIS Analyst
+2025-11-09 18:45:47,643 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597082817.html
+2025-11-09 18:45:47,657 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597082817.json
+2025-11-09 18:45:48,662 - INFO - [8/143] Scraping job 596888517: Financial Reporting Analyst
+2025-11-09 18:45:50,857 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596888517.html
+2025-11-09 18:45:50,872 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596888517.json
+2025-11-09 18:45:51,877 - INFO - [9/143] Scraping job 597084417: Intelligence Collator & Analyst
+2025-11-09 18:45:54,066 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597084417.html
+2025-11-09 18:45:54,087 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597084417.json
+2025-11-09 18:45:55,092 - INFO - [10/143] Scraping job 596918117: Senior Business Analyst
+2025-11-09 18:45:57,275 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596918117.html
+2025-11-09 18:45:57,288 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596918117.json
+2025-11-09 18:45:58,293 - INFO - [11/143] Scraping job 597117117: Manager, Legislative Planner & Senior Legislative Analyst
+2025-11-09 18:46:00,464 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597117117.html
+2025-11-09 18:46:00,480 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597117117.json
+2025-11-09 18:46:01,481 - INFO - [12/143] Scraping job 595743417: Senior Analyst Rate Review
+2025-11-09 18:46:03,657 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_595743417.html
+2025-11-09 18:46:03,677 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_595743417.json
+2025-11-09 18:46:04,683 - INFO - [13/143] Scraping job 597230417: Election Policy Analyst
+2025-11-09 18:46:06,882 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597230417.html
+2025-11-09 18:46:06,897 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597230417.json
+2025-11-09 18:46:07,898 - INFO - [14/143] Scraping job 596875517: Knowledge, Information & Technology Officer
+2025-11-09 18:46:10,069 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596875517.html
+2025-11-09 18:46:10,083 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596875517.json
+2025-11-09 18:46:11,088 - INFO - [15/143] Scraping job 594287217: Wildfire Dispatch Supervisor
+2025-11-09 18:46:13,279 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_594287217.html
+2025-11-09 18:46:13,300 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_594287217.json
+2025-11-09 18:46:14,305 - INFO - [16/143] Scraping job 595802817: Wildfire Dispatch Supervisor
+2025-11-09 18:46:16,526 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_595802817.html
+2025-11-09 18:46:16,547 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_595802817.json
+2025-11-09 18:46:17,552 - INFO - [17/143] Scraping job 597208217: Records Management Supervisor
+2025-11-09 18:46:19,829 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597208217.html
+2025-11-09 18:46:19,842 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597208217.json
+2025-11-09 18:46:20,848 - INFO - [18/143] Scraping job 595830517: Enterprise Architect
+2025-11-09 18:46:23,037 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_595830517.html
+2025-11-09 18:46:23,059 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_595830517.json
+2025-11-09 18:46:24,064 - INFO - [19/143] Scraping job 597167717: Junior Hydrogeologist
+2025-11-09 18:46:26,348 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597167717.html
+2025-11-09 18:46:26,369 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597167717.json
+2025-11-09 18:46:27,374 - INFO - [20/143] Scraping job 597025117: Alberta Crown Prosecution Services - Business Strategist
+2025-11-09 18:46:29,597 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597025117.html
+2025-11-09 18:46:29,612 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597025117.json
+2025-11-09 18:46:30,616 - INFO - [21/143] Scraping job 596424917: Regulatory Specialist
+2025-11-09 18:46:32,824 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596424917.html
+2025-11-09 18:46:32,846 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596424917.json
+2025-11-09 18:46:33,852 - INFO - [22/143] Scraping job 596255917: Senior Fisheries Technician
+2025-11-09 18:46:36,066 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596255917.html
+2025-11-09 18:46:36,109 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596255917.json
+2025-11-09 18:46:37,114 - INFO - [23/143] Scraping job 596901217: Regional Technical Advisor
+2025-11-09 18:46:39,302 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596901217.html
+2025-11-09 18:46:39,316 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596901217.json
+2025-11-09 18:46:40,321 - INFO - [24/143] Scraping job 576670017: Senior Fisheries Biologist
+2025-11-09 18:46:42,508 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_576670017.html
+2025-11-09 18:46:42,530 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_576670017.json
+2025-11-09 18:46:43,535 - INFO - [25/143] Scraping job 597164717: Senior Policy Advisor
+2025-11-09 18:46:46,846 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597164717.html
+2025-11-09 18:46:46,868 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597164717.json
+2025-11-09 18:46:47,868 - INFO - [26/143] Scraping job 596597617: Nurse Consultant, Immunization
+2025-11-09 18:46:50,257 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596597617.html
+2025-11-09 18:46:50,272 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596597617.json
+2025-11-09 18:46:51,276 - INFO - [27/143] Scraping job 596149417: Senior Staff Auditor
+2025-11-09 18:46:53,524 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596149417.html
+2025-11-09 18:46:53,543 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596149417.json
+2025-11-09 18:46:54,548 - INFO - [28/143] Scraping job 596801317: Energy and Sustainability Specialist
+2025-11-09 18:46:56,814 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596801317.html
+2025-11-09 18:46:56,835 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596801317.json
+2025-11-09 18:46:57,840 - INFO - [29/143] Scraping job 593800917: Senior Wildlife Biologist
+2025-11-09 18:47:00,033 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_593800917.html
+2025-11-09 18:47:00,047 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_593800917.json
+2025-11-09 18:47:01,052 - INFO - [30/143] Scraping job 597042317: Sr Assessment Auditor
+2025-11-09 18:47:03,251 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597042317.html
+2025-11-09 18:47:03,271 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597042317.json
+2025-11-09 18:47:04,276 - INFO - [31/143] Scraping job 597246917: Senior Policy Advisor
+2025-11-09 18:47:06,502 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597246917.html
+2025-11-09 18:47:06,523 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597246917.json
+2025-11-09 18:47:07,527 - INFO - [32/143] Scraping job 597181917: Senior Category Specialist
+2025-11-09 18:47:09,734 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597181917.html
+2025-11-09 18:47:09,748 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597181917.json
+2025-11-09 18:47:10,754 - INFO - [33/143] Scraping job 597162017: Senior Indigenous Policy Implementation Specialist
+2025-11-09 18:47:13,077 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597162017.html
+2025-11-09 18:47:13,099 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597162017.json
+2025-11-09 18:47:14,104 - INFO - [34/143] Scraping job 597176417: Evaluation and Program Advisor
+2025-11-09 18:47:16,339 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597176417.html
+2025-11-09 18:47:16,362 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597176417.json
+2025-11-09 18:47:17,366 - INFO - [35/143] Scraping job 597048817: Contract and Grant Specialist
+2025-11-09 18:47:19,597 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597048817.html
+2025-11-09 18:47:19,610 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597048817.json
+2025-11-09 18:47:20,616 - INFO - [36/143] Scraping job 596840517: Property Assessor
+2025-11-09 18:47:22,844 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596840517.html
+2025-11-09 18:47:22,858 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596840517.json
+2025-11-09 18:47:23,860 - INFO - [37/143] Scraping job 597102417: Project Assistant
+2025-11-09 18:47:26,085 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597102417.html
+2025-11-09 18:47:26,109 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597102417.json
+2025-11-09 18:47:27,113 - INFO - [38/143] Scraping job 596652217: Litigation Assistant
+2025-11-09 18:47:29,303 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596652217.html
+2025-11-09 18:47:29,329 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596652217.json
+2025-11-09 18:47:30,333 - INFO - [39/143] Scraping job 596807317: Livestock Disposal and Programs Specialist
+2025-11-09 18:47:32,500 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596807317.html
+2025-11-09 18:47:32,569 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596807317.json
+2025-11-09 18:47:33,574 - INFO - [40/143] Scraping job 597231517: Recoveries Officer
+2025-11-09 18:47:35,768 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597231517.html
+2025-11-09 18:47:35,790 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597231517.json
+2025-11-09 18:47:36,795 - INFO - [41/143] Scraping job 596258617: Senior L&E Strategic Planner
+2025-11-09 18:47:38,980 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596258617.html
+2025-11-09 18:47:38,996 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596258617.json
+2025-11-09 18:47:39,996 - INFO - [42/143] Scraping job 597144117: Director, Industry Relations/Director, Defense Strategy and Integration
+2025-11-09 18:47:42,335 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597144117.html
+2025-11-09 18:47:42,359 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597144117.json
+2025-11-09 18:47:43,364 - INFO - [43/143] Scraping job 596931517: Manager, Home and Community Care Compliance (North)
+2025-11-09 18:47:45,595 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596931517.html
+2025-11-09 18:47:45,617 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596931517.json
+2025-11-09 18:47:46,623 - INFO - [44/143] Scraping job 597013417: Senior Engineering Technologist
+2025-11-09 18:47:48,884 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597013417.html
+2025-11-09 18:47:48,908 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597013417.json
+2025-11-09 18:47:49,913 - INFO - [45/143] Scraping job 595712017: Executive Assistant
+2025-11-09 18:47:52,120 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_595712017.html
+2025-11-09 18:47:52,136 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_595712017.json
+2025-11-09 18:47:53,141 - INFO - [46/143] Scraping job 590942217: Nurse Consultant, Communicable Disease
+2025-11-09 18:47:55,337 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_590942217.html
+2025-11-09 18:47:55,359 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_590942217.json
+2025-11-09 18:47:56,363 - INFO - [47/143] Scraping job 597166017: Judicial Clerk
+2025-11-09 18:47:58,916 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597166017.html
+2025-11-09 18:47:58,926 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597166017.json
+2025-11-09 18:47:59,931 - INFO - [48/143] Scraping job 586278017: Judicial Clerk/Senior Judicial Clerk (Open Talent Pool)
+2025-11-09 18:48:02,146 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_586278017.html
+2025-11-09 18:48:02,161 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_586278017.json
+2025-11-09 18:48:03,167 - INFO - [49/143] Scraping job 596521017: Wildfire Crew Member
+2025-11-09 18:48:05,333 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596521017.html
+2025-11-09 18:48:05,361 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596521017.json
+2025-11-09 18:48:06,366 - INFO - [50/143] Scraping job 596521317: Wildfire Crew Leader
+2025-11-09 18:48:08,549 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596521317.html
+2025-11-09 18:48:08,564 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596521317.json
+2025-11-09 18:48:09,569 - INFO - [51/143] Scraping job 597231917: Language Services Coordinator
+2025-11-09 18:48:11,742 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597231917.html
+2025-11-09 18:48:11,757 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597231917.json
+2025-11-09 18:48:12,762 - INFO - [52/143] Scraping job 596826417: Assistant Deputy Minister, Economics and Fiscal Policy
+2025-11-09 18:48:14,943 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596826417.html
+2025-11-09 18:48:14,959 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596826417.json
+2025-11-09 18:48:15,963 - INFO - [53/143] Scraping job 597004617: Assistant Deputy Minister, Alberta Crown Prosecution Service
+2025-11-09 18:48:18,160 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597004617.html
+2025-11-09 18:48:18,179 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597004617.json
+2025-11-09 18:48:19,185 - INFO - [54/143] Scraping job 596581317: Correctional Peace Officer (CPO 1 & 2) (Multiple Locations)
+2025-11-09 18:48:21,353 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596581317.html
+2025-11-09 18:48:21,370 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596581317.json
+2025-11-09 18:48:22,375 - INFO - [55/143] Scraping job 594816317: Administrative Supervisor
+2025-11-09 18:48:24,554 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_594816317.html
+2025-11-09 18:48:24,590 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_594816317.json
+2025-11-09 18:48:25,591 - INFO - [56/143] Scraping job 597158217: Senior Lease Negotiator
+2025-11-09 18:48:27,772 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597158217.html
+2025-11-09 18:48:27,789 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597158217.json
+2025-11-09 18:48:28,794 - INFO - [57/143] Scraping job 597123517: Planning & Performance Measures Consultant
+2025-11-09 18:48:31,992 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597123517.html
+2025-11-09 18:48:32,017 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597123517.json
+2025-11-09 18:48:33,022 - INFO - [58/143] Scraping job 597241817: Risk Management Advisor
+2025-11-09 18:48:35,364 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597241817.html
+2025-11-09 18:48:35,384 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597241817.json
+2025-11-09 18:48:36,389 - INFO - [59/143] Scraping job 597180917: Executive Director, Business Relationships and Implementation
+2025-11-09 18:48:38,656 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597180917.html
+2025-11-09 18:48:38,677 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597180917.json
+2025-11-09 18:48:39,682 - INFO - [60/143] Scraping job 596850217: Director, Financial Planning and Budget
+2025-11-09 18:48:41,884 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596850217.html
+2025-11-09 18:48:41,898 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596850217.json
+2025-11-09 18:48:42,903 - INFO - [61/143] Scraping job 596950017: Senior Investigator
+2025-11-09 18:48:45,099 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596950017.html
+2025-11-09 18:48:45,121 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596950017.json
+2025-11-09 18:48:46,126 - INFO - [62/143] Scraping job 597205517: Area Assistant
+2025-11-09 18:48:48,320 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597205517.html
+2025-11-09 18:48:48,337 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597205517.json
+2025-11-09 18:48:49,337 - INFO - [63/143] Scraping job 592983817: Senior Contract Specialist
+2025-11-09 18:48:51,561 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_592983817.html
+2025-11-09 18:48:51,575 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_592983817.json
+2025-11-09 18:48:52,578 - INFO - [64/143] Scraping job 596901017: Procurement Strategy, Governance and Compliance Specialist
+2025-11-09 18:48:54,890 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596901017.html
+2025-11-09 18:48:54,911 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596901017.json
+2025-11-09 18:48:55,913 - INFO - [65/143] Scraping job 597151817: CYC Team Lead
+2025-11-09 18:48:58,142 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597151817.html
+2025-11-09 18:48:58,164 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597151817.json
+2025-11-09 18:48:59,166 - INFO - [66/143] Scraping job 597149717: Manager, Issues and Operations
+2025-11-09 18:49:01,438 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597149717.html
+2025-11-09 18:49:01,452 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597149717.json
+2025-11-09 18:49:02,457 - INFO - [67/143] Scraping job 597206017: Provincial Prosecutor
+2025-11-09 18:49:04,640 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597206017.html
+2025-11-09 18:49:04,661 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597206017.json
+2025-11-09 18:49:05,666 - INFO - [68/143] Scraping job 597011617: Program Coordinator
+2025-11-09 18:49:07,881 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597011617.html
+2025-11-09 18:49:07,903 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597011617.json
+2025-11-09 18:49:08,908 - INFO - [69/143] Scraping job 597129217: Regulatory Compliance Specialist
+2025-11-09 18:49:11,109 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597129217.html
+2025-11-09 18:49:11,123 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597129217.json
+2025-11-09 18:49:12,128 - INFO - [70/143] Scraping job 594669917: Worker Advisor - Permanent and Temporary
+2025-11-09 18:49:14,307 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_594669917.html
+2025-11-09 18:49:14,321 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_594669917.json
+2025-11-09 18:49:15,327 - INFO - [71/143] Scraping job 597203717: Senior Engineer, Engineering
+2025-11-09 18:49:17,532 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597203717.html
+2025-11-09 18:49:17,554 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597203717.json
+2025-11-09 18:49:18,556 - INFO - [72/143] Scraping job 597207817: Crown Prosecutor
+2025-11-09 18:49:20,735 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597207817.html
+2025-11-09 18:49:20,750 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597207817.json
+2025-11-09 18:49:21,755 - INFO - [73/143] Scraping job 597182217: Wildfire Technologist
+2025-11-09 18:49:23,996 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597182217.html
+2025-11-09 18:49:24,025 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597182217.json
+2025-11-09 18:49:25,028 - INFO - [74/143] Scraping job 597034117: Crown Prosecutor
+2025-11-09 18:49:27,287 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597034117.html
+2025-11-09 18:49:27,303 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597034117.json
+2025-11-09 18:49:28,308 - INFO - [75/143] Scraping job 596313117: Entry Level, Child Intervention Practitioner - Talent Pool
+2025-11-09 18:49:30,556 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596313117.html
+2025-11-09 18:49:30,580 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596313117.json
+2025-11-09 18:49:31,585 - INFO - [76/143] Scraping job 596943517: Director - North
+2025-11-09 18:49:33,800 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596943517.html
+2025-11-09 18:49:33,820 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596943517.json
+2025-11-09 18:49:34,825 - INFO - [77/143] Scraping job 597166117: Legal Assistant
+2025-11-09 18:49:37,096 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597166117.html
+2025-11-09 18:49:37,118 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597166117.json
+2025-11-09 18:49:38,124 - INFO - [78/143] Scraping job 593299617: Legislative Counsel
+2025-11-09 18:49:40,394 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_593299617.html
+2025-11-09 18:49:40,416 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_593299617.json
+2025-11-09 18:49:41,421 - INFO - [79/143] Scraping job 591888117: Barrister & Solicitor
+2025-11-09 18:49:43,769 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_591888117.html
+2025-11-09 18:49:43,792 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_591888117.json
+2025-11-09 18:49:44,793 - INFO - [80/143] Scraping job 597116017: Manager, Compliance
+2025-11-09 18:49:47,182 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597116017.html
+2025-11-09 18:49:47,204 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597116017.json
+2025-11-09 18:49:48,210 - INFO - [81/143] Scraping job 597042117: Senior Historic Interpreter
+2025-11-09 18:49:50,430 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597042117.html
+2025-11-09 18:49:50,449 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597042117.json
+2025-11-09 18:49:51,454 - INFO - [82/143] Scraping job 597023917: Legal Counsel
+2025-11-09 18:49:53,673 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597023917.html
+2025-11-09 18:49:53,695 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597023917.json
+2025-11-09 18:49:54,697 - INFO - [83/143] Scraping job 597246017: Legal Assistant
+2025-11-09 18:49:56,910 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597246017.html
+2025-11-09 18:49:56,933 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597246017.json
+2025-11-09 18:49:57,938 - INFO - [84/143] Scraping job 596693517: Senior Area Forester
+2025-11-09 18:50:01,318 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596693517.html
+2025-11-09 18:50:01,340 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596693517.json
+2025-11-09 18:50:02,345 - INFO - [85/143] Scraping job 593488917: Project Manager
+2025-11-09 18:50:04,665 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_593488917.html
+2025-11-09 18:50:04,687 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_593488917.json
+2025-11-09 18:50:05,692 - INFO - [86/143] Scraping job 596150417: Agrologist Team Lead
+2025-11-09 18:50:07,946 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596150417.html
+2025-11-09 18:50:07,964 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596150417.json
+2025-11-09 18:50:08,969 - INFO - [87/143] Scraping job 597130417: Stakeholder Engagement and Grant Specialist
+2025-11-09 18:50:11,223 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597130417.html
+2025-11-09 18:50:11,245 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597130417.json
+2025-11-09 18:50:12,250 - INFO - [88/143] Scraping job 594721417: Regulatory Advisor
+2025-11-09 18:50:14,464 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_594721417.html
+2025-11-09 18:50:14,484 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_594721417.json
+2025-11-09 18:50:15,489 - INFO - [89/143] Scraping job 597242917: AIS Site Leads
+2025-11-09 18:50:17,705 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597242917.html
+2025-11-09 18:50:17,742 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597242917.json
+2025-11-09 18:50:18,747 - INFO - [90/143] Scraping job 596844017: Director,Policy and Serv Coord
+2025-11-09 18:50:20,953 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596844017.html
+2025-11-09 18:50:20,975 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596844017.json
+2025-11-09 18:50:21,980 - INFO - [91/143] Scraping job 596940817: Director, Child Support Recalculation Program and Family Support Orders Services Policy
+2025-11-09 18:50:24,194 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596940817.html
+2025-11-09 18:50:24,215 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596940817.json
+2025-11-09 18:50:25,220 - INFO - [92/143] Scraping job 596900017: Investigator
+2025-11-09 18:50:27,414 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596900017.html
+2025-11-09 18:50:27,435 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596900017.json
+2025-11-09 18:50:28,440 - INFO - [93/143] Scraping job 594544517: Barrister & Solicitor
+2025-11-09 18:50:30,640 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_594544517.html
+2025-11-09 18:50:30,665 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_594544517.json
+2025-11-09 18:50:31,670 - INFO - [94/143] Scraping job 596881117: Investigator
+2025-11-09 18:50:33,858 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596881117.html
+2025-11-09 18:50:33,879 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596881117.json
+2025-11-09 18:50:34,884 - INFO - [95/143] Scraping job 597246617: Curriculum Consultant, Mathematics
+2025-11-09 18:50:37,065 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597246617.html
+2025-11-09 18:50:37,080 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597246617.json
+2025-11-09 18:50:38,086 - INFO - [96/143] Scraping job 597044017: Enrollments Coordinator
+2025-11-09 18:50:40,280 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597044017.html
+2025-11-09 18:50:40,300 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597044017.json
+2025-11-09 18:50:41,305 - INFO - [97/143] Scraping job 596922317: Farm Water Supply Specialist
+2025-11-09 18:50:43,488 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596922317.html
+2025-11-09 18:50:43,510 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596922317.json
+2025-11-09 18:50:44,515 - INFO - [98/143] Scraping job 596895617: Team Lead/Senior Investigator
+2025-11-09 18:50:46,717 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596895617.html
+2025-11-09 18:50:46,738 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596895617.json
+2025-11-09 18:50:47,743 - INFO - [99/143] Scraping job 583964917: Administrative Talent Pool (AS3/AS4) - Northern Alberta
+2025-11-09 18:50:49,941 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_583964917.html
+2025-11-09 18:50:49,961 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_583964917.json
+2025-11-09 18:50:50,964 - INFO - [100/143] Scraping job 597087617: Project Manager
+2025-11-09 18:50:53,160 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597087617.html
+2025-11-09 18:50:53,182 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597087617.json
+2025-11-09 18:50:54,188 - INFO - [101/143] Scraping job 595376717: Occupational Health and Safety (OHS) Officers - Multiple Positions (Canmore)
+2025-11-09 18:50:56,382 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_595376717.html
+2025-11-09 18:50:56,404 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_595376717.json
+2025-11-09 18:50:57,408 - INFO - [102/143] Scraping job 597153717: Appeal Officer
+2025-11-09 18:50:59,599 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597153717.html
+2025-11-09 18:50:59,619 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597153717.json
+2025-11-09 18:51:00,624 - INFO - [103/143] Scraping job 597165317: Lead Theatre Tech
+2025-11-09 18:51:02,806 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_597165317.html
+2025-11-09 18:51:02,825 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_597165317.json
+2025-11-09 18:51:03,830 - INFO - [104/143] Scraping job 596674617: Regulatory Approvals Coord.
+2025-11-09 18:51:06,005 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596674617.html
+2025-11-09 18:51:06,025 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596674617.json
+2025-11-09 18:51:07,031 - INFO - [105/143] Scraping job 587880017: Project Manager
+2025-11-09 18:51:09,233 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_587880017.html
+2025-11-09 18:51:09,253 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_587880017.json
+2025-11-09 18:51:10,258 - INFO - [106/143] Scraping job 594115917: Snow School Supervisor
+2025-11-09 18:51:12,463 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_594115917.html
+2025-11-09 18:51:12,501 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_594115917.json
+2025-11-09 18:51:13,506 - INFO - [107/143] Scraping job 594118317: Hill Operations
+2025-11-09 18:51:15,707 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_594118317.html
+2025-11-09 18:51:15,728 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_594118317.json
+2025-11-09 18:51:16,733 - INFO - [108/143] Scraping job 596934617: Disclosure Clerk
+2025-11-09 18:51:18,928 - INFO - Saved HTML to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/job_html/ab_job_596934617.html
+2025-11-09 18:51:18,960 - INFO - Saved JSON to /Users/agirgis/Downloads/public_jobs_scraper/data/AB/jobs_json/ab_job_596934617.json

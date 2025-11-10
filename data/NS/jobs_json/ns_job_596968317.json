@@ -1,0 +1,125 @@
+{
+  "job_posting": {
+    "source": {
+      "jurisdiction": "Nova Scotia",
+      "job_board": "Government of Nova Scotia",
+      "url": "https://jobs.novascotia.ca/job/HALIFAX-Senior-Cyber-and-Risk-Analyst-%28Computer-Services-Officer-4%29-NS-B3K-2A6/596968317/"
+    },
+    "metadata": {
+      "job_title": "Senior Cyber and Risk Analyst (Computer Services Officer 4)",
+      "classification": "Computer Services Officer 4",
+      "competition_number": "47347",
+      "department": "Cyber Security & Digital Solutions",
+      "location": "HALIFAX",
+      "type_of_employment": "Permanent",
+      "union_status": "NSGEU - NSPG",
+      "closing_date": "2025-11-12T00:00:00",
+      "closing_time": "11:59 PM",
+      "closing_timezone": "Atlantic Time"
+    },
+    "about_us": {
+      "heading": "About Us",
+      "body": "At CSDS, we prioritize people—both within our team and in the communities we serve. Our mission is to redefine how Nova Scotians engage with government by creating accessible, reliable digital solutions centered around user needs.\n\nIn today’s tech-driven world, CSDS empowers government departments with essential digital solutions to meet Nova Scotians’ expectations. As a trusted partner across government, we enable departments to fulfill their mandates with secure, user-friendly services. From healthcare and education to public safety, we collaborate to transform how services are designed and delivered.\n\nWe don’t just implement technology; we modernize outdated systems and reimagine processes. Our agile, data-driven approach ensures that digital services are both efficient and adaptable to Nova Scotia’s evolving needs.\n\nJoining CSDS means contributing to work that makes a real difference. From providing vital tech support to healthcare professionals to strengthening cybersecurity and developing scalable digital platforms, you’ll play a key role in building a more inclusive, responsive government for Nova Scotians.\n\nTogether, we’re setting new standards for digital public service, delivering resilient solutions that meet today’s needs—and anticipate tomorrow’s challenges."
+    },
+    "about_our_opportunity": {
+      "heading": "About Our Opportunity",
+      "body": "As Senior Cyber and Risk Analyst, you’ll join the Cyber Security and Enterprise Risk team to help strengthen cybersecurity practices across government digital services. Following a cybersecurity-by-design approach, you’ll work with delivery teams, vendors, business owners, and partners across the government, healthcare, and education sectors to embed security requirements throughout the delivery lifecycle.\n\nYou’ll build strong relationships, helping stakeholders understand their risk ownership responsibilities, assess cybersecurity risks, and provide expert guidance to ensure the secure delivery of products and services. You’ll also contribute to the development of cybersecurity policies, standards, and guidelines."
+    },
+    "primary_accountabilities": {
+      "heading": "Primary Accountabilities",
+      "intro": "As the Senior Cyber and Risk Analyst, you will be responsible for:\n\n\n\nCollaborating with delivery teams, vendors, and stakeholders to embed security risk management throughout the delivery lifecycle and promote a cybersecurity-by-design mindset.\nBuilding strong relationships across government, healthcare, and education sectors to support shared cybersecurity understanding and maturity.\nUnderstanding user needs and providing hands-on guidance on designing and implementing effective cybersecurity controls and secure system architecture.\nSupporting delivery teams in assessing cybersecurity controls, defining cybersecurity requirements and providing training as needed.\nEffectively and efficiently managing cybersecurity risk assessment activities, including monitoring progress, documenting statuses, coordinating follow-up actions, and obtaining necessary approvals.\nContributing to developing and refining cybersecurity policies, standards, and guidelines.\nDeveloping and maintaining dashboards and reporting tools using Power BI, PowerApps, SharePoint, and other Microsoft technologies.",
+      "bullets": [
+        "Collaborating with delivery teams, vendors, and stakeholders to embed security risk management throughout the delivery lifecycle and promote a cybersecurity-by-design mindset.",
+        "Building strong relationships across government, healthcare, and education sectors to support shared cybersecurity understanding and maturity.",
+        "Understanding user needs and providing hands-on guidance on designing and implementing effective cybersecurity controls and secure system architecture.",
+        "Supporting delivery teams in assessing cybersecurity controls, defining cybersecurity requirements and providing training as needed.",
+        "Effectively and efficiently managing cybersecurity risk assessment activities, including monitoring progress, documenting statuses, coordinating follow-up actions, and obtaining necessary approvals.",
+        "Contributing to developing and refining cybersecurity policies, standards, and guidelines.",
+        "Developing and maintaining dashboards and reporting tools using Power BI, PowerApps, SharePoint, and other Microsoft technologies."
+      ]
+    },
+    "qualifications_and_experience": {
+      "heading": "Qualifications and Experience",
+      "requirements_intro": "To be considered for this opportunity, you hold experience and expertise in the following areas:\n\nUndergraduate degree in Computer Science, Engineering, Science or related technical degree.\n5 years of progressive experience in cybersecurity risk management.\nProven ability to define cybersecurity requirements using recognized frameworks (e.g. NIST, ISO/IEC 27001, CIS Controls).\nExperience in cloud security practices and controls (Azure, AWS, etc.).\nExperience with Threat Risk Assessments (TRAs), penetration tests, Web Application Vulnerability Scans (WAVS), system-level scans, and custom code scans.\nFamiliarity with secure system design and modern delivery practices such as Agile and DevSecOps.\nHands-on experience managing the cybersecurity risk assessment lifecycle, including tracking, documentation, follow-ups, and approvals.\nStrong written and verbal communication skills; able to translate technical risks for non-technical audiences.\nExperience collaborating with delivery teams, partners, and vendors, and providing guidance on cybersecurity requirements.\nExperience contributing to the security policies, standards, and procedures.\nProficiency in Microsoft 365 tools including Power BI, PowerApps, SharePoint and related tools.\n\n\nIn addition, you have the following experience and skills:\n\nInformation Security professional designations such as CISSP, CISM, CISA, Security+.\nExperience using the NIST SP 800-53 cybersecurity framework.\nExperience performing Cybersecurity Threat Risk Assessments (TRAs).\nUser-centred, innovative and product management approaches to ensuring the secure delivery of services.\n\n \n\nWe will assess the above qualifications and competencies using one or more of the following tools: written examination, standardized tests, oral presentations, interview(s), and reference checks.",
+      "required_education": null,
+      "required_experience": null,
+      "required_bullets": [
+        "Undergraduate degree in Computer Science, Engineering, Science or related technical degree.",
+        "5 years of progressive experience in cybersecurity risk management.",
+        "Proven ability to define cybersecurity requirements using recognized frameworks (e.g. NIST, ISO/IEC 27001, CIS Controls).",
+        "Experience in cloud security practices and controls (Azure, AWS, etc.).",
+        "Experience with Threat Risk Assessments (TRAs), penetration tests, Web Application Vulnerability Scans (WAVS), system-level scans, and custom code scans.",
+        "Familiarity with secure system design and modern delivery practices such as Agile and DevSecOps.",
+        "Hands-on experience managing the cybersecurity risk assessment lifecycle, including tracking, documentation, follow-ups, and approvals.",
+        "Strong written and verbal communication skills; able to translate technical risks for non-technical audiences.",
+        "Experience collaborating with delivery teams, partners, and vendors, and providing guidance on cybersecurity requirements.",
+        "Experience contributing to the security policies, standards, and procedures.",
+        "Proficiency in Microsoft 365 tools including Power BI, PowerApps, SharePoint and related tools.",
+        "Information Security professional designations such as CISSP, CISM, CISA, Security+.",
+        "Experience using the NIST SP 800-53 cybersecurity framework.",
+        "Experience performing Cybersecurity Threat Risk Assessments (TRAs).",
+        "User-centred, innovative and product management approaches to ensuring the secure delivery of services."
+      ],
+      "additional_skills_bullets": [],
+      "asset_heading": "Assets",
+      "asset_bullets": [],
+      "equivalency_heading": "Equivalency",
+      "equivalency_text": "Include, but not limited to:\n\ngraduation from a recognized Information Technology Program plus 5 years 6 months related experience\n\n\n\nAn equivalent combination of related training and experience may be accepted in lieu of formal education. Applicants claiming equivalencies must clearly demonstrate them in their application."
+    },
+    "benefits": {
+      "heading": "Benefits",
+      "body": "Based on the employment status and union agreement, the Government of Nova Scotia offers its employees a wide range of benefits such as a Defined Benefit Pension Plan, Health, Dental, Life Insurance, General illness, Short and Long Term Disability, Vacation and Employee and Family Assistance Programs.  For information on all our Benefit program offerings, click here: Benefits for government employees.",
+      "benefits_link_text": "Benefits for government employees",
+      "benefits_link_url": "www.nspssp.ca"
+    },
+    "working_conditions": {
+      "heading": "Working Conditions",
+      "body": "You will be expected to work in the office approximately two days per week; however, this arrangement may be adjusted as required to meet operational needs. Travel throughout the province may be required periodically. Standard business hours are 08:00 to 16:30."
+    },
+    "additional_information": {
+      "heading": "Additional Information",
+      "body": "Offer of employment is conditional upon the completion of all applicable background checks and confirmation of credentials, the results of which must be satisfactory to the employer or will result in the termination of your employment."
+    },
+    "what_we_offer": {
+      "heading": "What We Offer",
+      "bullets": [
+        "Career development where you have access to career guidance, tools, resources, and ongoing training for every stage of your career",
+        "Engaging workplace: our employees feel valued, respected, connected, and tuned in, we have forward-thinking policies and strategies",
+        "Countless career paths",
+        "Department specific flexible working schedules"
+      ]
+    },
+    "compensation": {
+      "pay_grade": "PR 17",
+      "salary_range": {
+        "raw_text": "Salary Range:  $3,107.16 - $3,649.33 Bi-Weekly",
+        "min_amount": 3107.16,
+        "max_amount": 3649.33,
+        "frequency": "Bi-Weekly",
+        "currency": "CAD"
+      }
+    },
+    "statements": {
+      "employment_equity": {
+        "heading": "Employment Equity Statement",
+        "body": "Our goal is to be a diverse workforce that is representative, at all job levels, of the citizens we serve.  The Government of Nova Scotia has an Employment Equity Policy, and we welcome applications from Indigenous People, African Nova Scotians and Other Racially Visible Persons, Persons with Disabilities and Women in occupations or positions where they are under-represented.  If you are a member of one of these equity groups, you are encouraged to self-identify on your electronic application."
+      },
+      "accommodation": {
+        "heading": "Accommodation Statement",
+        "body": "We are committed to providing an inclusive and accessible recruitment process. Candidates may request accommodations based on any grounds protected by the Human Rights Act. If you require an accommodation throughout the recruitment process, please contact us at competitions@novascotia.ca."
+      }
+    },
+    "application_instructions": {
+      "internal_applicants_text": null,
+      "external_applicants_text": null,
+      "incomplete_applications_note": null,
+      "contact_email": "Competitions@novascotia.ca"
+    }
+  },
+  "scraping_metadata": {
+    "job_id": "596968317",
+    "scraped_at": "2025-11-09T03:54:02.580188",
+    "matched_keyword": "Senior Analyst",
+    "match_score": 95.0
+  }
+}

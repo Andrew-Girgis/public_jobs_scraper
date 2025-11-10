@@ -1,0 +1,57 @@
+{
+  "job_posting": {
+    "source": {
+      "jurisdiction": "Saskatchewan",
+      "job_board": "Government of Saskatchewan",
+      "url": "https://govskpsc.taleo.net/careersection/10180/jobdetail.ftl?job=736323&lang=en"
+    },
+    "metadata": {
+      "job_title": "Senior Strategic Advisor - Information Management, Access and Privacy",
+      "employment_type": "Permanent Full-time",
+      "location": "SK-Rgna-Regina",
+      "ministry": "033 Public Service Commission",
+      "salary_range": "$7,863-$10,223",
+      "salary_min": 7863.0,
+      "salary_max": 10223.0,
+      "salary_frequency": "Monthly",
+      "grade": "MCP.07.",
+      "hours_of_work": "M - Monthly Out of Scope",
+      "number_of_openings": 1,
+      "closing_date": null
+    },
+    "ministry_description": "The Public Service Commission (PSC) is seeking a proactive, organized, and resourceful team player to join our Corporate Services Division. The successful candidate will support PSC stakeholders and contribute expertise in developing and implementing planning and accountability frameworks and tools, human resource policy, legislation, business improvement for the PSC. This role focuses on information management, access and privacy, legislative business and policy, but offers a diversity of assignments and experiences.",
+    "the_opportunity": {
+      "intro": "",
+      "responsibilities": ""
+    },
+    "responsibilities_breakdown": {
+      "strategic_leadership_planning": "",
+      "technical_oversight": "",
+      "information_knowledge_management": "",
+      "stakeholder_engagement_collaboration": "",
+      "team_resource_management": ""
+    },
+    "qualifications": {
+      "the_ideal_candidate": "",
+      "intro": null,
+      "required_qualifications": [],
+      "education_requirements": "Typically, the knowledge and abilities required for this position would be obtained through a degree or post-graduate degree in public policy, administration, or a related discipline coupled with several years of relevant work experience. Professional certification in privacy protection and conducting risks assessments and in information security and records management would be assets."
+    },
+    "benefits": {
+      "what_we_offer": "",
+      "benefits_list": []
+    },
+    "additional": {
+      "diversity_statement": "We are committed to workplace diversity.",
+      "additional_notes": null
+    },
+    "full_description": "The Public Service Commission (PSC) is seeking a proactive, organized, and resourceful team player to join our Corporate Services Division. The successful candidate will support PSC stakeholders and contribute expertise in developing and implementing planning and accountability frameworks and tools, human resource policy, legislation, business improvement for the PSC. This role focuses on information management, access and privacy, legislative business and policy, but offers a diversity of assignments and experiences.\nPrimary responsibilities include:\nProviding advice and recommendations to executive leadership on a range of access and privacy issues including interpreting relevant legislation, regulations, policy, procedures, guidelines and government programs;\nCoordinating responses for access to information requests under\nThe Freedom of Information and Protection of Privacy Act (FOIP\n);\nLeading the delivery and development of a sustainable Records Management Program, including the development of institution-wide records management policies, strategies, guidelines and procedures related to collection, creation, storage, access, retention and disposal of information;\nDriving forward the transition to the new GEM system, specifically in regard to access and privacy, record management, and freedom of information being properly included in the system for all of GoS;\nServing as the key point of contact on these issues between PSC executive leadership, cross-ministry working groups, and senior leaders across the PSC and GoS. You would represent the PSC officially at several cross-organizational tables as well;\nLeading development, modification or amendment of legislation and regulations; and\nSupporting development of Cabinet documents.\nTo be successful in this position, you will possess:\nExtensive knowledge of and experience working with FOIP and The Health Information Protection Act (HIPA);\nKnowledge and experience in the areas of public policy, legislation and government decision-making processes;\nKnowledge and experience with records management function;\nAbility to build effective relationships with internal and external stakeholders;\nProject and change management skills; and\nStrong written and verbal communication skills and ability to articulate complex issues to senior leadership and non-technical audiences.\nTypically, the knowledge and abilities required for this position would be obtained through a degree or post-graduate degree in public policy, administration, or a related discipline coupled with several years of relevant work experience. Professional certification in privacy protection and conducting risks assessments and in information security and records management would be assets.\nThe PSC offers a fast-paced, values-based, innovative, and inclusive work environment. The PSC is committed to supporting personal and career development across the public service."
+  },
+  "scraping_metadata": {
+    "job_id": "736323",
+    "scraped_at": "2025-11-09T14:51:43.993766",
+    "search_keyword": "Policy Advisor",
+    "matched_keyword": "Information Officer",
+    "match_score": 90
+  }
+}

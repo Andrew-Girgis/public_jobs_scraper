@@ -1,0 +1,126 @@
+{
+    "job_posting": {
+        "search_keyword": null,
+        "source": {
+            "jurisdiction": "Manitoba",
+            "job_board": "Government of Manitoba Careers",
+            "url": "https://jobsearch.gov.mb.ca/search.action?ID=129012"
+        },
+        "metadata": {
+            "job_title": "Central Accounts Payable Project Officer",
+            "classification_title": "PM2 Planning and Program Analyst 2",
+            "classification_code": "PM2",
+            "employment_types": [
+                "Regular/full-time"
+            ],
+            "departments": [
+                "Department of Finance"
+            ],
+            "divisions": [
+                "Central Accounts Payable, Central Finance"
+            ],
+            "locations": [
+                "Winnipeg MB"
+            ],
+            "advertisement_number": "44548",
+            "salary": {
+                "raw_text": "PM2 $68,106.00 - $87,851.00 per year",
+                "classification_code": "PM2",
+                "min_amount": 68106.0,
+                "max_amount": 87851.0,
+                "frequency": "per year",
+                "currency": "CAD"
+            },
+            "closing_date": "November 10, 2025",
+            "closing_time": null
+        },
+        "employment_equity": {
+            "intro_paragraph": "The Manitoba government recognizes the importance of building an exemplary public service reflective of the citizens it serves, where diverse abilities, backgrounds, cultures, identities, languages and perspectives drives a high standard of service and innovation. The Manitoba government supports equitable employment practices and promotes representation of designated groups (women, Indigenous people, persons with disabilities, visible minorities).",
+            "equity_factor_statement": "Employment Equity is a factor in selection for this competition. Consideration will be given to Indigenous people and persons with disabilities.",
+            "designated_groups": [
+                "women",
+                "Indigenous people",
+                "persons with disabilities",
+                "visible minorities"
+            ]
+        },
+        "competition_notes": {
+            "eligibility_list_text": "An eligibility list may be established to fill similar regular and term positions and will remain in effect for up to 12 months.",
+            "classification_flex_text": null,
+            "usage_text": null
+        },
+        "position_overview": {
+            "summary_paragraphs": [
+                "The Department of Finance is seeking a qualified candidate to fill a Central Accounts Payable Project Officer position.",
+                "To be considered for this competition you must submit an application form and resume. Complete the application form at the link below or contact Human Resource Services under “Apply to” to request a copy of the application form. The selection board will rely only on the information provided in this application form to determine whether a candidate will be invited for further assessment."
+            ]
+        },
+        "benefits": {
+            "summary_paragraph": "Click here to access the application form.",
+            "benefit_items": []
+        },
+        "conditions_of_employment": {
+            "heading": "Conditions of Employment:",
+            "items": [
+                "Must be legally entitled to work in Canada",
+                "Must provide and maintain a satisfactory Criminal Record Check"
+            ]
+        },
+        "qualifications": {
+            "heading": "Qualifications",
+            "essential": [
+                "Knowledge of Canadian Generally Accepted Accounting Principles (GAAP) as they pertain to accounts payable, and their applications in the public sector environment.",
+                "Ability to interpret and apply legislation and regulations.",
+                "Experience monitoring, controlling and advising on Accounts Payable policies and functions.",
+                "Experience in identifying, researching, developing and implementing project initiatives with an emphasis on Accounts Payable.",
+                "Experience applying and interpreting Provincial and Federal T4, T4A and T4A-NR reporting requirements.",
+                "Experience working in the SAP Financial Module, particularly relating to Accounts Payable specifically payment processing (cheque, EFT, and wire transfer).",
+                "Ability to provide advice to senior leaders on complex topics and sensitive issues.",
+                "Verbal communication and presentation skills with the ability to present technical information to a variety of audiences.",
+                "Excellent written communication skills with the ability to draft policy and reports.",
+                "Strong analytical, problem solving and decision making skills.",
+                "Strong interpersonal skills with the ability to build and maintain effective working relationships with various stakeholders."
+            ],
+            "desired": [],
+            "equivalency_text": null
+        },
+        "duties": {
+            "heading": "Duties",
+            "intro": "The Central Accounts Payable Project Officer is responsible for managing projects within Central Finance, with a primary focus on financial and operational initiatives related to Central Accounts Payable (CAP). This includes leading the development, implementation, and oversight of government-wide accounts payable policies and procedures, ensuring alignment with project objectives and divisional goals. The incumbent conducts research, analysis, and evaluation of options to improve efficiency and leverage technological advancements, recommending policy and process alternatives supported by clear implementation strategies and written communications. The role provides expert guidance and direction to the Director, CAP Supervisor, CAP Analysts, and departmental AP staff, develops and maintains CAP policy and procedural manuals, and delivers training to support the successful adoption of new or revised initiatives.",
+            "items": []
+        },
+        "application_instructions": {
+            "apply_to_block": {
+                "advertisement_number": "44548",
+                "unit": "Talent Acquisition",
+                "branch": "Human Resource Services",
+                "address_lines": [
+                    "Winnipeg, MB",
+                    ",",
+                    "R3B 2A9"
+                ],
+                "phone": "204-945-7518",
+                "fax": "204-945-0601",
+                "email": null
+            },
+            "requires_application_form": true,
+            "application_form_link_text": "Click here to access the application form.",
+            "application_form_url": "https://www.gov.mb.ca/govjobs/doc/Screening_Application_Form/application_form_for_screening_44548.docx",
+            "instruction_text": [
+                "To be considered for this competition you must submit an application form and resume. Complete the application form at the link below or contact Human Resource Services under “Apply to” to request a copy of the application form. The selection board will rely only on information provided in this form to determine whether a candidate will be invited for further assessment. Note: You are not required to submit a cover letter, but may be asked to submit references, or other documentation at a later point if invited for further consideration. Click here to access the application form. WHEN APPLYING TO THIS POSITION, PLEASE INDICATE THE ADVERTISEMENT NUMBER AND POSITION TITLE IN THE SUBJECT LINE AND/OR BODY OF YOUR EMAIL.",
+                "Applicants may request reasonable accommodation related to the materials or activities used throughout the selection process. When applying to this position, please indicate the advertisement number and position title in the subject line and/or body of your email. Your cover letter, resumé and/or application must clearly indicate how you meet the qualifications.",
+                "Please be advised that job competitions for represented positions may be grieved by internal represented applicants. Should a selection grievance be filed, information from the competition file will be provided to the grievor's representative. Personal information irrelevant to the grievance and other information protected under legislation will be redacted.",
+                "We thank all who apply and advise that only those selected for further consideration will be contacted."
+            ],
+            "accommodation_text": "Applicants may request reasonable accommodation related to the materials or activities used throughout the selection process. When applying to this position, please indicate the advertisement number and position title in the subject line and/or body of your email. Your cover letter, resumé and/or application must clearly indicate how you meet the qualifications.",
+            "grievance_notice": "Please be advised that job competitions for represented positions may be grieved by internal represented applicants. Should a selection grievance be filed, information from the competition file will be provided to the grievor's representative. Personal information irrelevant to the grievance and other information protected under legislation will be redacted.",
+            "contact_note": "We thank all who apply and advise that only those selected for further consideration will be contacted."
+        }
+    },
+    "scraping_metadata": {
+        "job_id": "129012",
+        "scraped_at": "2025-11-09T16:33:26.085000",
+        "matched_keyword": "Project Officer",
+        "match_score": 95
+    }
+}

@@ -1,0 +1,113 @@
+{
+    "job_posting": {
+        "search_keyword": null,
+        "source": {
+            "jurisdiction": "Manitoba",
+            "job_board": "Government of Manitoba Careers",
+            "url": "https://jobsearch.gov.mb.ca/search.action?ID=129145"
+        },
+        "metadata": {
+            "job_title": "Chair and Chief Executive Officer / Chief Administrative Officer",
+            "classification_title": ". .",
+            "classification_code": null,
+            "employment_types": [
+                "Term/full-time"
+            ],
+            "departments": [
+                "Manitoba Securities Commission"
+            ],
+            "divisions": [
+                "Manitoba Financial Services Agency"
+            ],
+            "locations": [
+                "Winnipeg MB"
+            ],
+            "advertisement_number": "44672",
+            "salary": {
+                "raw_text": null,
+                "classification_code": null,
+                "min_amount": null,
+                "max_amount": null,
+                "frequency": "per year",
+                "currency": "CAD"
+            },
+            "closing_date": "November 17, 2025",
+            "closing_time": null
+        },
+        "employment_equity": {
+            "intro_paragraph": "The Manitoba government recognizes the importance of building an exemplary public service reflective of the citizens it serves, where diverse abilities, backgrounds, cultures, identities, languages and perspectives drives a high standard of service and innovation. The Manitoba government supports equitable employment practices and promotes representation of designated groups (women, Indigenous people, persons with disabilities, visible minorities).",
+            "equity_factor_statement": "Employment Equity is a factor in selection for this competition. Consideration will be given to women, Indigenous people, visible minorities and persons with disabilities.",
+            "designated_groups": [
+                "women",
+                "Indigenous people",
+                "persons with disabilities",
+                "visible minorities"
+            ]
+        },
+        "competition_notes": {
+            "eligibility_list_text": null,
+            "classification_flex_text": null,
+            "usage_text": null
+        },
+        "position_overview": {
+            "summary_paragraphs": [
+                "The Government of Manitoba is seeking a strategic, inclusive, and principled leader to serve as Chair and Chief Executive Officer of the Manitoba Securities Commission / Chief Administrative Officer of the Manitoba Financial Services Agency — a Special Operating Agency (SOA) responsible for regulating the securities and commodity futures industries, real estate and mortgage brokers, and the credit union and insurance sectors in Manitoba.",
+                "This is a unique opportunity to lead a respected regulatory body, shape policy, and protect the integrity of Manitoba’s financial markets while championing equity and accessibility in the financial sector."
+            ]
+        },
+        "benefits": {
+            "summary_paragraph": "Click here to access the position profile and qualifications.",
+            "benefit_items": []
+        },
+        "conditions_of_employment": {
+            "heading": "Conditions of Employment:",
+            "items": [
+                "Must be legally entitled to work in Canada",
+                "A satisfactory Criminal Record Check"
+            ]
+        },
+        "qualifications": {
+            "heading": "Qualifications",
+            "essential": [],
+            "desired": [],
+            "equivalency_text": null
+        },
+        "duties": {
+            "heading": "Duties",
+            "intro": "Please click on the link above for details.",
+            "items": []
+        },
+        "application_instructions": {
+            "apply_to_block": {
+                "advertisement_number": "44672",
+                "unit": "Talent Acquisition - Executive Recruitment",
+                "branch": "Human Resource Services",
+                "address_lines": [
+                    "Winnipeg, MB",
+                    ",",
+                    "R3C 0C4"
+                ],
+                "phone": "204-945-6892",
+                "fax": "204-945-0601",
+                "email": null
+            },
+            "requires_application_form": true,
+            "application_form_link_text": "Click here to access the position profile and qualifications.",
+            "application_form_url": "https://www.gov.mb.ca/govjobs/doc/Screening_Application_Form/position_profile_44672.pdf",
+            "instruction_text": [
+                "Applicants may request reasonable accommodation related to the materials or activities used throughout the selection process. When applying to this position, please indicate the advertisement number and position title in the subject line and/or body of your email. Your cover letter, resumé and/or application must clearly indicate how you meet the qualifications.",
+                "Please be advised that job competitions for represented positions may be grieved by internal represented applicants. Should a selection grievance be filed, information from the competition file will be provided to the grievor's representative. Personal information irrelevant to the grievance and other information protected under legislation will be redacted.",
+                "We thank all who apply and advise that only those selected for further consideration will be contacted."
+            ],
+            "accommodation_text": "Applicants may request reasonable accommodation related to the materials or activities used throughout the selection process. When applying to this position, please indicate the advertisement number and position title in the subject line and/or body of your email. Your cover letter, resumé and/or application must clearly indicate how you meet the qualifications.",
+            "grievance_notice": "Please be advised that job competitions for represented positions may be grieved by internal represented applicants. Should a selection grievance be filed, information from the competition file will be provided to the grievor's representative. Personal information irrelevant to the grievance and other information protected under legislation will be redacted.",
+            "contact_note": "We thank all who apply and advise that only those selected for further consideration will be contacted."
+        }
+    },
+    "scraping_metadata": {
+        "job_id": "129145",
+        "scraped_at": "2025-11-09T16:33:56.697144",
+        "matched_keyword": "Finance Officer",
+        "match_score": 85
+    }
+}

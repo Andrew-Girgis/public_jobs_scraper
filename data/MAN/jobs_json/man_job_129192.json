@@ -1,0 +1,126 @@
+{
+    "job_posting": {
+        "search_keyword": null,
+        "source": {
+            "jurisdiction": "Manitoba",
+            "job_board": "Government of Manitoba Careers",
+            "url": "https://jobsearch.gov.mb.ca/search.action?ID=129192"
+        },
+        "metadata": {
+            "job_title": "Senior GIS Business Analyst",
+            "classification_title": "BA3 Business Analyst 3",
+            "classification_code": "BA3",
+            "employment_types": [
+                "Regular/full-time"
+            ],
+            "departments": [
+                "Department of Transportation and Infrastructure"
+            ],
+            "divisions": [
+                "Innovation and Technology Services, Corporate Services Division"
+            ],
+            "locations": [
+                "Winnipeg MB"
+            ],
+            "advertisement_number": "44560",
+            "salary": {
+                "raw_text": "BA3 $80,910.00 - $105,346.00 per year",
+                "classification_code": "BA3",
+                "min_amount": 80910.0,
+                "max_amount": 105346.0,
+                "frequency": "per year",
+                "currency": "CAD"
+            },
+            "closing_date": "November 25, 2025",
+            "closing_time": null
+        },
+        "employment_equity": {
+            "intro_paragraph": "The Manitoba government recognizes the importance of building an exemplary public service reflective of the citizens it serves, where diverse abilities, backgrounds, cultures, identities, languages and perspectives drives a high standard of service and innovation. The Manitoba government supports equitable employment practices and promotes representation of designated groups (women, Indigenous people, persons with disabilities, visible minorities).",
+            "equity_factor_statement": "Employment Equity is a factor in selection for this competition. Consideration will be given to women, Indigenous people, visible minorities and persons with disabilities.",
+            "designated_groups": [
+                "women",
+                "Indigenous people",
+                "persons with disabilities",
+                "visible minorities"
+            ]
+        },
+        "competition_notes": {
+            "eligibility_list_text": "An eligibility list may be created for similar regular, term or acting status opportunities and will remain in effect for 12 months",
+            "classification_flex_text": null,
+            "usage_text": null
+        },
+        "position_overview": {
+            "summary_paragraphs": [
+                "The Information Technology and GIS Branch is looking for a creative, highly motivated self-starter to fill our Senior GIS Business Analyst position. This branch delivers technology solutions and services to support the Manitoba Transportation and Infrastructure Department programs. It offers business process analysis, project management, solution deliver, and recommendations to help stakeholders meet their operational goals with innovation and efficiency. The Information Technology and GIS Branch consults, supports, and collaborates with all Transportation & Infrastructure program areas by delivering fiscally responsible and innovative technologies, services and solutions to help our clients achieve their mandate.",
+                "To be considered for this competition you must submit an application form with a cover letter and resume (Word or PDF only). See below for further instructions."
+            ]
+        },
+        "benefits": {
+            "summary_paragraph": "Click here to access the application form.",
+            "benefit_items": []
+        },
+        "conditions_of_employment": {
+            "heading": "Conditions of Employment:",
+            "items": [
+                "Must be legally entitled to work in Canada"
+            ]
+        },
+        "qualifications": {
+            "heading": "Qualifications",
+            "essential": [
+                "Post-secondary education in Computer Science, Information Systems, or a related discipline. An equivalent combination of education and experience may also be considered.",
+                "Experienced business analyst with a proven ability to define requirements, build strategic business cases, and identify technology-driven solutions. Specialized in delivering geospatial products and services that support data-driven decision-making and improve operational efficiency.",
+                "Hands-on experience with geospatial technologies and web GIS development, including Esri GIS tools and platforms, and spatial databases such as PostgreSQL/Post GIS and SQL Server, applied in geospatial analysis and mapping.",
+                "Demonstrated leadership in motivating teams and influencing outcomes, with proven experience managing ICT projects.",
+                "Strong problem-solving and decision making skills.",
+                "Effective verbal communication skills, with the ability to convey information in a clear and organized manner to a wide variety of audiences.",
+                "Strong organizational skills with the ability to work independently and manage multiple priorities with conflicting deadlines.",
+                "Strong interpersonal skills, including the ability to develop and maintain positive working relationships with internal and external stakeholders such as vendors and consultants.",
+                "Excellent written communication and presentation skills.",
+                "Experience in project management including risk management, resource allocation, and creating and managing project plans and reports."
+            ],
+            "desired": [
+                "Experience with Esri Roads and Highways."
+            ],
+            "equivalency_text": null
+        },
+        "duties": {
+            "heading": "Duties",
+            "intro": "The Senior GIS Business Analyst is responsible for leading teams or multiple cross-functional project teams to deliver advanced GIS and technology solutions on time and within budget. This role involves gathering and documenting business requirements to produce clear functional specifications, providing expert guidance to stakeholders on GIS and IT project planning and execution, and ensuring that solutions align with organizational goals and support operational efficiency. The role combines deep technical expertise with leadership and project management capabilities to shape innovative spatial solutions and mentor a growing team of GIS professionals.",
+            "items": []
+        },
+        "application_instructions": {
+            "apply_to_block": {
+                "advertisement_number": "44560",
+                "unit": "Talent Acquisition",
+                "branch": "Human Resource Services",
+                "address_lines": [
+                    "Winnipeg, MB",
+                    ",",
+                    "R3B 2A9"
+                ],
+                "phone": "204-945-7518",
+                "fax": "204-945-0601",
+                "email": null
+            },
+            "requires_application_form": true,
+            "application_form_link_text": "Click here to access the application form.",
+            "application_form_url": "https://www.gov.mb.ca/govjobs/doc/Screening_Application_Form/application_form_for_screening_44560.docx",
+            "instruction_text": [
+                "WHEN APPLYING TO THIS POSITION, PLEASE INDICATE THE ADVERTISEMENT NUMBER AND POSITION TITLE IN THE SUBJECT LINE AND/OR BODY OF YOUR EMAIL. To be considered for this competition you must submit an application form with a cover letter and resume (Word or PDF only). Complete the application form at the link below or contact Human Resource Services under “Apply to” to request a copy of the application form. The selection board will rely only on information provided in this form to determine whether a candidate will be invited for further assessment. Note: You may be asked to submit references or other documentation at a later point if invited for further consideration. Click here to access the application form.",
+                "Applicants may request reasonable accommodation related to the materials or activities used throughout the selection process. When applying to this position, please indicate the advertisement number and position title in the subject line and/or body of your email. Your cover letter, resumé and/or application must clearly indicate how you meet the qualifications.",
+                "Please be advised that job competitions for represented positions may be grieved by internal represented applicants. Should a selection grievance be filed, information from the competition file will be provided to the grievor's representative. Personal information irrelevant to the grievance and other information protected under legislation will be redacted.",
+                "We thank all who apply and advise that only those selected for further consideration will be contacted."
+            ],
+            "accommodation_text": "Applicants may request reasonable accommodation related to the materials or activities used throughout the selection process. When applying to this position, please indicate the advertisement number and position title in the subject line and/or body of your email. Your cover letter, resumé and/or application must clearly indicate how you meet the qualifications.",
+            "grievance_notice": "Please be advised that job competitions for represented positions may be grieved by internal represented applicants. Should a selection grievance be filed, information from the competition file will be provided to the grievor's representative. Personal information irrelevant to the grievance and other information protected under legislation will be redacted.",
+            "contact_note": "We thank all who apply and advise that only those selected for further consideration will be contacted."
+        }
+    },
+    "scraping_metadata": {
+        "job_id": "129192",
+        "scraped_at": "2025-11-09T16:33:18.517757",
+        "matched_keyword": "Business Analyst",
+        "match_score": 95
+    }
+}

@@ -1,0 +1,21 @@
+2025-11-09 01:01:30,766 - __main__ - INFO - ================================================================================
+2025-11-09 01:01:30,766 - __main__ - INFO - Ontario (ONT) Job Scraper Starting
+2025-11-09 01:01:30,766 - __main__ - INFO - ================================================================================
+2025-11-09 01:01:31,003 - __main__ - INFO - Launching Chromium browser (headless=False)
+2025-11-09 01:01:32,320 - __main__ - INFO - Starting Ontario job scraping workflow
+2025-11-09 01:01:32,320 - __main__ - INFO - Loaded 43 job keywords from /Users/agirgis/Downloads/public_jobs_scraper/list-of-jobs.txt
+2025-11-09 01:01:32,320 - __main__ - INFO - Navigating to https://www.gojobs.gov.on.ca/Search.aspx
+2025-11-09 01:01:33,971 - __main__ - INFO - Scrolling page like a human
+2025-11-09 01:01:35,913 - __main__ - INFO - Page scrolled successfully
+2025-11-09 01:01:35,914 - __main__ - INFO - Selecting search filters
+2025-11-09 01:01:36,558 - __main__ - INFO - Opened job category dropdown
+2025-11-09 01:01:37,920 - __main__ - INFO - ✓ Selected 'All job categories' checkbox
+2025-11-09 01:01:38,435 - __main__ - INFO - Checkbox checked state: True
+2025-11-09 01:01:38,806 - __main__ - INFO - Closed job category dropdown
+2025-11-09 01:01:39,310 - __main__ - INFO - Scrolling to Search button
+2025-11-09 01:01:40,138 - __main__ - INFO - Search button is now in view
+2025-11-09 01:01:40,230 - __main__ - INFO - Saved screenshot before search: /Users/agirgis/Downloads/public_jobs_scraper/data/ONT/search_html/before_search_20251109_010140.png
+2025-11-09 01:01:40,230 - __main__ - INFO - Clicking Search button to load job results
+2025-11-09 01:01:40,277 - __main__ - INFO - Search submitted successfully
+2025-11-09 01:01:40,277 - __main__ - INFO - Waiting for search results to load...
+2025-11-09 01:01:43,797 - __main__ - INFO - Closing browser

@@ -1,0 +1,57 @@
+{
+  "job_posting": {
+    "source": {
+      "jurisdiction": "Saskatchewan",
+      "job_board": "Government of Saskatchewan",
+      "url": "https://govskpsc.taleo.net/careersection/10180/jobdetail.ftl?job=736430&lang=en"
+    },
+    "metadata": {
+      "job_title": "Financial Analyst",
+      "employment_type": "Permanent Full-time",
+      "location": "SK-Rgna-Regina",
+      "ministry": "036 Social Services",
+      "salary_range": "$42.033-$52.670",
+      "salary_min": 42.033,
+      "salary_max": 52.67,
+      "salary_frequency": "Hourly",
+      "grade": "SGEU.11.",
+      "hours_of_work": "A - SGEU Office 36 - one day off every two weeks",
+      "number_of_openings": 1,
+      "closing_date": null
+    },
+    "ministry_description": "The Ministry of Social Services, Income Assistance Programs Division, is seeking a professional, energetic, analytical, and methodical thinker to be part of the division’s Financial Operations Unit. You will be an integral member of the financial services team that is responsible for providing forecasting, budgeting and financial consulting expertise in support of the programs and strategic direction of the Ministry.",
+    "the_opportunity": {
+      "intro": "",
+      "responsibilities": ""
+    },
+    "responsibilities_breakdown": {
+      "strategic_leadership_planning": "",
+      "technical_oversight": "",
+      "information_knowledge_management": "",
+      "stakeholder_engagement_collaboration": "",
+      "team_resource_management": ""
+    },
+    "qualifications": {
+      "the_ideal_candidate": "",
+      "intro": null,
+      "required_qualifications": [],
+      "education_requirements": "Typically, knowledge for this position is gained through the successful completion of an undergraduate Degree in Commerce, Business Administration, or related discipline combined with an accounting designation. Equivalent combinations of education and experience will be considered. Candidates must clearly indicate in their cover letter or résumé where they have acquired the knowledge and abilities required for this position. Applications will be screened on the basis of this information."
+    },
+    "benefits": {
+      "what_we_offer": "",
+      "benefits_list": []
+    },
+    "additional": {
+      "diversity_statement": "We are committed to workplace diversity.",
+      "additional_notes": null
+    },
+    "full_description": "The Ministry of Social Services, Income Assistance Programs Division, is seeking a professional, energetic, analytical, and methodical thinker to be part of the division’s Financial Operations Unit. You will be an integral member of the financial services team that is responsible for providing forecasting, budgeting and financial consulting expertise in support of the programs and strategic direction of the Ministry.\nReporting to the Manager of Financial Operations, the successful candidate will be responsible for working with financial consultants and divisional managers on developing and reporting on the division’s financial plan. The successful candidate’s primary responsibilities will include, but not be limited to:\nAssist in the creation and maintenance of the financial plan for the division;\nProvide leadership and support in the development of financial and FTE budgets to support the delivery of Income Assistance programs;\nEstablish and manage processes for fiscal forecasting and budgeting to meet the requirements of division deliverables and reporting;\nPrepare financial reports in accordance with ministry and government policies; and,\nProvide advice and recommendation to management on financial issues, legislative requirements, Ministerial and government policies and processes to ensure they are fully informed when making decisions on spending and programing actions.\nThe successful candidate will have outstanding organizational, interpersonal and communication skills and will have knowledge and experience working with:\nPublic Sector Accounting Standards and financial processes including budgeting, forecasting, and reporting within the public sector;\nApplicable Acts, regulations, policies, procedures, contracts and systems; and,\nComputer software applications such as Microsoft Excel, Word, Access, Power BI, integrated financial systems and financial reporting systems.\nKnowledge of MIDAS, GEM would be considered an asset.\nTypically, knowledge for this position is gained through the successful completion of an undergraduate Degree in Commerce, Business Administration, or related discipline combined with an accounting designation. Equivalent combinations of education and experience will be considered. Candidates must clearly indicate in their cover letter or résumé where they have acquired the knowledge and abilities required for this position. Applications will be screened on the basis of this information."
+  },
+  "scraping_metadata": {
+    "job_id": "736430",
+    "scraped_at": "2025-11-09T14:44:58.581568",
+    "search_keyword": "Business Analyst",
+    "matched_keyword": "Business Analyst",
+    "match_score": 90
+  }
+}

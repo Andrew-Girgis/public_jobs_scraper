@@ -1,0 +1,57 @@
+{
+  "job_posting": {
+    "source": {
+      "jurisdiction": "Saskatchewan",
+      "job_board": "Government of Saskatchewan",
+      "url": "https://govskpsc.taleo.net/careersection/10180/jobdetail.ftl?job=736434&lang=en"
+    },
+    "metadata": {
+      "job_title": "Project Manager",
+      "employment_type": "Permanent Full-time",
+      "location": "SK-Rgna-Regina",
+      "ministry": "016 Highways",
+      "salary_range": "$6,498 - $8,448",
+      "salary_min": 6498.0,
+      "salary_max": 8448.0,
+      "salary_frequency": "Monthly",
+      "grade": "MCP.05.",
+      "hours_of_work": "M - Monthly Out of Scope",
+      "number_of_openings": 1,
+      "closing_date": null
+    },
+    "ministry_description": "",
+    "the_opportunity": {
+      "intro": "",
+      "responsibilities": ""
+    },
+    "responsibilities_breakdown": {
+      "strategic_leadership_planning": "",
+      "technical_oversight": "",
+      "information_knowledge_management": "",
+      "stakeholder_engagement_collaboration": "",
+      "team_resource_management": ""
+    },
+    "qualifications": {
+      "the_ideal_candidate": "",
+      "intro": null,
+      "required_qualifications": [],
+      "education_requirements": ""
+    },
+    "benefits": {
+      "what_we_offer": "",
+      "benefits_list": []
+    },
+    "additional": {
+      "diversity_statement": "We are committed to workplace diversity.",
+      "additional_notes": null
+    },
+    "full_description": "The Ministry of Highways is seeking a highly-motivated individual with excellent interpersonal and leadership skills to join our Construction Delivery team. This position will be based in Regina.\nAs a Project Manager, you will be an integral part of a team responsible for the construction of highway projects.\nTo qualify for the Project Manager position, you will possess a Bachelor of Science degree in engineering from an accredited university and be eligible for registration as a professional engineer or engineer-in-training with the Association of Professional Engineers and Geoscientists of Saskatchewan (APEGS), OR you will possess a two-year degree/diploma in engineering, be eligible for registration with Saskatchewan Applied Science Technologists and Technicians (SASTT), and have eight years related work experience.\nWork will include managing construction delivery by internal resources and contracting consultants to administer construction projects, and liaising with the consultants throughout the contracted projects. Local highway construction knowledge and experience will be considered an asset.\nOur core values include showing respect and integrity, serving citizens, excellence and innovation, and acting as one team. We demonstrate these values in our daily behaviours."
+  },
+  "scraping_metadata": {
+    "job_id": "736434",
+    "scraped_at": "2025-11-09T14:50:35.405340",
+    "search_keyword": "Manager",
+    "matched_keyword": "Manager",
+    "match_score": 100
+  }
+}

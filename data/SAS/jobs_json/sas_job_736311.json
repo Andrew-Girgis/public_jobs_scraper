@@ -1,0 +1,69 @@
+{
+  "job_posting": {
+    "source": {
+      "jurisdiction": "Saskatchewan",
+      "job_board": "Government of Saskatchewan",
+      "url": "https://govskpsc.taleo.net/careersection/10180/jobdetail.ftl?job=736311&lang=en"
+    },
+    "metadata": {
+      "job_title": "Shop Manager",
+      "employment_type": "Permanent Full-time",
+      "location": "SK-South Central-Moose Jaw",
+      "ministry": "016 Highways",
+      "salary_range": "$6,498 - $8,448",
+      "salary_min": 6498.0,
+      "salary_max": 8448.0,
+      "salary_frequency": "Monthly",
+      "grade": "MCP.05.",
+      "hours_of_work": "M - Monthly Out of Scope",
+      "number_of_openings": 1,
+      "closing_date": null
+    },
+    "ministry_description": "About Us",
+    "the_opportunity": {
+      "intro": "Fleet Operations within the Ministry of Highways is currently seeking a highly motivated Fleet Shop Manager for the Moose Jaw shop.",
+      "responsibilities": ""
+    },
+    "responsibilities_breakdown": {
+      "strategic_leadership_planning": "",
+      "technical_oversight": "",
+      "information_knowledge_management": "",
+      "stakeholder_engagement_collaboration": "",
+      "team_resource_management": ""
+    },
+    "qualifications": {
+      "the_ideal_candidate": "- Managing or providing supervision in a Heavy Equipment and Truck Repair Shop.\n- Hold a ticket as a Journeyperson Technician in either the Heavy Equipment, Truck and Transport or Agricultural Machinery Technician Trades which are recognized by the province of Saskatchewan.\n- Valid Saskatchewan driver's license, preferably class 3A or higher.",
+      "intro": null,
+      "required_qualifications": [
+        "Managing or providing supervision in a Heavy Equipment and Truck Repair Shop.",
+        "Hold a ticket as a Journeyperson Technician in either the Heavy Equipment, Truck and Transport or Agricultural Machinery Technician Trades which are recognized by the province of Saskatchewan.",
+        "Valid Saskatchewan driver's license, preferably class 3A or higher."
+      ],
+      "education_requirements": ""
+    },
+    "benefits": {
+      "what_we_offer": "- Dynamic, challenging work for talented individuals.\n- A competitive salary.\n- Comprehensive benefits package including pension.\n- Paid Vacation as well as other types of leave.\n- Inclusive work environments.\n- Advancement opportunities.\n- Flexible work arrangements.",
+      "benefits_list": [
+        "Dynamic, challenging work for talented individuals.",
+        "A competitive salary.",
+        "Comprehensive benefits package including pension.",
+        "Paid Vacation as well as other types of leave.",
+        "Inclusive work environments.",
+        "Advancement opportunities.",
+        "Flexible work arrangements."
+      ]
+    },
+    "additional": {
+      "diversity_statement": "We are committed to workplace diversity.",
+      "additional_notes": null
+    },
+    "full_description": "About Us\nThe Ministry of Highways is committed to providing an integrated transportation system supporting economic growth and prosperity for Saskatchewan citizens.\nThe Opportunity\nFleet Operations within the Ministry of Highways is currently seeking a highly motivated Fleet Shop Manager for the Moose Jaw shop.\nUnder the general direction of the Fleet Operations Director, you will work as the team leader in Moose Jaw delivering repair, fabrication, procurement, and assembly work on the provincial fleet of equipment and vehicles.\nIn this position, you will:\nOversee a team of journeypersons and apprentice staff.\nAssign and monitor tasks in a manner that provides a safe work environment for all employees while maintaining a required level of service to internal clients.\nCo-ordinate daily shop activities.\nCollaborate with external stakeholders.\nProvide staff supervision and development needs.\nOvernight travel is required periodically.\nIdeal Candidate\nTo be considered for the position, our ideal candidate may have previous types of work experience:\nManaging or providing supervision in a Heavy Equipment and Truck Repair Shop.\nHold a ticket as a Journeyperson Technician in either the Heavy Equipment, Truck and Transport or Agricultural Machinery Technician Trades which are recognized by the province of Saskatchewan.\nValid Saskatchewan driver's license, preferably class 3A or higher.\nIt is imperative in this position to manage the team in accordance with the Ministry’s corporate values, while ensuring that the corporate culture is promoted and maintained through exemplary leadership, staff recognition and accountability processes.\nIn addition to the required supervisory, work delegation, problem solving, and customer service skills, the successful candidate must have the required leadership and management competencies.\nSome of the key position requirements are:\nOrganize and prioritize work activities while taking into consideration safety and needs of employees, clients and stakeholders.\nMonitor monthly expenditures, assist in annual budget development, prepare various reports, and develop and implement administrative policies.\nRecruit and select staff.\nManage activities associated with the inventory to maximize the productivity and ensure the provision of supplies for clients while keeping in mind the cost of inventory.\nInput, edit, update, retrieve, maintain, format and transmit data with accuracy creating and generating queries, reports and other documents using word processing, databases, spreadsheets, communications and other software packages.\nPerform various economic analyses such as cost/benefit analyses relating to optimum repair/replacement strategies and provide written reports to document the results.\nYou must have a solid understanding of the Ministry’s core business and the ability to forecast staffing requirements in order to maximize the efficiency of the depot and meet required level of service.\nWhat we offer\nDynamic, challenging work for talented individuals.\nA competitive salary.\nComprehensive benefits package including pension.\nPaid Vacation as well as other types of leave.\nInclusive work environments.\nAdvancement opportunities.\nFlexible work arrangements.\nOur core values include showing respect and integrity, serving citizens, excellence and innovation, and acting as one team. We demonstrate these values in our daily behavior."
+  },
+  "scraping_metadata": {
+    "job_id": "736311",
+    "scraped_at": "2025-11-09T14:50:41.575661",
+    "search_keyword": "Manager",
+    "matched_keyword": "Manager",
+    "match_score": 100
+  }
+}

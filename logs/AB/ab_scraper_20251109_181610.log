@@ -1,0 +1,7 @@
+2025-11-09 18:16:10,597 - INFO - Searching for keyword: 'data analyst'
+2025-11-09 18:16:16,925 - INFO - Processing page 1 for keyword: 'data analyst'
+2025-11-09 18:16:16,960 - INFO - Found 25 jobs on page 1
+2025-11-09 18:16:16,961 - INFO - Navigating to next page: https://jobpostings.alberta.ca?q=data+analyst&startrow=25
+2025-11-09 18:16:20,371 - INFO - Processing page 2 for keyword: 'data analyst'
+2025-11-09 18:16:20,392 - INFO - No results table found on page 2
+2025-11-09 18:16:20,392 - INFO - Found 25 total jobs for keyword: 'data analyst'

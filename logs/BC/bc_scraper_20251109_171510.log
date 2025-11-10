@@ -1,0 +1,62 @@
+[2025-11-09 17:15:10] INFO: ================================================================================
+[2025-11-09 17:15:10] INFO: BC Public Service Job Scraper
+[2025-11-09 17:15:10] INFO: ================================================================================
+[2025-11-09 17:15:10] INFO: Headless mode: False
+[2025-11-09 17:15:10] INFO: Results per page: 100
+[2025-11-09 17:15:10] INFO: 
+[2025-11-09 17:15:10] INFO: Loaded 44 keywords from list-of-jobs.txt
+[2025-11-09 17:15:11] INFO: 📍 STEP 1: Searching for jobs by keyword
+[2025-11-09 17:15:11] INFO: --------------------------------------------------------------------------------
+[2025-11-09 17:15:11] INFO: [1/44] Searching: 'Business Analyst'
+[2025-11-09 17:15:11] INFO: 🔍 Searching for: 'Business Analyst'
+[2025-11-09 17:15:14] INFO: 📋 Found 2 job listings
+[2025-11-09 17:15:14] INFO:   ✓ Found 2 results for 'Business Analyst'
+[2025-11-09 17:15:14] INFO:   ✓ Added 2 new unique jobs (total: 2)
+[2025-11-09 17:15:14] INFO: [2/44] Searching: 'Business Consultant'
+[2025-11-09 17:15:14] INFO: 🔍 Searching for: 'Business Consultant'
+[2025-11-09 17:15:26] INFO:   ✗ No results found for 'Business Consultant'
+[2025-11-09 17:15:27] INFO: [3/44] Searching: 'Business Systems Analyst'
+[2025-11-09 17:15:27] INFO: 🔍 Searching for: 'Business Systems Analyst'
+[2025-11-09 17:15:29] INFO: 📋 Found 1 job listings
+[2025-11-09 17:15:29] INFO:   ✓ Found 1 results for 'Business Systems Analyst'
+[2025-11-09 17:15:30] INFO: [4/44] Searching: 'Data Analyst'
+[2025-11-09 17:15:30] INFO: 🔍 Searching for: 'Data Analyst'
+[2025-11-09 17:15:32] INFO: 📋 Found 2 job listings
+[2025-11-09 17:15:32] INFO:   ✓ Found 2 results for 'Data Analyst'
+[2025-11-09 17:15:32] INFO: [5/44] Searching: 'Database Administrator'
+[2025-11-09 17:15:32] INFO: 🔍 Searching for: 'Database Administrator'
+[2025-11-09 17:15:44] INFO:   ✗ No results found for 'Database Administrator'
+[2025-11-09 17:15:45] INFO: [6/44] Searching: 'Data Entry Clerk'
+[2025-11-09 17:15:45] INFO: 🔍 Searching for: 'Data Entry Clerk'
+[2025-11-09 17:15:57] INFO:   ✗ No results found for 'Data Entry Clerk'
+[2025-11-09 17:15:58] INFO: [7/44] Searching: 'Economic'
+[2025-11-09 17:15:58] INFO: 🔍 Searching for: 'Economic'
+[2025-11-09 17:16:01] INFO: 📋 Found 5 job listings
+[2025-11-09 17:16:01] INFO:   ✓ Found 5 results for 'Economic'
+[2025-11-09 17:16:01] INFO:   ✓ Added 5 new unique jobs (total: 7)
+[2025-11-09 17:16:02] INFO: [8/44] Searching: 'Economist'
+[2025-11-09 17:16:02] INFO: 🔍 Searching for: 'Economist'
+[2025-11-09 17:16:14] INFO:   ✗ No results found for 'Economist'
+[2025-11-09 17:16:14] INFO: [9/44] Searching: 'Finance Officer'
+[2025-11-09 17:16:14] INFO: 🔍 Searching for: 'Finance Officer'
+[2025-11-09 17:16:16] INFO: 📋 Found 1 job listings
+[2025-11-09 17:16:16] INFO:   ✓ Found 1 results for 'Finance Officer'
+[2025-11-09 17:16:16] INFO:   ✓ Added 1 new unique jobs (total: 8)
+[2025-11-09 17:16:17] INFO: [10/44] Searching: 'Governance Officer'
+[2025-11-09 17:16:17] INFO: 🔍 Searching for: 'Governance Officer'
+[2025-11-09 17:16:19] INFO: 📋 Found 1 job listings
+[2025-11-09 17:16:19] INFO:   ✓ Found 1 results for 'Governance Officer'
+[2025-11-09 17:16:19] INFO: [11/44] Searching: 'Information Officer'
+[2025-11-09 17:16:19] INFO: 🔍 Searching for: 'Information Officer'
+[2025-11-09 17:16:22] INFO: 📋 Found 5 job listings
+[2025-11-09 17:16:22] INFO:   ✓ Found 5 results for 'Information Officer'
+[2025-11-09 17:16:22] INFO:   ✓ Added 3 new unique jobs (total: 11)
+[2025-11-09 17:16:23] INFO: [12/44] Searching: 'Investment Analyst'
+[2025-11-09 17:16:23] INFO: 🔍 Searching for: 'Investment Analyst'
+[2025-11-09 17:16:26] INFO:   ✗ No results found for 'Investment Analyst'
+[2025-11-09 17:16:27] ERROR: Future exception was never retrieved
+future: <Future finished exception=TargetClosedError('Target page, context or browser has been closed')>
+playwright._impl._errors.TargetClosedError: Target page, context or browser has been closed
+[2025-11-09 17:16:27] ERROR: Future exception was never retrieved
+future: <Future finished exception=TargetClosedError('Target page, context or browser has been closed')>
+playwright._impl._errors.TargetClosedError: Target page, context or browser has been closed

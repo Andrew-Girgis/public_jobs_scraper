@@ -1,0 +1,57 @@
+{
+  "job_posting": {
+    "source": {
+      "jurisdiction": "Saskatchewan",
+      "job_board": "Government of Saskatchewan",
+      "url": "https://govskpsc.taleo.net/careersection/10180/jobdetail.ftl?job=736401&lang=en"
+    },
+    "metadata": {
+      "job_title": "Senior Policy Analyst (Health)",
+      "employment_type": "Permanent Full-time",
+      "location": "SK-Rgna-Regina",
+      "ministry": "032 Health",
+      "salary_range": "$48.852-$61.219",
+      "salary_min": 48.852,
+      "salary_max": 61.219,
+      "salary_frequency": "Hourly",
+      "grade": "SGEU.13.",
+      "hours_of_work": "A - SGEU Office 36 - one day off every two weeks",
+      "number_of_openings": 1,
+      "closing_date": null
+    },
+    "ministry_description": "The Corporate Support and Infrastructure Unit (CSI) within the Continuing Care Branch at the Ministry of Health is looking for an individual with a passion for improving the patient experience, the outcomes of care and improving our provincial health system. An opportunity exists to play a significant role in the branch pertaining to policy planning, analysis, development, and implementation, as well as significant stakeholder collaboration, research, monitoring and evaluation. Reporting to the Director of CSI, this position will have core responsibilities for various programs including but not limited to the Acquired Brain Injury (ABI) program, MAID program, and involved in advancing key long term care infrastructure projects.",
+    "the_opportunity": {
+      "intro": "",
+      "responsibilities": ""
+    },
+    "responsibilities_breakdown": {
+      "strategic_leadership_planning": "",
+      "technical_oversight": "",
+      "information_knowledge_management": "",
+      "stakeholder_engagement_collaboration": "",
+      "team_resource_management": ""
+    },
+    "qualifications": {
+      "the_ideal_candidate": "",
+      "intro": null,
+      "required_qualifications": [],
+      "education_requirements": "Typically, knowledge for this position would be obtained through a graduate degree in a public policy-related field, business/health administration or a related discipline, as well as, related experience. Knowledge of facilitation and project management is considered an asset."
+    },
+    "benefits": {
+      "what_we_offer": "",
+      "benefits_list": []
+    },
+    "additional": {
+      "diversity_statement": "Preference will be given to qualified equity group members who self-declare in this online application, as identified in \"diversity groups\" below",
+      "additional_notes": null
+    },
+    "full_description": "The Corporate Support and Infrastructure Unit (CSI) within the Continuing Care Branch at the Ministry of Health is looking for an individual with a passion for improving the patient experience, the outcomes of care and improving our provincial health system. An opportunity exists to play a significant role in the branch pertaining to policy planning, analysis, development, and implementation, as well as significant stakeholder collaboration, research, monitoring and evaluation. Reporting to the Director of CSI, this position will have core responsibilities for various programs including but not limited to the Acquired Brain Injury (ABI) program, MAID program, and involved in advancing key long term care infrastructure projects.\nIn this role, you will have the opportunity to use your communication, facilitation, analytical and project management skills to lead, support and guide various policy and infrastructure related projects. You will represent the voice of the Ministry of Health on various teams with a focus on community-based services. You will use your analytical and policy development skills to identify and anticipate emerging issues, trends and risks to support development of programs, policies, and planning activities. You will work collaboratively with a range of internal clients and external stakeholders on a range of issues, related to long-term care, home care, disability issues, and other community-based health programs.\nYour experience in public policy development and analysis, expertise in program evaluation, combined with knowledge of health policy issues, emerging strategies, and best practices in health care, will enable you to develop options and recommendations, and to provide sound advice to senior Ministry officials.\nTypically, knowledge for this position would be obtained through a graduate degree in a public policy-related field, business/health administration or a related discipline, as well as, related experience. Knowledge of facilitation and project management is considered an asset.\nThis position is an in-office position located in Regina, Saskatchewan."
+  },
+  "scraping_metadata": {
+    "job_id": "736401",
+    "scraped_at": "2025-11-09T14:44:50.200751",
+    "search_keyword": "Business Analyst",
+    "matched_keyword": "Policy Analyst",
+    "match_score": 100
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "job_posting": {
+    "search_keyword": "Project Officer",
+    "source": {
+      "jurisdiction": "British Columbia",
+      "job_board": "BC Public Service",
+      "organization": "Elections BC",
+      "url": "https://bcpublicservice.hua.hrsmart.com/hr/ats/Posting/view/121522"
+    },
+    "metadata": {
+      "posting_title": "ADMN O 21R - Indigenous Outreach Specialist",
+      "posting_id": "121522",
+      "job_title": "ADMN O 21R - Indigenous Outreach Specialist",
+      "position_classification": "Administrative Officer R21",
+      "classification_code": "Administrative Officer R21",
+      "union": "N/A",
+      "work_options": null,
+      "locations": [
+        "Victoria, BC V9B 6X2 CA (Primary)"
+      ],
+      "salary": {
+        "raw_text": "$69,760.70 - $79,322.69 annually",
+        "min_amount": 69760.7,
+        "max_amount": 79322.69,
+        "frequency": "per annum",
+        "currency": "CAD",
+        "temporary_market_adjustment": null
+      },
+      "close_date": "11/25/2025",
+      "close_time": "11:00 pm Pacific Time",
+      "job_type": "Temporary (Auxiliary)",
+      "temporary_end_date": "3/31/2027",
+      "ministry_organization": "BC Public Service -> Elections BC",
+      "ministry_branch_division": "Communications",
+      "job_category": "Administrative Services"
+    },
+    "amendments": [],
+    "job_summary": {
+      "about_organization": {
+        "heading": null,
+        "body": []
+      },
+      "about_business_unit": {
+        "heading": null,
+        "body": []
+      },
+      "about_role": {
+        "heading": "Job Description",
+        "body": [
+          "***Please DO NOT apply for this position by submitting your profile on this BC Government Hiring Centre website. Applications must be made via the following directions below.***",
+          "Bring your passion for Indigenous engagement and relationship-building to serve democracy in British Columbia.",
+          "Join an innovative and recognized leader in electoral administration.",
+          "Indigenous Outreach Specialist \u200b\u200b\u200b\u200b\u200b\u200b\u200b*This position is restricted to Indigenous (First Nations, M\u00e9tis, or Inuit) applicants*",
+          "Applicants internal to the BC Public Service - temporary appointment to Administrative Officer (AO) 21",
+          "Applicants external to the BC Public Service - hired under the Election Act \u2013 Project Officer $38.20 per hour (plus bi-weekly compensation allowance for health and welfare)",
+          "Competition #TEMP2025:07",
+          "1 full time temporary position to March 31, 2027 (part-time options may be considered)",
+          "Victoria, BC (hybrid); other communities in BC may be considered for remote work",
+          "Posting close date: 11/25/2025 at 11:00 pm Pacific Time",
+          "For complete details on this opportunity, and to apply, please review the job posting on the Elections BC website at www.elections.bc.ca/jobs."
+        ]
+      },
+      "special_conditions": [],
+      "eligibility_list_note": null
+    },
+    "position_requirements": {
+      "heading": "Position requirements",
+      "education_and_experience": {
+        "required_paths": [],
+        "equivalency_statement": null,
+        "recent_experience_note": null
+      },
+      "required_experience_bullets": [],
+      "preferred_experience_bullets": []
+    },
+    "application_instructions": {
+      "heading": "Application instructions",
+      "evaluation_note": null,
+      "requirements": {
+        "cover_letter_required": true,
+        "resume_details_required": true,
+        "other_documents": []
+      },
+      "hr_contact": {
+        "name": null,
+        "title": null,
+        "email": null
+      },
+      "submission_method": {
+        "system_name": "BC Public Service Recruitment System",
+        "notes": [
+          "DO NOT SUBMIT your application through this Recruitment System.",
+          "In order to apply on this competition, you must follow application instructions on the Elections BC website at www.elections.bc.ca/jobs. Applications submitted through this Recruitment System will NOT be accepted."
+        ]
+      },
+      "technical_help_contact": {
+        "email": "BCPSA.Hiring.Centre@gov.bc.ca",
+        "notes": []
+      },
+      "deadline_note": "Applications will be accepted until 11:00pm Pacific Time on the closing date of the competition."
+    },
+    "working_for_bc_public_service": {
+      "diversity_statement": null,
+      "flexible_work_statement": null,
+      "indigenous_applicant_advisory_service": {
+        "available": false,
+        "description": null,
+        "contact_email": null,
+        "contact_phone": null
+      },
+      "employer_value_proposition": []
+    },
+    "attachments": {
+      "job_description_files": []
+    }
+  },
+  "scraping_metadata": {
+    "job_id": "121522",
+    "scraped_at": "2025-11-09T17:48:21.694187",
+    "matched_keyword": "Project Officer",
+    "match_score": 100
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "job_posting": {
+    "search_keyword": "Manager",
+    "source": {
+      "jurisdiction": "British Columbia",
+      "job_board": "BC Public Service",
+      "organization": "Public Safety & Sol General",
+      "url": "https://bcpublicservice.hua.hrsmart.com/hr/ats/Posting/view/121484"
+    },
+    "metadata": {
+      "posting_title": "CLK 9R - Administrative Assistant - Closing Date Extended",
+      "posting_id": "121484",
+      "job_title": "CLK 9R - Administrative Assistant - Closing Date Extended",
+      "position_classification": "Clerk R9",
+      "classification_code": "Clerk R9",
+      "union": "GEU",
+      "work_options": "On-Site",
+      "locations": [
+        "Vanderhoof, BC V0J 3A0 CA (Primary)"
+      ],
+      "salary": {
+        "raw_text": "$27.48 to $30.96 hourly",
+        "min_amount": 27.48,
+        "max_amount": 30.96,
+        "frequency": "per annum",
+        "currency": "CAD",
+        "temporary_market_adjustment": null
+      },
+      "close_date": "11/21/2025",
+      "close_time": "11:00 pm Pacific Time",
+      "job_type": "Regular Part Time",
+      "temporary_end_date": null,
+      "ministry_organization": "BC Public Service -> Public Safety & Sol General",
+      "ministry_branch_division": "BC Corrections/Community Corrections",
+      "job_category": "Administrative Services, Court and Judicial Services"
+    },
+    "amendments": [],
+    "job_summary": {
+      "about_organization": {
+        "heading": null,
+        "body": []
+      },
+      "about_business_unit": {
+        "heading": null,
+        "body": []
+      },
+      "about_role": {
+        "heading": "Job Description",
+        "body": [
+          "The Team The Vanderhoof Community Corrections team is a group of dedicated professionals committed to making a meaningful impact in their community. This established team includes Probation Officers, Administrative staff, and a Local Manager, who collaborate closely with justice partners such as the local RCMP, Crown Counsel, court staff, and community agencies. The team fosters a respectful and supportive environment that values teamwork, making it a rewarding place to grow and contribute.",
+          "The Role As the first point of contact in a community corrections office, you\u2019ll play a key role in creating a respectful and inclusive space for all visitors and staff. This position provides confidential administrative support, manages electronic records and files, and assists with financial tasks. We\u2019re committed to equity, diversity, and inclusion, and we welcome applicants who bring a variety of backgrounds, experiences, and perspectives to help us better serve our community.",
+          "Qualifications: Education and Experience Requirements",
+          "\u2022 Secondary School graduation.\n\u2022 A minimum of 6 months of related experience working in a clerical, secretarial, receptionist or administrative support role.\n\u2022 An equivalent combination of education and/or experience may be considered.\n\u2022 Minimum of 30 words per minute (WPM) in keyboarding.",
+          "Preference may be given to applicants with:",
+          "\u2022 Completion of a post-secondary certificate, program or course in office administration.\n\u2022 Experience working in an office setting providing services within the Justice System (Court Services, Correctional Centre, BC Prosecution Services, Youth Justice, legal office, justice focused non-profit).",
+          "For questions regarding this position, please contact Chanel.Stevens@gov.bc.ca. About this Position: Amendment (November 7): Posting closing date extended to November 21, 2025 This position has full time on-site requirements. This position is part time (52.5 hours biweekly) An eligibility list may be established to fill future permanent vacancies. Vanderhoof is home to the Kenney Dam and sits on the Nechako River, in the flat spot between the BC coastline and the Rocky Mountain Range. Vanderhoof hosts events all year long, including hockey and golf tournaments. A Criminal Record Review Act Check (CRRA) and Enhanced Security Screening will be required. Employees of the BC Public Service must be located in BC at the time of employment.",
+          "Working for the BC Public Service: The BC Public Service is committed to creating a diverse workplace to represent the population we serve and to better meet the needs of our citizens. Consider joining our team and being part of an innovative, inclusive and rewarding workplace. We are committed to ensuring that reasonable accommodations are available throughout the hiring process, including the assessment and selection stages. Please email the individual or contact listed on the posting if you require an accommodation to fully participate in the hiring process. The Indigenous Applicant Advisory Service is available to Indigenous (First Nations [status or non-status], Inuit or M\u00e9tis) applicants originating from the land now known as Canada, seeking work or already employed in the BC Public Service. Indigenous applicants can contact this service for personalized guidance on the BC Public Service hiring process including job applications and interviews. With over 200 different occupations available in 280 communities across the province, we offer exciting opportunities for your career. Come be a part of the BC Public Service, a Top 100 Employer that embraces diversity, health and career growth. For more information, please see What We Offer. How to Apply: Your application must clearly demonstrate how you meet the job requirements listed above. Applicants who are selected to move forward in the hiring process may be assessed on their knowledge, skills, abilities, competencies and other position related requirements as outlined in the Job Profile at the bottom of the posting. Cover Letter: NO - Please do not submit a cover letter as it will not be reviewed. Resume: YES - Ensure your resume includes your educational accomplishments, employment history including start and end dates (month and year) of your employment, and any relevant information that relates to the job to which you are applying. Questionnaire: YES - You will need to complete a basic questionnaire to demonstrate how you meet the job requirements. Find more information on the recruitment process, including helpful tips and videos about the application process, visit the Your Job Application page of MyHR. Gain insights into the hiring journey by joining a Career Conversation. Applications will be accepted until 11:00 pm Pacific Time on the closing date of the competition. If you are experiencing technical difficulty applying, visit the Technical Assistance page of MyHR."
+        ]
+      },
+      "special_conditions": [],
+      "eligibility_list_note": null
+    },
+    "position_requirements": {
+      "heading": "Position requirements",
+      "education_and_experience": {
+        "required_paths": [],
+        "equivalency_statement": null,
+        "recent_experience_note": null
+      },
+      "required_experience_bullets": [
+        "Secondary School graduation.",
+        "A minimum of 6 months of related experience working in a clerical, secretarial, receptionist or administrative support role.",
+        "An equivalent combination of education and/or experience may be considered.",
+        "Minimum of 30 words per minute (WPM) in keyboarding."
+      ],
+      "preferred_experience_bullets": [
+        "Completion of a post-secondary certificate, program or course in office administration.",
+        "Experience working in an office setting providing services within the Justice System (Court Services, Correctional Centre, BC Prosecution Services, Youth Justice, legal office, justice focused non-profit)."
+      ]
+    },
+    "application_instructions": {
+      "heading": "Application instructions",
+      "evaluation_note": null,
+      "requirements": {
+        "cover_letter_required": true,
+        "resume_details_required": true,
+        "other_documents": []
+      },
+      "hr_contact": {
+        "name": null,
+        "title": null,
+        "email": null
+      },
+      "submission_method": {
+        "system_name": "BC Public Service Recruitment System",
+        "notes": []
+      },
+      "technical_help_contact": {
+        "email": "BCPSA.Hiring.Centre@gov.bc.ca",
+        "notes": []
+      },
+      "deadline_note": "Applications will be accepted until 11:00pm Pacific Time on the closing date of the competition."
+    },
+    "working_for_bc_public_service": {
+      "diversity_statement": "The Role As the first point of contact in a community corrections office, you\u2019ll play a key role in creating a respectful and inclusive space for all visitors and staff. This position provides confidential administrative support, manages electronic records and files, and assists with financial tasks. We\u2019re committed to equity, diversity, and inclusion, and we welcome applicants who bring a variety of backgrounds, experiences, and perspectives to help us better serve our community.",
+      "flexible_work_statement": null,
+      "indigenous_applicant_advisory_service": {
+        "available": true,
+        "description": "Working for the BC Public Service: The BC Public Service is committed to creating a diverse workplace to represent the population we serve and to better meet the needs of our citizens. Consider joining our team and being part of an innovative, inclusive and rewarding workplace. We are committed to ensuring that reasonable accommodations are available throughout the hiring process, including the assessment and selection stages. Please email the individual or contact listed on the posting if you require an accommodation to fully participate in the hiring process. The Indigenous Applicant Advisory Service is available to Indigenous (First Nations [status or non-status], Inuit or M\u00e9tis) applicants originating from the land now known as Canada, seeking work or already employed in the BC Public Service. Indigenous applicants can contact this service for personalized guidance on the BC Public Service hiring process including job applications and interviews. With over 200 different occupations available in 280 communities across the province, we offer exciting opportunities for your career. Come be a part of the BC Public Service, a Top 100 Employer that embraces diversity, health and career growth. For more information, please see What We Offer. How to Apply: Your application must clearly demonstrate how you meet the job requirements listed above. Applicants who are selected to move forward in the hiring process may be assessed on their knowledge, skills, abilities, competencies and other position related requirements as outlined in the Job Profile at the bottom of the posting. Cover Letter: NO - Please do not submit a cover letter as it will not be reviewed. Resume: YES - Ensure your resume includes your educational accomplishments, employment history including start and end dates (month and year) of your employment, and any relevant information that relates to the job to which you are applying. Questionnaire: YES - You will need to complete a basic questionnaire to demonstrate how you meet the job requirements. Find more information on the recruitment process, including helpful tips and videos about the application process, visit the Your Job Application page of MyHR. Gain insights into the hiring journey by joining a Career Conversation. Applications will be accepted until 11:00 pm Pacific Time on the closing date of the competition. If you are experiencing technical difficulty applying, visit the Technical Assistance page of MyHR.",
+        "contact_email": null,
+        "contact_phone": null
+      },
+      "employer_value_proposition": []
+    },
+    "attachments": {
+      "job_description_files": [
+        {
+          "label": "Job Profile_121484",
+          "path_or_url": "/display_document.php?noheader=1&file_id=174761&action=download&req_attachment_id=52780"
+        }
+      ]
+    }
+  },
+  "scraping_metadata": {
+    "job_id": "121484",
+    "scraped_at": "2025-11-09T17:48:13.027785",
+    "matched_keyword": "Manager",
+    "match_score": 100
+  }
+}

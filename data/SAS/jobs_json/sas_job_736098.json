@@ -1,0 +1,71 @@
+{
+  "job_posting": {
+    "source": {
+      "jurisdiction": "Saskatchewan",
+      "job_board": "Government of Saskatchewan",
+      "url": "https://govskpsc.taleo.net/careersection/10180/jobdetail.ftl?job=736098&lang=en"
+    },
+    "metadata": {
+      "job_title": "Business Analyst",
+      "employment_type": "Permanent Full-time",
+      "location": "SK-Rgna-Regina",
+      "ministry": "510 Apprenticeship and Trade Cert Commission",
+      "salary_range": "$36.703 – $45.993",
+      "salary_min": null,
+      "salary_max": null,
+      "salary_frequency": "Hourly",
+      "grade": "SGEU.10.",
+      "hours_of_work": "A - SGEU Office 36 - one day off every two weeks",
+      "number_of_openings": 1,
+      "closing_date": null
+    },
+    "ministry_description": "About Us",
+    "the_opportunity": {
+      "intro": "In this role you will be responsible for:",
+      "responsibilities": ""
+    },
+    "responsibilities_breakdown": {
+      "strategic_leadership_planning": "",
+      "technical_oversight": "",
+      "information_knowledge_management": "",
+      "stakeholder_engagement_collaboration": "",
+      "team_resource_management": ""
+    },
+    "qualifications": {
+      "the_ideal_candidate": "- Dynamic, challenging work for talented individuals.\n- Positive, inclusive work environments.\n- A competitive salary.\n- Comprehensive benefits package including pension.\n- Training and support.\n- Vacation, earned days off (EDO) and other types of leave.",
+      "intro": null,
+      "required_qualifications": [
+        "Dynamic, challenging work for talented individuals.",
+        "Positive, inclusive work environments.",
+        "A competitive salary.",
+        "Comprehensive benefits package including pension.",
+        "Training and support.",
+        "Vacation, earned days off (EDO) and other types of leave."
+      ],
+      "education_requirements": "Typically, the knowledge and skills required for this position would be attained through the completion of a degree in Computer Science, a Business Analyst certification (such as CCBA, CBAP, etc.), or an equivalent combination of education and experience."
+    },
+    "benefits": {
+      "what_we_offer": "- Dynamic, challenging work for talented individuals.\n- Positive, inclusive work environments.\n- A competitive salary.\n- Comprehensive benefits package including pension.\n- Training and support.\n- Vacation, earned days off (EDO) and other types of leave.",
+      "benefits_list": [
+        "Dynamic, challenging work for talented individuals.",
+        "Positive, inclusive work environments.",
+        "A competitive salary.",
+        "Comprehensive benefits package including pension.",
+        "Training and support.",
+        "Vacation, earned days off (EDO) and other types of leave."
+      ]
+    },
+    "additional": {
+      "diversity_statement": "We are committed to workplace diversity.",
+      "additional_notes": null
+    },
+    "full_description": "About Us\nThe Saskatchewan Apprenticeship and Trade Certification Commission (SATCC) is seeking a highly motivated and innovative individual with strong analytical, interpersonal, and communication skills for a permanent position as a Business Analyst in the Business Systems unit.\nThe Opportunity\nIn this role you will be responsible for:\nIdentifying business needs, analyzing opportunities, and recommending effective solutions to enhance the commissions business systems.\nGathering and documenting detailed business requirements to ensure that new and existing commission systems meet established standards.\nCreating, executing and documenting test plans, cases and scripts for system modifications, enhancements, and new programs.\nExplaining and presenting both technical and non-technical information to a wide variety of technical and non-technical audiences in a clear, accurate and understandable manner.\nDeveloping and delivering application training to system users and creating or updating procedure manuals.\nProviding business and technical support to clients and system users.\nWorking collaboratively with SATCC management, system users, team members, developers, and external partners to achieve successful project outcomes.\nIdeal Candidate\nThe ideal candidate will be an experienced business analyst who is a critical thinker and problem solver, with strong communication, interpersonal, and relationship-building skills. You will have experience gathering and documenting detailed business requirements, developing test cases, and executing IT systems testing. You will be comfortable leading initiatives as well as contributing to team efforts.\nTypically, the knowledge and skills required for this position would be attained through the completion of a degree in Computer Science, a Business Analyst certification (such as CCBA, CBAP, etc.), or an equivalent combination of education and experience.\nExperience with Microsoft Fabric, ServiceNow or Azure DevOps would be seen as an asset.\nWhat We Offer:\nDynamic, challenging work for talented individuals.\nPositive, inclusive work environments.\nA competitive salary.\nComprehensive benefits package including pension.\nTraining and support.\nVacation, earned days off (EDO) and other types of leave.\nThe SATCC is a great place to work! Mediacorp Canada Inc. has named us one of Saskatchewan’s Top Employers for the past three years. Our employees love what they do – according to our 2024 Employee Engagement Survey, administered by Insightrix, 70 per cent of staff members agree with the statement: “I find my work fulfilling and look forward to coming to work each day.”"
+  },
+  "scraping_metadata": {
+    "job_id": "736098",
+    "scraped_at": "2025-11-09T14:45:06.143019",
+    "search_keyword": "Business Analyst",
+    "matched_keyword": "Business Analyst",
+    "match_score": 100
+  }
+}

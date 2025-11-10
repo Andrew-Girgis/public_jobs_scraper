@@ -1,0 +1,131 @@
+{
+    "job_posting": {
+        "search_keyword": null,
+        "source": {
+            "jurisdiction": "Manitoba",
+            "job_board": "Government of Manitoba Careers",
+            "url": "https://jobsearch.gov.mb.ca/search.action?ID=128697"
+        },
+        "metadata": {
+            "job_title": "Information Specialist/Financial Worker",
+            "classification_title": "SP1 Support Worker 1",
+            "classification_code": "SP1",
+            "employment_types": [
+                "Regular/full-time"
+            ],
+            "departments": [
+                "Department of Families"
+            ],
+            "divisions": [
+                "Regional Social Services, Community Services and Supports"
+            ],
+            "locations": [
+                "Winnipeg MB"
+            ],
+            "advertisement_number": "44151",
+            "salary": {
+                "raw_text": "SP1 $50,763.00 - $60,692.00 per year",
+                "classification_code": "SP1",
+                "min_amount": 50763.0,
+                "max_amount": 60692.0,
+                "frequency": "per year",
+                "currency": "CAD"
+            },
+            "closing_date": "November 30, 2025",
+            "closing_time": null
+        },
+        "employment_equity": {
+            "intro_paragraph": "The Manitoba government recognizes the importance of building an exemplary public service reflective of the citizens it serves, where diverse abilities, backgrounds, cultures, identities, languages and perspectives drives a high standard of service and innovation. The Manitoba government supports equitable employment practices and promotes representation of designated groups (women, Indigenous people, persons with disabilities, visible minorities).",
+            "equity_factor_statement": "This competition is designated for Indigenous people. Only applicants who self-declare at the time of application will be eligible for further consideration.",
+            "designated_groups": [
+                "women",
+                "Indigenous people",
+                "persons with disabilities",
+                "visible minorities"
+            ]
+        },
+        "competition_notes": {
+            "eligibility_list_text": "An eligibility list may be created to fill similar full-time and part-time, regular and term positions for 12 month.",
+            "classification_flex_text": null,
+            "usage_text": null
+        },
+        "position_overview": {
+            "summary_paragraphs": [
+                "Income Assistance Programs are intended to meet the basic needs of eligible participants, encouraging access and participation in the workforce and/or meet the needs of persons with a disability.",
+                "The Manitoba Government has a comprehensive benefit package which includes extended health care, health spending account, dental care, vision care, long term disability insurance, group life insurance, maternity/paternity leave, family related leave, and a defined pension plan (some pension plans allow for portability between the Civil Service Superannuation Board and employers).",
+                "To be considered for this competition candidates are required to submit the Application Form for screening, along with your resume, to the Public Service Commission by email at govjobs@gov.mb.ca. Please indicate the advertisement number and the position title in the subject line."
+            ]
+        },
+        "benefits": {
+            "summary_paragraph": "click here to access the application screening form.",
+            "benefit_items": []
+        },
+        "conditions_of_employment": {
+            "heading": "Conditions of Employment:",
+            "items": [
+                "Must be legally entitled to work in Canada",
+                "Must be able to provide a satisfactory Criminal Record Check including Vulnerable Sector Search.",
+                "Must be able to provide satisfactory Child Abuse and Adult Abuse Registry Checks."
+            ]
+        },
+        "qualifications": {
+            "heading": "Qualifications",
+            "essential": [
+                "Experience assessing and verifying information to determine eligibility to a program or for services.",
+                "Experience working with people from diverse backgrounds (persons with disabilities, persons who are financially and/or socially disadvantaged, newcomers and/or different cultures.",
+                "Strong interpersonal skills and ability to work effectively with the public, program participants, staff and/or external agencies.",
+                "Strong organizational skills including ability to prioritize tasks, work under pressure with accuracy in an environment with competing demands.",
+                "Experience with disbursing funds according to program or policy guidelines.",
+                "Ability to maintain client confidentiality.",
+                "Experience interpreting, applying or explaining legislation, regulations or policies.",
+                "Experience using Microsoft Office applications, particularly Word, Excel and Outlook (or compatible programs).",
+                "Clear and concise English verbal communication skills.",
+                "Effective English written communication skills."
+            ],
+            "desired": [
+                "Knowledge of The Freedom of Information and Protection of Privacy Act (FIPPA) and The Personal Health Information Act (PHIA).",
+                "Knowledge of various community programs and social services.",
+                "Ability to communicate verbally and in writing in French."
+            ],
+            "equivalency_text": null
+        },
+        "duties": {
+            "heading": "Duties",
+            "intro": "The Information Specialist/Financial Worker functions as a member of a team providing Income Assistance supports and services. The incumbent communicates regularly with clients, agencies, and other stakeholders by telephone, in writing, or in person to gather required information, respond to inquiries or explain policies and eligibility guidelines. The Information Specialist/Financial Worker calculates, processes, and issues benefits in accordance with the Manitoba Assistance Act and the Disability Support Act. This position reviews, recommends, orders, and/or authorizes expenditures for health and/or special needs, minor repairs, or medical travel needs. Additionally, the role involves entering electronic data for clients' budgets, paying bills, maintaining client confidentiality, and performing other clerical duties as assigned.",
+            "items": []
+        },
+        "application_instructions": {
+            "apply_to_block": {
+                "advertisement_number": "44151",
+                "unit": "Talent Acquisition",
+                "branch": "Human Resource Services",
+                "address_lines": [
+                    "Winnipeg, MB",
+                    ",",
+                    "R3B 2A9"
+                ],
+                "phone": "204-945-7518",
+                "fax": "204-945-0601",
+                "email": null
+            },
+            "requires_application_form": true,
+            "application_form_link_text": "click here to access the application screening form.",
+            "application_form_url": "https://www.gov.mb.ca/govjobs/doc/Screening_Application_Form/application_form_for_screening_44151.docx",
+            "instruction_text": [
+                "When applying to this position, please indicate the advertisement number and position title in the subject line and/or body of your email.",
+                "Applicants may request reasonable accommodation related to the materials or activities used throughout the selection process. When applying to this position, please indicate the advertisement number and position title in the subject line and/or body of your email. Your cover letter, resumé and/or application must clearly indicate how you meet the qualifications.",
+                "Please be advised that job competitions for represented positions may be grieved by internal represented applicants. Should a selection grievance be filed, information from the competition file will be provided to the grievor's representative. Personal information irrelevant to the grievance and other information protected under legislation will be redacted.",
+                "We thank all who apply and advise that only those selected for further consideration will be contacted."
+            ],
+            "accommodation_text": "Applicants may request reasonable accommodation related to the materials or activities used throughout the selection process. When applying to this position, please indicate the advertisement number and position title in the subject line and/or body of your email. Your cover letter, resumé and/or application must clearly indicate how you meet the qualifications.",
+            "grievance_notice": "Please be advised that job competitions for represented positions may be grieved by internal represented applicants. Should a selection grievance be filed, information from the competition file will be provided to the grievor's representative. Personal information irrelevant to the grievance and other information protected under legislation will be redacted.",
+            "contact_note": "We thank all who apply and advise that only those selected for further consideration will be contacted."
+        }
+    },
+    "scraping_metadata": {
+        "job_id": "128697",
+        "scraped_at": "2025-11-09T16:34:14.371905",
+        "matched_keyword": "Information Officer",
+        "match_score": 85
+    }
+}

@@ -1,0 +1,75 @@
+2025-11-09 00:44:38,564 - __main__ - INFO - ================================================================================
+2025-11-09 00:44:38,564 - __main__ - INFO - Ontario (ONT) Job Scraper Starting
+2025-11-09 00:44:38,564 - __main__ - INFO - ================================================================================
+2025-11-09 00:44:38,723 - __main__ - INFO - Launching Chromium browser (headless=False)
+2025-11-09 00:44:39,522 - __main__ - INFO - Starting Ontario job scraping workflow
+2025-11-09 00:44:39,523 - __main__ - INFO - Loaded 43 job keywords from /Users/agirgis/Downloads/public_jobs_scraper/list-of-jobs.txt
+2025-11-09 00:44:39,523 - __main__ - INFO - Navigating to https://www.gojobs.gov.on.ca/Search.aspx
+2025-11-09 00:44:41,402 - __main__ - INFO - Scrolling page like a human
+2025-11-09 00:44:43,344 - __main__ - INFO - Page scrolled successfully
+2025-11-09 00:44:43,344 - __main__ - INFO - Selecting search filters
+2025-11-09 00:44:43,955 - __main__ - INFO - Opened job category dropdown
+2025-11-09 00:44:45,298 - __main__ - INFO - ✓ Selected 'All job categories' checkbox
+2025-11-09 00:44:45,815 - __main__ - INFO - Checkbox checked state: True
+2025-11-09 00:44:46,159 - __main__ - INFO - Closed job category dropdown
+2025-11-09 00:44:46,664 - __main__ - INFO - Scrolling to Search button
+2025-11-09 00:44:47,505 - __main__ - INFO - Search button is now in view
+2025-11-09 00:44:47,589 - __main__ - INFO - Saved screenshot before search: /Users/agirgis/Downloads/public_jobs_scraper/data/ONT/search_html/before_search_20251109_004447.png
+2025-11-09 00:44:47,590 - __main__ - INFO - Clicking Search button to load job results
+2025-11-09 00:44:47,633 - __main__ - INFO - Search submitted successfully
+2025-11-09 00:44:47,708 - __main__ - INFO - Saved screenshot after search: /Users/agirgis/Downloads/public_jobs_scraper/data/ONT/search_html/after_search_20251109_004447.png
+2025-11-09 00:44:47,708 - __main__ - INFO - ================================================================================
+2025-11-09 00:44:47,708 - __main__ - INFO - BROWSER PAUSED - You can now interact with the page manually
+2025-11-09 00:44:47,708 - __main__ - INFO - Check if there are job results displayed
+2025-11-09 00:44:47,708 - __main__ - INFO - Press ENTER when ready to continue...
+2025-11-09 00:44:47,708 - __main__ - INFO - ================================================================================
+2025-11-09 00:44:54,966 - __main__ - INFO - Resuming scraper...
+2025-11-09 00:44:55,035 - __main__ - INFO - Total pages to scrape: 11
+2025-11-09 00:44:55,035 - __main__ - INFO - Processing page 1/11
+2025-11-09 00:44:56,246 - __main__ - INFO - Scraping search page 1
+2025-11-09 00:44:56,277 - __main__ - INFO - Found 10 job listings on page 1
+2025-11-09 00:44:56,294 - __main__ - INFO - Found 0 matches on page 1
+2025-11-09 00:44:58,299 - __main__ - INFO - Processing page 2/11
+2025-11-09 00:45:01,448 - __main__ - INFO - Scraping search page 2
+2025-11-09 00:45:01,478 - __main__ - INFO - Found 1 job listings on page 2
+2025-11-09 00:45:01,481 - __main__ - INFO - Found 0 matches on page 2
+2025-11-09 00:45:03,486 - __main__ - INFO - Processing page 3/11
+2025-11-09 00:45:07,204 - __main__ - INFO - Scraping search page 3
+2025-11-09 00:45:07,245 - __main__ - INFO - Found 0 job listings on page 3
+2025-11-09 00:45:07,246 - __main__ - INFO - Found 0 matches on page 3
+2025-11-09 00:45:09,251 - __main__ - INFO - Processing page 4/11
+2025-11-09 00:45:09,264 - __main__ - WARNING - Could not find link for page 4
+2025-11-09 00:45:09,265 - __main__ - WARNING - Skipping page 4 due to navigation error
+2025-11-09 00:45:09,265 - __main__ - INFO - Processing page 5/11
+2025-11-09 00:45:12,101 - __main__ - INFO - Scraping search page 5
+2025-11-09 00:45:12,131 - __main__ - INFO - Found 0 job listings on page 5
+2025-11-09 00:45:12,131 - __main__ - INFO - Found 0 matches on page 5
+2025-11-09 00:45:14,136 - __main__ - INFO - Processing page 6/11
+2025-11-09 00:45:18,583 - __main__ - INFO - Scraping search page 6
+2025-11-09 00:45:18,621 - __main__ - INFO - Found 0 job listings on page 6
+2025-11-09 00:45:18,621 - __main__ - INFO - Found 0 matches on page 6
+2025-11-09 00:45:20,622 - __main__ - INFO - Processing page 7/11
+2025-11-09 00:45:22,751 - __main__ - INFO - Scraping search page 7
+2025-11-09 00:45:22,776 - __main__ - INFO - Found 0 job listings on page 7
+2025-11-09 00:45:22,776 - __main__ - INFO - Found 0 matches on page 7
+2025-11-09 00:45:24,777 - __main__ - INFO - Processing page 8/11
+2025-11-09 00:45:26,910 - __main__ - INFO - Scraping search page 8
+2025-11-09 00:45:26,937 - __main__ - INFO - Found 0 job listings on page 8
+2025-11-09 00:45:26,937 - __main__ - INFO - Found 0 matches on page 8
+2025-11-09 00:45:28,942 - __main__ - INFO - Processing page 9/11
+2025-11-09 00:45:31,080 - __main__ - INFO - Scraping search page 9
+2025-11-09 00:45:31,107 - __main__ - INFO - Found 0 job listings on page 9
+2025-11-09 00:45:31,107 - __main__ - INFO - Found 0 matches on page 9
+2025-11-09 00:45:33,108 - __main__ - INFO - Processing page 10/11
+2025-11-09 00:45:35,224 - __main__ - INFO - Scraping search page 10
+2025-11-09 00:45:35,247 - __main__ - INFO - Found 0 job listings on page 10
+2025-11-09 00:45:35,247 - __main__ - INFO - Found 0 matches on page 10
+2025-11-09 00:45:37,252 - __main__ - INFO - Processing page 11/11
+2025-11-09 00:45:39,395 - __main__ - INFO - Scraping search page 11
+2025-11-09 00:45:39,420 - __main__ - INFO - Found 0 job listings on page 11
+2025-11-09 00:45:39,420 - __main__ - INFO - Found 0 matches on page 11
+2025-11-09 00:45:39,420 - __main__ - INFO - Total matches found: 0
+2025-11-09 00:45:39,420 - __main__ - INFO - Successfully scraped 0 jobs
+2025-11-09 00:45:39,420 - __main__ - INFO - Scraping complete. Total jobs scraped: 0
+2025-11-09 00:45:39,420 - __main__ - INFO - Closing browser
+2025-11-09 00:45:39,573 - __main__ - INFO - Ontario Job Scraper finished

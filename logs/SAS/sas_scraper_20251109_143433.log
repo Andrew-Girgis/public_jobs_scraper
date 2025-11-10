@@ -1,0 +1,27 @@
+[2025-11-09 14:34:33] INFO: ================================================================================
+[2025-11-09 14:34:33] INFO: Saskatchewan Government Job Scraper
+[2025-11-09 14:34:33] INFO: ================================================================================
+[2025-11-09 14:34:33] INFO: Started at: 2025-11-09 14:34:33
+[2025-11-09 14:34:33] INFO: Data directory: /Users/agirgis/Downloads/public_jobs_scraper/data/SAS
+[2025-11-09 14:34:33] INFO: Headless mode: False
+[2025-11-09 14:34:33] INFO: ================================================================================
+[2025-11-09 14:34:33] INFO: ✓ Loaded 43 keywords from list-of-jobs.txt
+[2025-11-09 14:34:33] INFO: 🔍 Searching for 43 keywords
+[2025-11-09 14:34:33] INFO: ================================================================================
+[2025-11-09 14:34:35] INFO: ================================================================================
+[2025-11-09 14:34:35] INFO: Keyword 1/43: Business Analyst
+[2025-11-09 14:34:35] INFO: ================================================================================
+[2025-11-09 14:34:35] INFO: 🔍 Searching for: 'Business Analyst'
+[2025-11-09 14:34:42] INFO:   📋 Found 5 jobs on this page
+[2025-11-09 14:34:42] INFO:   ✓ MATCH: 'Director, Research and Analysis' → 'Junior Research Analyst' (score: 90)
+[2025-11-09 14:34:42] INFO:   ✓ MATCH: 'System Configuration Analyst' → 'Business Analyst' (score: 90)
+[2025-11-09 14:34:42] INFO:   ✓ MATCH: 'Senior Policy Analyst (Health)' → 'Policy Analyst' (score: 100)
+[2025-11-09 14:34:42] INFO:   ✓ MATCH: 'Financial Analyst' → 'Business Analyst' (score: 90)
+[2025-11-09 14:34:42] INFO:   ✓ MATCH: 'Business Analyst' → 'Business Analyst' (score: 100)
+[2025-11-09 14:34:42] INFO:   ✓ Extracted 5 matching jobs from page
+[2025-11-09 14:34:42] INFO: ✓ Total matching jobs for 'Business Analyst': 5
+[2025-11-09 14:34:42] INFO: 📋 [1/5] Scraping: Director, Research and Analysis
+[2025-11-09 14:34:42] INFO:   📄 Parsing job: Director, Research and Analysis
+[2025-11-09 14:35:07] INFO:   ✓ Successfully parsed job 736475
+[2025-11-09 14:35:07] INFO:   💾 Saved JSON: sas_job_736475.json
+[2025-11-09 14:35:07] INFO: ✓ [1/5] Successfully scraped job 736475

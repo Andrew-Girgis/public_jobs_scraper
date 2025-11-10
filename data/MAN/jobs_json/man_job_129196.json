@@ -1,0 +1,130 @@
+{
+    "job_posting": {
+        "search_keyword": null,
+        "source": {
+            "jurisdiction": "Manitoba",
+            "job_board": "Government of Manitoba Careers",
+            "url": "https://jobsearch.gov.mb.ca/search.action?ID=129196"
+        },
+        "metadata": {
+            "job_title": "Manager, Financial Services",
+            "classification_title": "FI5 Financial Officer 5",
+            "classification_code": "FI5",
+            "employment_types": [
+                "Regular/full-time"
+            ],
+            "departments": [
+                "Manitoba Legislative Assembly"
+            ],
+            "divisions": [
+                "Administration Branch"
+            ],
+            "locations": [
+                "Winnipeg MB"
+            ],
+            "advertisement_number": "14025",
+            "salary": {
+                "raw_text": "FI5 $80,702.00 - $105,857.00 per year",
+                "classification_code": "FI5",
+                "min_amount": 80702.0,
+                "max_amount": 105857.0,
+                "frequency": "per year",
+                "currency": "CAD"
+            },
+            "closing_date": "November 21, 2025",
+            "closing_time": null
+        },
+        "employment_equity": {
+            "intro_paragraph": "The Manitoba government recognizes the importance of building an exemplary public service reflective of the citizens it serves, where diverse abilities, backgrounds, cultures, identities, languages and perspectives drives a high standard of service and innovation. The Manitoba government supports equitable employment practices and promotes representation of designated groups (women, Indigenous people, persons with disabilities, visible minorities).",
+            "equity_factor_statement": "This is a preference competition. All applicants are encouraged to apply, however first consideration for this competition will be given to Indigenous people and visible minorities. Applicants are requested to self-declare at the time of application.",
+            "designated_groups": [
+                "women",
+                "Indigenous people",
+                "persons with disabilities",
+                "visible minorities"
+            ]
+        },
+        "competition_notes": {
+            "eligibility_list_text": null,
+            "classification_flex_text": null,
+            "usage_text": null
+        },
+        "position_overview": {
+            "summary_paragraphs": [
+                "The Legislative Assembly is looking for an experienced Manager, Financial Services to provide leadership to finance staff, and oversee and actively engage in the provision of professional, effective and responsive financial services to the Legislative Assembly and its Independent Offices."
+            ]
+        },
+        "benefits": {
+            "summary_paragraph": null,
+            "benefit_items": []
+        },
+        "conditions_of_employment": {
+            "heading": "Conditions of Employment:",
+            "items": [
+                "Must be legally entitled to work in Canada",
+                "The incumbent of this position must be, and remain, politically non-partisan in both perception and fact",
+                "Must provide and maintain a satisfactory Criminal Records Check"
+            ]
+        },
+        "qualifications": {
+            "heading": "Qualifications",
+            "essential": [
+                "A professional accounting designation is preferred (CPA, CMA, or CGA); an equivalent combination of financial/accounting experience and training may be considered.",
+                "Demonstrated experience providing leadership and exercising comptrollership in organizational financial planning and expenditure controls as it lends to asset and liability management, expense and revenue control.",
+                "Demonstrates experience in financial management activities such as administering the annual budget and estimate process, monthly and quarterly financial reporting including variance analysis and explanations, year-end or ad-hoc reporting in a tiered complex environment.",
+                "Experience in the supervision of staff including team leadership, performance management and training and development.",
+                "Strong analytical and problem solving skills with experience in evaluating, interpreting, and communicating legislation, policies and procedures to all staffing levels.",
+                "Demonstrates excellent communication and interpersonal skills with the ability to develop positive relationships with various stakeholders and work collaboratively with a team.",
+                "Superior organization and time management skills with the ability to prioritize and meet competing deadlines.",
+                "Demonstrates experience with Microsoft Office Suite including an advanced proficiency with Excel.",
+                "Demonstrates strong working knowledge and understanding of SAP or equivalent financial system specific to financial accounting, expenditure management, budgeting and reporting.",
+                "Knowledge of the independence of the Legislative Assembly and the Independent Offices of the Legislative Assembly.",
+                "Knowledge and understanding of the Government’s financial reporting and budgeting cycle, and policies as it pertains to the Financial Administration Manual (FAM) and the General Manual of Administration (GMA).",
+                "Knowledge and experience in Public Sector and understanding of fund accounting."
+            ],
+            "desired": [
+                "Experience demonstrating strong political acumen and influence when providing advice on complex issues."
+            ],
+            "equivalency_text": null
+        },
+        "duties": {
+            "heading": "Duties",
+            "intro": "Reporting to the Director of Financial Services, this position supports senior management in managing the functional responsibilities associated with the Estimate process including financial planning and budgetary preparation, and budgetary operational control in adherence to the Legislative Assembly’s Comptrollership Plan.",
+            "items": [
+                "The successful candidate is also responsible and accountable for overseeing the Legislative Assembly accounts payable services, for the analysis of revenues, expenditures and assets, advice and direction regarding the budgeting and cash flow projections for the Legislative Assembly and Independent Offices, preparing annual financial reports, and supporting the Director, Financial Services in exercising comptrollership and providing financial leadership."
+            ]
+        },
+        "application_instructions": {
+            "apply_to_block": {
+                "advertisement_number": "14025",
+                "unit": "Manitoba Legislative Assembly",
+                "branch": "Human Resource Services",
+                "address_lines": [
+                    "Winnipeg MB",
+                    ",",
+                    "R3C 3R6"
+                ],
+                "phone": "204-945-7279",
+                "fax": "204-948-3115",
+                "email": null
+            },
+            "requires_application_form": false,
+            "application_form_link_text": null,
+            "application_form_url": null,
+            "instruction_text": [
+                "Applicants may request reasonable accommodation related to the materials or activities used throughout the selection process. When applying to this position, please indicate the advertisement number and position title in the subject line and/or body of your email. Your cover letter, resumé and/or application must clearly indicate how you meet the qualifications.",
+                "Please be advised that job competitions for represented positions may be grieved by internal represented applicants. Should a selection grievance be filed, information from the competition file will be provided to the grievor's representative. Personal information irrelevant to the grievance and other information protected under legislation will be redacted.",
+                "We thank all who apply and advise that only those selected for further consideration will be contacted."
+            ],
+            "accommodation_text": "Applicants may request reasonable accommodation related to the materials or activities used throughout the selection process. When applying to this position, please indicate the advertisement number and position title in the subject line and/or body of your email. Your cover letter, resumé and/or application must clearly indicate how you meet the qualifications.",
+            "grievance_notice": "Please be advised that job competitions for represented positions may be grieved by internal represented applicants. Should a selection grievance be filed, information from the competition file will be provided to the grievor's representative. Personal information irrelevant to the grievance and other information protected under legislation will be redacted.",
+            "contact_note": "We thank all who apply and advise that only those selected for further consideration will be contacted."
+        }
+    },
+    "scraping_metadata": {
+        "job_id": "129196",
+        "scraped_at": "2025-11-09T16:33:12.699134",
+        "matched_keyword": "Manager",
+        "match_score": 95
+    }
+}

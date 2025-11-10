@@ -1,0 +1,42 @@
+[2025-11-09 04:55:43] INFO: ================================================================================
+[2025-11-09 04:55:43] INFO: Saskatchewan Government Job Scraper
+[2025-11-09 04:55:43] INFO: ================================================================================
+[2025-11-09 04:55:43] INFO: Started at: 2025-11-09 04:55:43
+[2025-11-09 04:55:43] INFO: Data directory: /Users/agirgis/Downloads/public_jobs_scraper/data/SAS
+[2025-11-09 04:55:43] INFO: Headless mode: False
+[2025-11-09 04:55:43] INFO: ================================================================================
+[2025-11-09 04:55:43] INFO: ✓ Loaded 43 keywords from list-of-jobs.txt
+[2025-11-09 04:55:43] INFO: 🔍 Searching for 43 keywords
+[2025-11-09 04:55:43] INFO: ================================================================================
+[2025-11-09 04:55:45] INFO: ================================================================================
+[2025-11-09 04:55:45] INFO: Keyword 1/43: Business Analyst
+[2025-11-09 04:55:45] INFO: ================================================================================
+[2025-11-09 04:55:45] INFO: 🔍 Searching for: 'Business Analyst'
+[2025-11-09 04:56:18] WARNING:   ⚠ Search interaction error: Locator.fill: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("input[name='keyword'], input#keyword, input[type='text']").first
+    - locator resolved to <input value="" type="text" name="nameValue" class="inputtext" autocomplete="off" id="saveSearchInterface.SaveNameInput"/>
+    - fill("Business Analyst")
+  - attempting fill action
+    2 × waiting for element to be visible, enabled and editable
+      - element is not visible
+    - retrying fill action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and editable
+      - element is not visible
+    - retrying fill action
+      - waiting 100ms
+    60 × waiting for element to be visible, enabled and editable
+       - element is not visible
+     - retrying fill action
+       - waiting 500ms
+
+[2025-11-09 04:56:18] INFO:   📋 Found 0 jobs on this page
+[2025-11-09 04:56:18] INFO:   ✓ Extracted 0 matching jobs from page
+[2025-11-09 04:56:18] INFO: ✓ Total matching jobs for 'Business Analyst': 0
+[2025-11-09 04:56:18] INFO: ✓ Completed keyword 'Business Analyst': 0 jobs scraped, 0 duplicates skipped
+[2025-11-09 04:56:18] INFO: ⏱ Waiting 3s before next keyword...
+[2025-11-09 04:56:21] INFO: ================================================================================
+[2025-11-09 04:56:21] INFO: Keyword 2/43: Business Consultant
+[2025-11-09 04:56:21] INFO: ================================================================================
+[2025-11-09 04:56:21] INFO: 🔍 Searching for: 'Business Consultant'

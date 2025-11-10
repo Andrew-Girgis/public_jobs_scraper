@@ -1,0 +1,197 @@
+{
+  "job_posting": {
+    "search_keyword": "Business Analyst",
+    "source": {
+      "jurisdiction": "Alberta",
+      "job_board": "Alberta Public Service Careers",
+      "company": "Government of Alberta",
+      "url": "https://jobpostings.alberta.ca/job/Edmonton-Project-Data-Analyst/597090317/"
+    },
+    "header": {
+      "job_title": "Project Data Analyst",
+      "posting_date": "Nov 3, 2025",
+      "location_line": "Edmonton, AB",
+      "company_line": "Government of Alberta"
+    },
+    "job_information": {
+      "job_title": "Project Data Analyst",
+      "job_requisition_id": "76795",
+      "ministry": "Infrastructure",
+      "location": "Edmonton",
+      "full_or_part_time": "Full Time",
+      "hours_of_work": "36.25 hours per week",
+      "permanent_or_temporary": "Permanent",
+      "scope": "Open Competition",
+      "closing_date": "November 17, 2025",
+      "classification": "Program Services 4",
+      "salary": {
+        "raw_text": "$3,056.50 to $4,006.62 /bi-weekly ($79,774 - $104,572/ year)",
+        "biweekly_min": 3056.5,
+        "biweekly_max": 4006.62,
+        "annual_min": 79774.0,
+        "annual_max": 104572.0,
+        "currency": "CAD",
+        "primary_frequency": "bi-weekly"
+      }
+    },
+    "diversity_and_inclusion": {
+      "statement": "Job InformationJob Title: Project Data Analyst Job Requisition ID: 76795Ministry: InfrastructureLocation: EdmontonFull or Part-Time: Full TimeHours of Work: 36.25 hours per weekPermanent/Temporary: PermanentScope: Open CompetitionClosing Date: November 17, 2025Classification: Program Services 4 Salary: $3,056.50 to $4,006.62 /bi-weekly ($79,774 - $104,572/ year)The Government of Alberta is committed to a diverse and inclusive public service that reflects the population we serve to best meet the needs of Albertans. Consider joining a team where diversity, inclusion and innovation are valued and supported. For more information on diversity and inclusion, please visit: https://www.alberta.ca/diversity-inclusion-policy.aspx.Alberta Infrastructure designs, builds, manages, and maintains government-owned and operated facilities, and collaborates with other ministries to ensure that schools, hospitals and government facilities infrastructure meet the needs of Alberta’s population. The Ministry also provides accommodation services and manages a large portfolio of owned and leased facilities while maintaining fiscal accountability and optimizing value for Albertans. For more information about Alberta Infrastructure, please visit http://www.infrastructure.alberta.ca.",
+      "policy_url": "https://www.alberta.ca/diversity-inclusion-policy.aspx"
+    },
+    "ministry_overview": {
+      "heading": "Alberta Infrastructure",
+      "body": [
+        "diversity-inclusion-policy.aspx.Alberta Infrastructure designs, builds, manages, and maintains government-owned and operated facilities, and collaborates with other ministries to ensure that schools, hospitals and government facilities infrastructure meet the needs of Alberta’s population. The Ministry also provides accommodation services and manages a large portfolio of owned and leased facilities while maintaining fiscal accountability and optimizing value for Albertans. For more information about Alberta Infrastructure, please visit http://www.infrastructure.alberta.ca."
+      ]
+    },
+    "role_responsibilities": {
+      "heading": "Role Responsibilities",
+      "tagline": "Join us in transforming how Alberta delivers infrastructure—where your data expertise drives smarter decisions, greater transparency, and lasting impact for communities across the province!",
+      "intro_paragraphs": [
+        "Reporting to the Manager of Project Reporting and Integration, the Project Data Analyst position plays a key role in developing and enhancing data analytics and reporting solutions to support the delivery of major infrastructure projects across Alberta Infrastructure. This position ensures decision-makers have timely, accurate, and actionable insights by integrating project, financial, and operational data.",
+        "The role is responsible for data governance, quality assurance, and automation, supporting transparency, efficiency, and compliance with government reporting standards. Through the design of predictive models, dashboards, and data pipelines, the analyst enables strategic planning, performance monitoring, and contributes to the ministry’s digital transformation efforts."
+      ],
+      "responsibility_groups": [
+        {
+          "heading": "Responsibilities: Some of the responsibilities of this position include but are not limited to",
+          "items": [
+            "Data Integration & Quality Management: Design and maintain data models and ETL pipelines to integrate diverse data sources.Implement data quality controls, manage metadata standards, and coordinate data stewardship to ensure accurate, timely, and trusted project data.",
+            "Reporting & Visualization: Develop and maintain executive-ready dashboards using Power BI. Standardize reporting templates and deliver concise insights to support leadership decision-making. Enable self-service analytics through certified datasets and semantic models.",
+            "Advanced Analytics & Forecasting: Build predictive models to support cost forecasting, schedule risk analysis, and resource planning. Define early warning indicators and conduct scenario analysis to inform prioritization and capital optimization.",
+            "Governance & Compliance: Apply privacy, security, and information management standards to datasets and reports. Manage change control processes and ensure alignment with ministry governance and IT systems.",
+            "Operational Planning & Performance Measurement: Translate strategic objectives into measurable KPIs. Provide analytical support for capital planning, variance analysis, and policy impact assessments to inform operational decisions.",
+            "Data Literacy & Continuous Improvement: Promote data literacy through training, coaching, and community engagement. Lead continuous improvement initiatives, pilot innovative solutions, and refine analytics tools based on user feedback.",
+            "Please click on this link to view the job description for this position."
+          ]
+        }
+      ],
+      "job_description_link_text": "link",
+      "job_description_url": "https://mydocs.wfd.alberta.ca/media/5fale04p/jr76795_project-data-analyst_jd.pdf"
+    },
+    "aps_competencies": {
+      "heading": "APS Competencies",
+      "description": "Competencies are behaviors that are essential to reach our goals in serving Albertans. We encourage you to have an in depth understanding of the competencies that are required for this opportunity and to be prepared to demonstrate them during the recruitment process. This link will assist you with understanding competencies: https://www.alberta.ca/system/files/custom_downloaded_images/psc-alberta-public-service-competency-model.pdf.",
+      "competencies_url": "https://www.alberta.ca/system/files/custom_downloaded_images/psc-alberta-public-service-competency-model.pdf",
+      "items": [
+        "Agility: Proactively incorporates change into processes. Creates opportunities for improvement. Is aware of and adapts to changing priorities. Remains objective under pressure and supports others to manage their emotions. Proactively explains impact of change on roles and integrates change in existing work. Readily adapts plans and practices.",
+        "Drive for Results: Knowing what outcomes are important and maximizing resources to achieve results that are aligned with the goals of the organization, while maintaining accountability to each other and external stakeholders.",
+        "Systems Thinking: Considers inter-relationships and emerging trends to attain goals. Seeks insight on implications of different options. Analyzes long-term outcomes, focus on goals and values. Identifies unintended consequences.",
+        "Creative Problem Solving: Engages the community and resources at hand to address issues. Engages perspective to seek root causes. Finds ways to improve complex systems. Employs resources from other areas to solve problems. Engages others and encourages debate and idea generation to solve problems while addressing risks."
+      ]
+    },
+    "qualifications": {
+      "heading": "Qualifications",
+      "required": {
+        "education": [
+          "A university degree in Computer Science, Engineering, Information Technology, Management Information Systems, or a related discipline."
+        ],
+        "experience": [
+          "A minimum of 4 years of progressively responsible related experience in data analytics, BI development, or data engineering, preferably in a capital project or public-sector environment.",
+          "Proven experience designing Power BI dashboards, building data models, and implementing ETL processes.",
+          "Hands-on experience with SQL, Power Query, and automation tools (e.g., Power Automate, Azure Data Factory)."
+        ],
+        "other": [
+          "Advanced proficiency in Power BI, Excel (Power Pivot), and data visualization best practices."
+        ]
+      },
+      "equivalency": {
+        "text": "Directly related education or experience considered on the basis of: 1 year of education for 1 year of experience; or 1 year of experience for 1 year of education.",
+        "rules": [
+          "1 year of education for 1 year of experience; or",
+          "1 year of experience for 1 year of education."
+        ]
+      },
+      "assets": {
+        "heading": "Assets",
+        "items": [
+          "Microsoft Certified: Data Analyst Associate or an equivalent Business Intelligence (BI) certification.",
+          "Project Management certification such as PMP or PRINCE2, to support governance and structured project delivery.",
+          "Prosci Change Management certification to facilitate adoption of digital tools and processes.",
+          "Strong understanding and/or hands-on experience with SQL for data querying and transformation.",
+          "Knowledge of data governance frameworks, privacy/security standards, and metadata management.",
+          "Understanding of system integration principles and API-based data exchange.",
+          "Ability to manage Microsoft Fabric workspaces.",
+          "Familiarity with predictive analytics and statistical modeling (Python/R).",
+          "https://www.alberta.ca/alberta-public-service-minimum-recruitment-standards"
+        ]
+      },
+      "minimum_recruitment_standards_url": "https://www.alberta.ca/alberta-public-service-minimum-recruitment-standards"
+    },
+    "notes": {
+      "heading": "Notes",
+      "employment_term": "Term of Employment: Permanent full-time position.Hours of Work: 36.25 hours per weekLocation: Edmonton",
+      "location_reminder": null,
+      "assessment_info": [
+        "A written assessment may be required as part of the interview process."
+      ],
+      "security_screening": [
+        "Final candidates may be required to undergo a security screening.Applicants are advised to provide a cover letter summarizing information that clearly and concisely demonstrates how their qualifications meet the advertised requirements, including education, experience, and relevant examples ofrequired competencies.This competition may be used to fill future vacancies, across the Government of Alberta, at the same or lower classification level.Any costs associated with obtaining the required documents/checks as noted or interview travel expenses, will be the responsibility of the candidate. Out-of-province applicants can obtain the required documents/checks from the province they currently reside in.Links and information on what the GoA have to offer to prospective employees."
+      ],
+      "reuse_competition_note": [],
+      "costs_note": [],
+      "benefits_and_resources_links": [
+        {
+          "label": "advantages-working-for-alberta-public-service.aspx",
+          "url": "https://www.alberta.ca/advantages-working-for-alberta-public-service.aspx"
+        },
+        {
+          "label": "www.pspp.ca",
+          "url": "https://www.pspp.ca"
+        },
+        {
+          "label": "www.mepp.ca",
+          "url": "https://www.mepp.ca"
+        },
+        {
+          "label": "alberta-public-service-benefits",
+          "url": "https://www.alberta.ca/alberta-public-service-benefits"
+        },
+        {
+          "label": "professional-development-support-directive",
+          "url": "https://www.alberta.ca/professional-development-support-directive"
+        },
+        {
+          "label": "researchapscareers.alberta.ca",
+          "url": "https://researchapscareers.alberta.ca"
+        }
+      ]
+    },
+    "how_to_apply": {
+      "heading": "How To Apply",
+      "instructions": [
+        "Applicants are advised to provide information that clearly and concisely demonstrates how their qualifications meet the advertised requirements, including education, experience, and relevant examples of required competencies.",
+        "Candidates are required to apply for a job online. Please visit",
+        "for more information. Please visit",
+        "Recruitment Principles",
+        ", for more information.",
+        "It is recommended applicants who have completed post-secondary studies from outside of Canada obtain an evaluation of their credentials from the International Qualifications Assessment Service (IQAS)(",
+        ") or from a recognized Canadian Credential Evaluator; please visit the Alliance of Credential Evaluation Services of Canada for more information",
+        "(",
+        ").",
+        "It is recommended that applicants include the assessment certificate from IQAS or any other educational assessment service as part of their application."
+      ],
+      "job_application_resources_url": "https://www.alberta.ca/job-application-resources#before",
+      "recruitment_principles_url": "https://www.alberta.ca/recruitment-principles",
+      "iqas_recommendation": {
+        "recommended": true,
+        "iqas_url": "https://www.alberta.ca/international-qualifications-assessment.aspx",
+        "alliance_url": "https://canalliance.org/en/default.html"
+      }
+    },
+    "closing_statement": {
+      "reuse_competition_note": "This competition may be used to fill future vacancies, across the Government of Alberta, at the same or lower classification level.",
+      "thanks_and_screening_note": "We thank all applicants for their interest. All applications will be reviewed to determine which candidates' qualifications most closely match the advertised requirements. Only individuals selected for interviews will be contacted.",
+      "contact": {
+        "name": null,
+        "email": "Donna.M.Lee@gov.ab.ca"
+      },
+      "accommodation_note": "If you require any further information on this job posting or require an accommodation during the recruitment process, please contact"
+    }
+  },
+  "scraping_metadata": {
+    "job_id": "597090317",
+    "scraped_at": "2025-11-09T19:16:50.840141",
+    "matched_keyword": "Business Analyst",
+    "match_score": 100
+  }
+}

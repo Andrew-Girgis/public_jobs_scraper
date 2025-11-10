@@ -1,0 +1,41 @@
+[2025-11-09 05:13:37] INFO: ================================================================================
+[2025-11-09 05:13:37] INFO: Saskatchewan Government Job Scraper
+[2025-11-09 05:13:37] INFO: ================================================================================
+[2025-11-09 05:13:37] INFO: Started at: 2025-11-09 05:13:37
+[2025-11-09 05:13:37] INFO: Data directory: /Users/agirgis/Downloads/public_jobs_scraper/data/SAS
+[2025-11-09 05:13:37] INFO: Headless mode: False
+[2025-11-09 05:13:37] INFO: ================================================================================
+[2025-11-09 05:13:37] INFO: ✓ Loaded 43 keywords from list-of-jobs.txt
+[2025-11-09 05:13:37] INFO: 🔍 Searching for 43 keywords
+[2025-11-09 05:13:37] INFO: ================================================================================
+[2025-11-09 05:13:38] INFO: ================================================================================
+[2025-11-09 05:13:38] INFO: Keyword 1/43: Business Analyst
+[2025-11-09 05:13:38] INFO: ================================================================================
+[2025-11-09 05:13:38] INFO: 🔍 Searching for: 'Business Analyst'
+[2025-11-09 05:13:45] INFO:   📋 Found 41 jobs on this page
+[2025-11-09 05:13:45] INFO:   ✓ Extracted 0 matching jobs from page
+[2025-11-09 05:13:45] INFO: ✓ Total matching jobs for 'Business Analyst': 0
+[2025-11-09 05:13:45] INFO: ✓ Completed keyword 'Business Analyst': 0 jobs scraped, 0 duplicates skipped
+[2025-11-09 05:13:45] INFO: ⏱ Waiting 3s before next keyword...
+[2025-11-09 05:13:48] INFO: ================================================================================
+[2025-11-09 05:13:48] INFO: Keyword 2/43: Business Consultant
+[2025-11-09 05:13:48] INFO: ================================================================================
+[2025-11-09 05:13:48] INFO: 🔍 Searching for: 'Business Consultant'
+[2025-11-09 05:13:55] INFO:   📋 Found 38 jobs on this page
+[2025-11-09 05:13:55] INFO:   ✓ Extracted 0 matching jobs from page
+[2025-11-09 05:13:55] INFO: ✓ Total matching jobs for 'Business Consultant': 0
+[2025-11-09 05:13:55] INFO: ✓ Completed keyword 'Business Consultant': 0 jobs scraped, 0 duplicates skipped
+[2025-11-09 05:13:55] INFO: ⏱ Waiting 3s before next keyword...
+[2025-11-09 05:13:58] INFO: ================================================================================
+[2025-11-09 05:13:58] INFO: Keyword 3/43: Business Systems Analyst
+[2025-11-09 05:13:58] INFO: ================================================================================
+[2025-11-09 05:13:58] INFO: 🔍 Searching for: 'Business Systems Analyst'
+[2025-11-09 05:14:04] INFO:   📋 Found 40 jobs on this page
+[2025-11-09 05:14:04] INFO:   ✓ Extracted 0 matching jobs from page
+[2025-11-09 05:14:04] INFO: ✓ Total matching jobs for 'Business Systems Analyst': 0
+[2025-11-09 05:14:04] INFO: ✓ Completed keyword 'Business Systems Analyst': 0 jobs scraped, 0 duplicates skipped
+[2025-11-09 05:14:04] INFO: ⏱ Waiting 3s before next keyword...
+[2025-11-09 05:14:07] INFO: ================================================================================
+[2025-11-09 05:14:07] INFO: Keyword 4/43: Data Analyst
+[2025-11-09 05:14:07] INFO: ================================================================================
+[2025-11-09 05:14:07] INFO: 🔍 Searching for: 'Data Analyst'

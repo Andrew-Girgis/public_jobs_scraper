@@ -1,0 +1,2785 @@
+<!DOCTYPE html><html data-bs-theme="light" dir="ltr" lang="en"><head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="language-code" content="en">
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+
+		
+									<title>Job Seekers - Province of British Columbia</title>
+		<link rel="shortcut icon" href="/custom/themes/customer_front_end/images/favicons.png">
+												
+								
+
+				<link rel="stylesheet" media="all" type="text/css" href="/css/sprites.css">
+				<link rel="stylesheet" media="all" type="text/css" href="/css/jqueryui/jquery-ui.min.css">
+
+				<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet">
+
+						<link rel="stylesheet" media="all" type="text/css" href="/css/bootstrap/bootstrap.css">
+   				<link rel="stylesheet" media="all" type="text/css" href="/fontawesome/css/all.css">
+
+				<link rel="stylesheet" media="all" type="text/css" href="/css/bootstrap/huaicon-font.css">
+				<link rel="stylesheet" media="all" type="text/css" href="/css/fonts/style.css">
+									<link rel="stylesheet" media="all" type="text/css" href="/css/external/hua_external.css">
+			<link rel="stylesheet" media="print" type="text/css" href="/css/external/print.css">
+																<link rel="stylesheet" media="all" type="text/css" href="/custom/themes/customer_front_end/css/custom.css">
+															
+
+		
+                           		<script async="" src="https://www2.gov.bc.ca/StaticWebResources/static/sp/sp-2-14-0.js"></script><script type="text/javascript" src="/js_includes/jquery/jquery-3.6.3.min.js"></script>
+		<script>jQuery.noConflict();</script>
+		<script type="text/javascript" src="/js_includes/jquery/jquery-migrate-3.3.2.min.js"></script>
+		<script type="text/javascript" src="/js_includes/jquery/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/js_includes/bootstrap/bootstrap.bundle.js"></script>
+		<script type="text/javascript" src="/js_includes/clipboarddate.js"></script>
+				<script type="text/javascript" src="/js_includes/highcharts/code/highcharts.js"></script>
+		<script type="text/javascript" src="/js_includes/highcharts/code/highcharts-more.js"></script>
+		<script type="text/javascript" src="/js_includes/highcharts/code/modules/exporting.js"></script>
+		<script type="text/javascript" src="/js_includes/highcharts/code/modules/export-data.js"></script>
+		<script type="text/javascript" src="/js_includes/highcharts/code/modules/accessibility.js"></script>
+		<script type="text/javascript" src="/js_includes/highcharts/code/modules/data.js"></script>
+		<script type="text/javascript" src="/js_includes/highcharts/hc.js"></script>
+		<script type="text/javascript">
+
+		
+		jQuery( document ).ready(function() {
+				// Fix Bootstrap dropdown conflict with Prototype
+				(function() {
+					var isBootstrapEvent = false;
+					if (window.jQuery) {
+						var bs_Collapse = jQuery('[data-bs-toggle="collapse"]');
+						jQuery.each(['hide.bs.collapse'], function(index, eventName) {
+							bs_Collapse.on(eventName, function( event ) {
+								isBootstrapEvent = true;
+							});
+						});
+						//var bs_Dropdown = jQuery('[data-bs-toggle="dropdown"]');
+						var bs_Dropdown = jQuery('*');
+						jQuery.each(['hide.bs.dropdown'], function(index, eventName) {
+							bs_Dropdown.on(eventName, function( event ) {
+								isBootstrapEvent = true;
+							});
+						});
+						var bs_Modal = jQuery('[data-bs-toggle="modal"]');
+						jQuery.each(['hide.bs.modal'], function(index, eventName) {
+							bs_Modal.on(eventName, function( event ) {
+								isBootstrapEvent = true;
+							});
+						});
+						var bs_Tooltip = jQuery('[data-bs-toggle="tooltip"]');
+						jQuery.each(['hide.bs.tooltip'], function(index, eventName) {
+							bs_Tooltip.on(eventName, function( event ) {
+								isBootstrapEvent = true;
+							});
+						});
+						var bs_Popover = jQuery('[data-bs-toggle="popover"]');
+						jQuery.each(['hide.bs.popover'], function(index, eventName) {
+							bs_Popover.on(eventName, function( event ) {
+								isBootstrapEvent = true;
+							});
+						});
+						var bs_Tabs = jQuery('[data-bs-toggle="tab"]');
+						jQuery.each(['hide.bs.tab'], function(index, eventName) {
+							bs_Tabs.on(eventName, function( event ) {
+								isBootstrapEvent = true;
+							});
+						});
+					}
+					var originalHide = Element.hide;
+					Element.addMethods({
+						hide: function(element) {
+							if(isBootstrapEvent) {
+								isBootstrapEvent = false;
+								return element;
+							}
+							return originalHide(element);
+						}
+					});
+				})();
+
+				// Remove instruction toggle item if no instructions exist on page
+				if (1 > jQuery('div.instruction-container').length) {
+					jQuery("#instruction_toggle").parent().detach();
+				}
+
+                // Give onclick event for delete user account link
+				jQuery("#navitem_delete_user_account_external").on("click", function(e) {
+                    delete_self_data();
+              });
+
+                 jQuery("#navitem_delete_user_account").on("click", function(e) {
+                    delete_self_data();
+              });
+
+				 // Add onclick event if Delete user account link exists
+				function delete_self_data(to_status_id)
+				{
+				   if(confirm('Are you sure you want to delete your account? All of your information will be deleted. Once deleted, it is permanent and no information can be recovered.'))
+					{
+					   var form = jQuery('<form></form>');
+					   form.attr({
+							action: '/hr/hua/Users/selfDelete',
+							method:  'POST',
+							name: 'jobseeker_deletion_form'
+						});
+					   var hiddenField = jQuery('<input>').attr({
+							type: 'hidden',
+							value:  '',
+							name: 'confirmation_value'
+						});
+					  submitForm(form.append(hiddenField).appendTo('body'));
+					}
+				}
+			});
+		</script>
+        
+						<script type="text/javascript" src="/js_includes/scriptaculous/scriptaculous_bundle.min.js"></script>
+				
+<script type="text/javascript" charset="UTF-8">
+/* <![CDATA[ */
+try { if (undefined == xajax.config) xajax.config = {}; } catch (e) { xajax = {}; xajax.config = {}; };
+xajax.config.requestURI = "/hr/ats/JobSearch/search";
+xajax.config.statusMessages = false;
+xajax.config.waitCursor = true;
+xajax.config.version = "xajax 0.5";
+xajax.config.defaultMode = "asynchronous";
+xajax.config.defaultMethod = "POST";
+xajax.config.JavaScriptURI = "/js_includes/xajax/";
+/* ]]> */
+</script>
+<script type="text/javascript" src="/js_includes/xajax/xajax_js/xajax_core.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+/* <![CDATA[ */
+window.setTimeout(
+ function() {
+  var scriptExists = false;
+  try { if (xajax.isLoaded) scriptExists = true; }
+  catch (e) {}
+  if (!scriptExists) {
+   alert("Error: the xajax Javascript component could not be included. Perhaps the URL is incorrect?\nURL: /js_includes/xajax/xajax_js/xajax_core.js");
+  }
+ }, 20000);
+/* ]]> */
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+/* <![CDATA[ */
+xajax_addFavorite = function() { return xajax.request( { xjxfun: 'addFavorite' }, { parameters: arguments } ); };
+xajax_removeFavorite = function() { return xajax.request( { xjxfun: 'removeFavorite' }, { parameters: arguments } ); };
+xajax_toggleMenuItemDisplay = function() { return xajax.request( { xjxfun: 'toggleMenuItemDisplay' }, { parameters: arguments } ); };
+xajax_requestActionAjax = function() { return xajax.request( { xjxfun: 'requestActionAjax' }, { parameters: arguments, mode: "asynchronous" } ); };
+xajax_requestActionAjaxWithSuccessMessage = function() { return xajax.request( { xjxfun: 'requestActionAjaxWithSuccessMessage' }, { parameters: arguments, mode: "synchronous" } ); };
+xajax_requestAsyncActionAjax = function() { return xajax.request( { xjxfun: 'requestAsyncActionAjax' }, { parameters: arguments, mode: "asynchronous" } ); };
+xajax_validateFieldAjax = function() { return xajax.request( { xjxfun: 'validateFieldAjax' }, { parameters: arguments, mode: "synchronous" } ); };
+/* ]]> */
+</script>
+
+		
+		<script type="text/javascript">
+			if ( typeof(xajax) != 'undefined' && xajax.config )
+			{
+				xajax.config.maxObjectSize = 25000;
+			}
+
+			var proto = String.fromCharCode(104,116,116,112,115,58);
+			if (window.location.protocol != proto) {
+				// redirect to https
+				window.location.href = proto + window.location.href.substring(window.location.protocol.length);
+			}
+		</script>
+
+
+		
+		<script type="text/javascript">
+			var _lang_badwordcheck = "Word Filter";
+			var _img_badwordcheck = "huaicon huaicon-stop text-danger";
+			var _enable_badwordcheck = Boolean(0);
+			var _layout_direction = 'ltr';
+
+			var _viewed_notifications = [];
+			
+		//-->
+		</script>
+				
+			<script type="text/javascript">
+			<!--
+				window.onresize = function() {if(document.readyState === "complete"){document.body.style.width = '100%';}}
+			//-->
+			</script>
+		
+
+		<script type="text/javascript" src="/js_includes/domready.js"></script>
+				<!--
+		<script type="text/javascript" src="/js_includes/global.min.js"></script>
+		-->
+				<script type="text/javascript" src="/js_includes/global.js"></script>
+		
+        <script>
+        DomReady.ready( function() {
+			// Init Bootstrap Tooltips (http://getbootstrap.com/javascript/#tooltips)
+			var tooltipObj = jQuery('[data-bs-toggle=tooltip]');
+			if (typeof tooltipObj.tooltip !== 'undefined')
+			{
+				tooltipObj.tooltip({html:true});
+			}
+
+			// Init Bootstrap Popovers (http://getbootstrap.com/javascript/#popovers)
+			var popoverObj = jQuery('[data-bs-toggle=popover]');
+			if (typeof popoverObj.popover !== 'undefined')
+			{
+				popoverObj.popover();
+			}
+         });
+		</script>
+        
+				
+		
+							<script type="text/javascript" src="/js_includes/menu.js"></script>
+		
+				
+							</head><body class="light" onload="onload_init(); if( window.load_me ) load_me();  menu_init(); "><div></div>
+								
+		
+
+				<script>
+		if ( window.CKEDITOR && ( !CKEDITOR.env.ie || CKEDITOR.env.version > 7 ) )
+		CKEDITOR.env.isCompatible = true;
+		</script>
+
+				<script type="text/javascript" src="/js_includes/responsiveview.js"></script>
+
+		        <script>
+        	if ( window.CKEDITOR && ( !CKEDITOR.env.ie || CKEDITOR.env.version > 7 ) )
+        	CKEDITOR.env.isCompatible = true;
+        </script>
+
+				<!--[if lt IE 9]>
+			<script src="{ '/js_includes/html5shiv.min.js'|huauri }"></script>
+			<script src="{ '/js_includes/respond.min.js'|huauri }"></script>
+		<![endif]-->
+
+	                            		<!-- BEGIN Gainsight PX Tag-->
+                <!-- END Gainsight PX Identify Call -->
+		
+
+        
+    
+	    
+	                            	
+			 <noscript>This site attempts to protect users against <a href="https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29">
+	Cross-Site Request Forgeries </a> attacks. In order to do so, you must have JavaScript enabled in your web browser otherwise this site will fail to work correctly for you.
+	 See details of your web browser for how to enable JavaScript.</noscript>
+	
+		
+	
+				<div id="modalWindowOverlay" class="lightbox_overlay elem_hide"></div>
+		<div id="modalWindowContainer" class="modalWindow lightbox_container elem_hide"></div>
+
+											    <div id="ext-theme"> 				
+<!--Client Favicon-->
+
+
+<script>
+jQuery('link[rel="shortcut icon"]').attr('href','/custom/themes/customer_front_end/images/favicons.png');
+</script>
+
+
+
+<!--Page Title-->
+
+<script>
+document.title = "Job Seekers - Province of British Columbia";
+</script>
+
+
+
+<!-- styles hrdesign-->
+<link rel="stylesheet" type="text/css" href="/custom/themes/customer_front_end/css/custom.css">
+
+<link href="/custom/themes/customer_front_end/css/main1.css" rel="stylesheet" type="text/css">
+<link href="/custom/themes/customer_front_end/css/navMenu.css" rel="stylesheet" type="text/css">
+
+<!--<script src="/custom/themes/customer_front_end/js/navMenu.js"></script>-->
+
+
+
+ <noscript>This site attempts to protect users against <a href="https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29">
+	Cross-Site Request Forgeries </a> attacks. In order to do so, you must have JavaScript enabled in your web browser otherwise this site will fail to work correctly for you.
+	 See details of your web browser for how to enable JavaScript.</noscript>
+	<!-- googleoff:all -->
+	<div id="header" class="">
+
+		<div class="navbar navbar-default navbar-fixed-top" id="header-main">
+			<div class="container" style="display: block;">
+				<div class="row" id="header-main-row1">
+					<div class="col-sm-4 col-md-5 col-lg-6 header-main-left">
+						<div id="logo" role="banner">
+							<a href="http://www2.gov.bc.ca/gov/content/home"><img alt="Government of B.C." src="/custom/themes/customer_front_end/images/D7A2B18D1A32406F9309CD9DA1C71B41.png" title="Government of B.C."></a>
+						</div>
+						<div id="access">
+							<ul>
+								<li aria-label="Keyboard Tab Skip">
+									<a accesskey="1" aria-label="Skip to main content" href="#main-content-anchor">Skip to main content</a>
+								</li>
+								<li aria-label="Keyboard Tab Skip">
+									<a accesskey="n" aria-label="Skip to navigation" href="#main-content-anchor" onclick="$('.menu-button').focus();">Skip to navigation</a>
+								</li>
+								<li aria-label="Keyboard Tab Skip">
+									<a accesskey="0" aria-label="Accessibility Statement" href="http://www2.gov.bc.ca/gov/content/accessibility">Accessibility Statement</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="navbar-header">
+						<!--<button aria-expanded="true" aria-label="Burger Navigation" class="menu-button navbar-toggle mini-menu-trigger" data-target="#header-main-row2" data-toggle="collapse" type="button"></button>-->
+
+<!--Custom Mobile Menu-->
+<div class="custom-mobile-menu">
+
+                    <nav class="navbar navbar-default yamm theme-default" role="navigation" id="mmenu">
+                        <div class="navbar-header collapsed" data-bs-toggle="collapse" data-bs-target="#mmenu-collapse" aria-expanded="false">
+                            <button type="button" class="navbar-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#mmenu-collapse" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="navbar-collapse collapse" id="mmenu-collapse">
+
+                            <ul class="nav navbar-nav navbar-left">
+                                <li><a href="http://www2.gov.bc.ca/gov/content/careers-myhr">Careers &amp; MyHR</a></li>
+                                <li><a href="http://www2.gov.bc.ca/gov/content/home/forms-a-z">Forms A-Z</a></li>
+                                <li><a href="http://www2.gov.bc.ca/gov/content/home/services-a-z">Services A-Z</a></li>
+                                <li><a href="https://news.gov.bc.ca/">News</a></li>
+                                <li><a href="http://www2.gov.bc.ca/gov/content/home/organizations-a-z">Organizations A-Z</a></li>
+                                <li><a href="http://www2.gov.bc.ca/gov/content/home/contact-us">Contact Us</a></li>
+                            </ul>
+
+                        </div>
+                    </nav>
+
+
+</div>
+
+<!--Custom Mobile Menu-->
+
+					</div>
+					<div class="header-search navbar-collapse collapse">
+						<div class="search-boarder-arror visible-xs-block"></div>
+						<div class="col-sm-8 col-md-7 col-lg-6 header-main-right">
+							<div class="search"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row navbar-collapse " id="header-main-row3">
+					<div class="d-flex justify-content-start col mb-2 ps-0">
+						<div class="menu-button hidden-xs" id="govNavMenuToggle" role="navigation" tabindex="0">
+							<img alt="Menu" src="/custom/themes/customer_front_end/images/menu-ico-sm.png" title="Menu"><span>MENU</span>
+						</div>
+						<div id="govNavMenu" style="height: auto; overflow-y: initial;">
+							<nav class="govNav" id="govMainMenu">
+								<ul class="firstLevel nav navbar-nav">
+									<li class="hassub clearfix british">
+										<a href="http://www2.gov.bc.ca/gov/content/governments">British Columbians &amp; Our Governments</a>
+										
+
+										<div class="British Columbians &amp; Our Governments issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_britishcolumbians.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_480" method="get" name="menu_suggestion_form_480">
+												<input aria-label="Search theme_1_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 480)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_1_collection</span> <span class="client">theme_1_frontend</span> <input name="id" value="401A7ECBB734485FA6AF857F78DD4363" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_480" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">British Columbians &amp; Our Governments</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_1BCDDAA9ED30487784F29ADC800E5DCB">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/governments/organizational-structure">Organizational Structure</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/governments/government-id">Government ID</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/governments/about-the-bc-government">Initiatives, Plans &amp; Strategies</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/governments/aboriginal-people">Aboriginal People</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/governments/services-for-government">Services &amp; Policies for Government</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/governments/celebrating-british-columbia">Celebrating British Columbia</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/governments/multiculturalism-anti-racism">Multiculturalism &amp; Anti-Racism</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/governments/local-governments">Local Governments</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+
+
+										<div class="mobile-menu-search issub">
+											<div class="homepage-tile">
+												<div class="tile-content">
+													<span class="tile-search"></span>
+													<div class="tile-search-flyout">
+														<form action="/gov/search" id="mobile_menu_search_form_480" method="get" name="mobile_menu_search_form_480">
+															<input aria-label="Search default_collection" autocomplete="off" class="mobile-menu-searchbox placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 480)" type="text">
+															<div class="hiddenVals" style="display:none">
+																<span class="site">theme_1_collection</span> <span class="client">theme_1_frontend</span> <input name="id" value="401A7ECBB734485FA6AF857F78DD4363" type="hidden">
+															</div>
+														</form>
+													</div>
+												</div>
+												<table class="ss-gac-m" id="mobile_menu_search_suggest_480" style="visibility: hidden;"></table>
+											</div>
+										</div><span class="level-trigger"></span>
+										
+							
+										<div class="British Columbians &amp; Our Governments issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_britishcolumbians.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_480" method="get" name="menu_suggestion_form_480">
+												<input aria-label="Search theme_1_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 480)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_1_collection</span> <span class="client">theme_1_frontend</span> <input name="id" value="401A7ECBB734485FA6AF857F78DD4363" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_480" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">British Columbians &amp; Our Governments</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_1BCDDAA9ED30487784F29ADC800E5DCB">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/governments/organizational-structure">Organizational Structure</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/governments/government-id">Government ID</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/governments/about-the-bc-government">Initiatives, Plans &amp; Strategies</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/governments/aboriginal-people">Aboriginal People</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/governments/services-for-government">Services &amp; Policies for Government</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/governments/celebrating-british-columbia">Celebrating British Columbia</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/governments/multiculturalism-anti-racism">Multiculturalism &amp; Anti-Racism</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/governments/local-governments">Local Governments</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+									</li><!-- Output subtheme navigation links only if this is a theme page or deeper -->
+
+
+
+
+
+									<li class="hassub clearfix health">
+										<a href="http://www2.gov.bc.ca/gov/content/health">Health</a>
+										
+										<div class="Health issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_health.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_504" method="get" name="menu_suggestion_form_504">
+												<input aria-label="Search theme_3_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 504)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_3_collection</span> <span class="client">theme_3_frontend</span> <input name="id" value="19E4894872F646948A1C7E4D8CE73863" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_504" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Health</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_EC75FD2ECA044D2C9CCB32361905348A">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/health/about-bc-s-health-care-system">About B.C.'s Health Care System</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/health/accessing-health-care">Accessing Health Care</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/health/health-drug-coverage">Health &amp; Drug Coverage</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/health/managing-your-health">Managing Your Health</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/health/keeping-bc-healthy-safe">Keeping B.C. Healthy &amp; Safe</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/health/conducting-health-research-evaluation">Conducting Health Research &amp; Evaluation</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/health/health-forms">Health Forms</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/health/practitioner-professional-resources">Practitioner &amp; Professional Resources</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+
+										<div class="mobile-menu-search issub">
+											<div class="homepage-tile">
+												<div class="tile-content">
+													<span class="tile-search"></span>
+													<div class="tile-search-flyout">
+														<form action="/gov/search" id="mobile_menu_search_form_504" method="get" name="mobile_menu_search_form_504">
+															<input aria-label="Search default_collection" autocomplete="off" class="mobile-menu-searchbox placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 504)" type="text">
+															<div class="hiddenVals" style="display:none">
+																<span class="site">theme_3_collection</span> <span class="client">theme_3_frontend</span> <input name="id" value="19E4894872F646948A1C7E4D8CE73863" type="hidden">
+															</div>
+														</form>
+													</div>
+												</div>
+												<table class="ss-gac-m" id="mobile_menu_search_suggest_504" style="visibility: hidden;"></table>
+											</div>
+										</div><span class="level-trigger"></span>
+
+
+
+										<div class="Health issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_health.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_504" method="get" name="menu_suggestion_form_504">
+												<input aria-label="Search theme_3_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 504)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_3_collection</span> <span class="client">theme_3_frontend</span> <input name="id" value="19E4894872F646948A1C7E4D8CE73863" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_504" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Health</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_EC75FD2ECA044D2C9CCB32361905348A">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/health/about-bc-s-health-care-system">About B.C.'s Health Care System</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/health/accessing-health-care">Accessing Health Care</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/health/health-drug-coverage">Health &amp; Drug Coverage</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/health/managing-your-health">Managing Your Health</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/health/keeping-bc-healthy-safe">Keeping B.C. Healthy &amp; Safe</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/health/conducting-health-research-evaluation">Conducting Health Research &amp; Evaluation</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/health/health-forms">Health Forms</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/health/practitioner-professional-resources">Practitioner &amp; Professional Resources</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+									</li><!-- Output subtheme navigation links only if this is a theme page or deeper -->
+
+
+
+
+
+
+
+
+
+									<li class="hassub clearfix birth">
+										<a href="http://www2.gov.bc.ca/gov/content/life-events">Birth, Adoption, Death, Marriage &amp; Divorce</a>
+										
+
+										<div class="Birth, Adoption, Death, Marriage &amp; Divorce issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_births.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_505" method="get" name="menu_suggestion_form_505">
+												<input aria-label="Search theme_2_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 505)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_2_collection</span> <span class="client">theme_2_frontend</span> <input name="id" value="37BDCD618E4744998F9385A3F3248A06" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_505" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Birth, Adoption, Death, Marriage &amp; Divorce</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_90CA4E68AA484987B5B74587FB5B0764">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/life-events/births-adoptions">Births &amp; Adoptions</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/life-events/marriages">Marriages</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/life-events/death-and-bereavement">Death &amp; Bereavement</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/life-events/divorce">Separation &amp; Divorce</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/life-events/legal-changes-of-name">Legal Changes of Name</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/life-events/statistics-reports">Statistics &amp; Reports</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/life-events/order-certificates-copies">Order Certificates &amp; Copies</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+
+
+										<div class="mobile-menu-search issub">
+											<div class="homepage-tile">
+												<div class="tile-content">
+													<span class="tile-search"></span>
+													<div class="tile-search-flyout">
+														<form action="/gov/search" id="mobile_menu_search_form_505" method="get" name="mobile_menu_search_form_505">
+															<input aria-label="Search default_collection" autocomplete="off" class="mobile-menu-searchbox placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 505)" type="text">
+															<div class="hiddenVals" style="display:none">
+																<span class="site">theme_2_collection</span> <span class="client">theme_2_frontend</span> <input name="id" value="37BDCD618E4744998F9385A3F3248A06" type="hidden">
+															</div>
+														</form>
+													</div>
+												</div>
+												<table class="ss-gac-m" id="mobile_menu_search_suggest_505" style="visibility: hidden;"></table>
+											</div>
+										</div><span class="level-trigger"></span>
+
+
+										<div class="Birth, Adoption, Death, Marriage &amp; Divorce issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_births.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_505" method="get" name="menu_suggestion_form_505">
+												<input aria-label="Search theme_2_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 505)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_2_collection</span> <span class="client">theme_2_frontend</span> <input name="id" value="37BDCD618E4744998F9385A3F3248A06" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_505" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Birth, Adoption, Death, Marriage &amp; Divorce</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_90CA4E68AA484987B5B74587FB5B0764">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/life-events/births-adoptions">Births &amp; Adoptions</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/life-events/marriages">Marriages</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/life-events/death-and-bereavement">Death &amp; Bereavement</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/life-events/divorce">Separation &amp; Divorce</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/life-events/legal-changes-of-name">Legal Changes of Name</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/life-events/statistics-reports">Statistics &amp; Reports</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/life-events/order-certificates-copies">Order Certificates &amp; Copies</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+									</li><!-- Output subtheme navigation links only if this is a theme page or deeper -->
+
+
+
+
+
+
+
+
+									<li class="hassub clearfix education">
+										<a href="http://www2.gov.bc.ca/gov/content/education-training">Education &amp; Training</a>
+										
+<div class="Education &amp; Training issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_education.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_509" method="get" name="menu_suggestion_form_509">
+												<input aria-label="Search theme_4_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 509)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_4_collection</span> <span class="client">theme_4_frontend</span> <input name="id" value="84131A7374544958A7C2832226CC8A81" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_509" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Education &amp; Training</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_205DE48374094784A6B7202B9614CD69">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/education-training/early-learning">Early Learning</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/education-training/k-12">Kindergarten to Grade 12</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/education-training/post-secondary-education">Post-secondary Education</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/education-training/adult-education">Adult Education</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/education-training/ways-to-learn">Ways to Learn</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/education-training/administration">Administration</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/education-training/job-career-training">Job &amp; Career Training</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+
+										<div class="mobile-menu-search issub">
+											<div class="homepage-tile">
+												<div class="tile-content">
+													<span class="tile-search"></span>
+													<div class="tile-search-flyout">
+														<form action="/gov/search" id="mobile_menu_search_form_509" method="get" name="mobile_menu_search_form_509">
+															<input aria-label="Search default_collection" autocomplete="off" class="mobile-menu-searchbox placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 509)" type="text">
+															<div class="hiddenVals" style="display:none">
+																<span class="site">theme_4_collection</span> <span class="client">theme_4_frontend</span> <input name="id" value="84131A7374544958A7C2832226CC8A81" type="hidden">
+															</div>
+														</form>
+													</div>
+												</div>
+												<table class="ss-gac-m" id="mobile_menu_search_suggest_509" style="visibility: hidden;"></table>
+											</div>
+										</div><span class="level-trigger driving"></span>
+										
+
+
+
+										<div class="Education &amp; Training issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_education.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_509" method="get" name="menu_suggestion_form_509">
+												<input aria-label="Search theme_4_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 509)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_4_collection</span> <span class="client">theme_4_frontend</span> <input name="id" value="84131A7374544958A7C2832226CC8A81" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_509" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Education &amp; Training</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_205DE48374094784A6B7202B9614CD69">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/education-training/early-learning">Early Learning</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/education-training/k-12">Kindergarten to Grade 12</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/education-training/post-secondary-education">Post-secondary Education</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/education-training/adult-education">Adult Education</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/education-training/ways-to-learn">Ways to Learn</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/education-training/administration">Administration</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/education-training/job-career-training">Job &amp; Career Training</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+									</li><!-- Output subtheme navigation links only if this is a theme page or deeper -->
+
+
+
+
+									<li class="hassub clearfix driving">
+										<a href="http://www2.gov.bc.ca/gov/content/transportation">Driving &amp; Transportation</a>
+										
+
+											<div class="Driving &amp; Transportation issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_driving.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_514" method="get" name="menu_suggestion_form_514">
+												<input aria-label="Search theme_5_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 514)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_5_collection</span> <span class="client">theme_5_frontend</span> <input name="id" value="B183E708FB894403AE4914B67D5FCB31" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_514" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Driving &amp; Transportation</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_A7B3531E17F34FE9AF2B5553E2BE212A">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling">Driving &amp; Cycling</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/transportation/passenger-travel">Passenger Travel</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/transportation/vehicle-safety-enforcement">Vehicle Safety &amp; Enforcement</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/transportation/funding-engagement-permits">Funding, Engagement &amp; Permits</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/transportation/transportation-infrastructure">Transportation Infrastructure</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/transportation/transportation-reports-and-reference">Transportation Reports &amp; Reference</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/transportation/transportation-environment">Transportation &amp; the Environment</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+
+
+
+										<div class="mobile-menu-search issub">
+											<div class="homepage-tile">
+												<div class="tile-content">
+													<span class="tile-search"></span>
+													<div class="tile-search-flyout">
+														<form action="/gov/search" id="mobile_menu_search_form_514" method="get" name="mobile_menu_search_form_514">
+															<input aria-label="Search default_collection" autocomplete="off" class="mobile-menu-searchbox placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 514)" type="text">
+															<div class="hiddenVals" style="display:none">
+																<span class="site">theme_5_collection</span> <span class="client">theme_5_frontend</span> <input name="id" value="B183E708FB894403AE4914B67D5FCB31" type="hidden">
+															</div>
+														</form>
+													</div>
+												</div>
+												<table class="ss-gac-m" id="mobile_menu_search_suggest_514" style="visibility: hidden;"></table>
+											</div>
+										</div><span class="level-trigger"></span>
+									
+
+
+										<div class="Driving &amp; Transportation issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_driving.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_514" method="get" name="menu_suggestion_form_514">
+												<input aria-label="Search theme_5_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 514)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_5_collection</span> <span class="client">theme_5_frontend</span> <input name="id" value="B183E708FB894403AE4914B67D5FCB31" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_514" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Driving &amp; Transportation</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_A7B3531E17F34FE9AF2B5553E2BE212A">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling">Driving &amp; Cycling</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/transportation/passenger-travel">Passenger Travel</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/transportation/vehicle-safety-enforcement">Vehicle Safety &amp; Enforcement</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/transportation/funding-engagement-permits">Funding, Engagement &amp; Permits</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/transportation/transportation-infrastructure">Transportation Infrastructure</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/transportation/transportation-reports-and-reference">Transportation Reports &amp; Reference</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/transportation/transportation-environment">Transportation &amp; the Environment</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+									</li><!-- Output subtheme navigation links only if this is a theme page or deeper -->
+
+
+
+
+									<li class="hassub clearfix public">
+										<a href="http://www2.gov.bc.ca/gov/content/safety">Public Safety &amp; Emergency Services</a>
+
+
+											<div class="Public Safety &amp; Emergency Services issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_publicsafety.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_520" method="get" name="menu_suggestion_form_520">
+												<input aria-label="Search theme_6_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 520)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_6_collection</span> <span class="client">theme_6_frontend</span> <input name="id" value="80CC1FB1480D4F59B28322CBE2927585" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_520" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Public Safety &amp; Emergency Services</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_B1756B8E482543338B861392B8615439">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/safety/public-safety">Public Safety</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/safety/crime-prevention">Crime Prevention</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/safety/emergency-preparedness-response-recovery">Emergency Preparedness, Response &amp; Recovery</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/safety/wildfire-status">Wildfire Status</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+
+
+										<div class="mobile-menu-search issub">
+											<div class="homepage-tile">
+												<div class="tile-content">
+													<span class="tile-search"></span>
+													<div class="tile-search-flyout">
+														<form action="/gov/search" id="mobile_menu_search_form_520" method="get" name="mobile_menu_search_form_520">
+															<input aria-label="Search default_collection" autocomplete="off" class="mobile-menu-searchbox placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 520)" type="text">
+															<div class="hiddenVals" style="display:none">
+																<span class="site">theme_6_collection</span> <span class="client">theme_6_frontend</span> <input name="id" value="80CC1FB1480D4F59B28322CBE2927585" type="hidden">
+															</div>
+														</form>
+													</div>
+												</div>
+												<table class="ss-gac-m" id="mobile_menu_search_suggest_520" style="visibility: hidden;"></table>
+											</div>
+										</div><span class="level-trigger"></span>
+										
+
+										<div class="Public Safety &amp; Emergency Services issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_publicsafety.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_520" method="get" name="menu_suggestion_form_520">
+												<input aria-label="Search theme_6_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 520)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_6_collection</span> <span class="client">theme_6_frontend</span> <input name="id" value="80CC1FB1480D4F59B28322CBE2927585" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_520" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Public Safety &amp; Emergency Services</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_B1756B8E482543338B861392B8615439">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/safety/public-safety">Public Safety</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/safety/crime-prevention">Crime Prevention</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/safety/emergency-preparedness-response-recovery">Emergency Preparedness, Response &amp; Recovery</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/safety/wildfire-status">Wildfire Status</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+									</li><!-- Output subtheme navigation links only if this is a theme page or deeper -->
+
+
+
+									<li class="hassub clearfix law">
+										<a href="http://www2.gov.bc.ca/gov/content/justice">Law, Crime &amp; Justice</a>
+										
+											<div class="Law, Crime &amp; Justice issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_lawcrime.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_532" method="get" name="menu_suggestion_form_532">
+												<input aria-label="Search theme_7_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 532)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_7_collection</span> <span class="client">theme_7_frontend</span> <input name="id" value="2C2D870D983944B5B7EE026C36963D11" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_532" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Law, Crime &amp; Justice</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_24EEB3C6DAAE49B5AA4EB916CF5C930F">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/justice/about-bcs-justice-system">About B.C.'s Justice System</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/justice/criminal-justice">Criminal Justice</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/justice/human-rights">Human Rights</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/justice/courthouse-services">Courthouse Services</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/justice/for-legal-professionals">For Legal Professionals</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+
+										<div class="mobile-menu-search issub">
+											<div class="homepage-tile">
+												<div class="tile-content">
+													<span class="tile-search"></span>
+													<div class="tile-search-flyout">
+														<form action="/gov/search" id="mobile_menu_search_form_532" method="get" name="mobile_menu_search_form_532">
+															<input aria-label="Search default_collection" autocomplete="off" class="mobile-menu-searchbox placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 532)" type="text">
+															<div class="hiddenVals" style="display:none">
+																<span class="site">theme_7_collection</span> <span class="client">theme_7_frontend</span> <input name="id" value="2C2D870D983944B5B7EE026C36963D11" type="hidden">
+															</div>
+														</form>
+													</div>
+												</div>
+												<table class="ss-gac-m" id="mobile_menu_search_suggest_532" style="visibility: hidden;"></table>
+											</div>
+										</div><span class="level-trigger"></span>
+
+
+
+										<div class="Law, Crime &amp; Justice issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_lawcrime.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_532" method="get" name="menu_suggestion_form_532">
+												<input aria-label="Search theme_7_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 532)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_7_collection</span> <span class="client">theme_7_frontend</span> <input name="id" value="2C2D870D983944B5B7EE026C36963D11" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_532" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Law, Crime &amp; Justice</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_24EEB3C6DAAE49B5AA4EB916CF5C930F">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/justice/about-bcs-justice-system">About B.C.'s Justice System</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/justice/criminal-justice">Criminal Justice</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/justice/human-rights">Human Rights</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/justice/courthouse-services">Courthouse Services</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/justice/for-legal-professionals">For Legal Professionals</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+									</li><!-- Output subtheme navigation links only if this is a theme page or deeper -->
+
+
+									<li class="hassub clearfix taxes">
+										<a href="http://www2.gov.bc.ca/gov/content/taxes">Taxes &amp; Tax Credits</a>
+
+										<div class="Taxes &amp; Tax Credits issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_taxes.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_536" method="get" name="menu_suggestion_form_536">
+												<input aria-label="Search theme_8_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 536)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_8_collection</span> <span class="client">theme_8_frontend</span> <input name="id" value="364A046E32874A31B702AC4357032A64" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_536" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Taxes &amp; Tax Credits</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_32D3378678624AF8A905FEE82427C82F">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/taxes/sales-taxes">Sales Taxes</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/taxes/income-taxes">Income Taxes</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/taxes/property-taxes">Property Taxes</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/taxes/natural-resource-taxes">Natural Resource Taxes</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/taxes/insurance-taxes">Insurance Taxes</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/taxes/audit-ruling-appeal">Tax Audits, Rulings &amp; Appeals</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/taxes/etaxbc">Using eTaxBC Online Services</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+
+
+										<div class="mobile-menu-search issub">
+											<div class="homepage-tile">
+												<div class="tile-content">
+													<span class="tile-search"></span>
+													<div class="tile-search-flyout">
+														<form action="/gov/search" id="mobile_menu_search_form_536" method="get" name="mobile_menu_search_form_536">
+															<input aria-label="Search default_collection" autocomplete="off" class="mobile-menu-searchbox placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 536)" type="text">
+															<div class="hiddenVals" style="display:none">
+																<span class="site">theme_8_collection</span> <span class="client">theme_8_frontend</span> <input name="id" value="364A046E32874A31B702AC4357032A64" type="hidden">
+															</div>
+														</form>
+													</div>
+												</div>
+												<table class="ss-gac-m" id="mobile_menu_search_suggest_536" style="visibility: hidden;"></table>
+											</div>
+										</div><span class="level-trigger"></span>
+
+
+
+										<div class="Taxes &amp; Tax Credits issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_taxes.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_536" method="get" name="menu_suggestion_form_536">
+												<input aria-label="Search theme_8_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 536)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_8_collection</span> <span class="client">theme_8_frontend</span> <input name="id" value="364A046E32874A31B702AC4357032A64" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_536" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Taxes &amp; Tax Credits</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_32D3378678624AF8A905FEE82427C82F">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/taxes/sales-taxes">Sales Taxes</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/taxes/income-taxes">Income Taxes</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/taxes/property-taxes">Property Taxes</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/taxes/natural-resource-taxes">Natural Resource Taxes</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/taxes/insurance-taxes">Insurance Taxes</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/taxes/audit-ruling-appeal">Tax Audits, Rulings &amp; Appeals</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/taxes/etaxbc">Using eTaxBC Online Services</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+
+
+									</li><!-- Output subtheme navigation links only if this is a theme page or deeper -->
+
+									<li class="hassub clearfix housing">
+										<a href="http://www2.gov.bc.ca/gov/content/housing-tenancy">Housing &amp; Tenancy</a>
+
+<div class="Housing &amp; Tenancy issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_housing.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_541" method="get" name="menu_suggestion_form_541">
+												<input aria-label="Search theme_9_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 541)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_9_collection</span> <span class="client">theme_9_frontend</span> <input name="id" value="B2F6526DAAF848A5A45CED4CF8B44509" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_541" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Housing &amp; Tenancy</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_981982BEA20341FB81B611675492A653">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies">Residential Tenancies</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/housing-tenancy/strata-housing">Strata Housing</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/housing-tenancy/owning-a-home">Owning a Home</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/housing-tenancy/seniors-housing">Seniors Housing</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/housing-tenancy/social-housing">Social Housing</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/housing-tenancy/local-governments">Local Governments</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/housing-tenancy/building-or-renovating">Building or Renovating</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/housing-tenancy/buying-and-selling">Buying &amp; Selling</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+
+
+										<div class="mobile-menu-search issub">
+											<div class="homepage-tile">
+												<div class="tile-content">
+													<span class="tile-search"></span>
+													<div class="tile-search-flyout">
+														<form action="/gov/search" id="mobile_menu_search_form_541" method="get" name="mobile_menu_search_form_541">
+															<input aria-label="Search default_collection" autocomplete="off" class="mobile-menu-searchbox placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 541)" type="text">
+															<div class="hiddenVals" style="display:none">
+																<span class="site">theme_9_collection</span> <span class="client">theme_9_frontend</span> <input name="id" value="B2F6526DAAF848A5A45CED4CF8B44509" type="hidden">
+															</div>
+														</form>
+													</div>
+												</div>
+												<table class="ss-gac-m" id="mobile_menu_search_suggest_541" style="visibility: hidden;"></table>
+											</div>
+										</div><span class="level-trigger"></span>
+
+
+
+										<div class="Housing &amp; Tenancy issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_housing.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_541" method="get" name="menu_suggestion_form_541">
+												<input aria-label="Search theme_9_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 541)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_9_collection</span> <span class="client">theme_9_frontend</span> <input name="id" value="B2F6526DAAF848A5A45CED4CF8B44509" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_541" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Housing &amp; Tenancy</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_981982BEA20341FB81B611675492A653">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancies">Residential Tenancies</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/housing-tenancy/strata-housing">Strata Housing</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/housing-tenancy/owning-a-home">Owning a Home</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/housing-tenancy/seniors-housing">Seniors Housing</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/housing-tenancy/social-housing">Social Housing</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/housing-tenancy/local-governments">Local Governments</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/housing-tenancy/building-or-renovating">Building or Renovating</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/housing-tenancy/buying-and-selling">Buying &amp; Selling</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+									</li><!-- Output subtheme navigation links only if this is a theme page or deeper -->
+
+
+
+									<li class="hassub clearfix sports">
+										<a href="http://www2.gov.bc.ca/gov/content/sports-culture">Sports, Recreation, Arts &amp; Culture</a>
+
+	<div class="Sports, Recreation, Arts &amp; Culture issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_sportsrec.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_543" method="get" name="menu_suggestion_form_543">
+												<input aria-label="Search theme_10_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 543)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_10_collection</span> <span class="client">theme_10_frontend</span> <input name="id" value="3610728B0FC142458338578D37774BE8" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_543" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Sports, Recreation, Arts &amp; Culture</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_7E0910AE24054217AFE2E62D117A2687">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/sports-culture/sports">Sports</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/sports-culture/recreation">Recreation</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/sports-culture/arts-culture">Arts &amp; Culture</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/sports-culture/events-hosting">Event Hosting</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/sports-culture/gambling-fundraising">Gambling &amp; Fundraising</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+
+
+										<div class="mobile-menu-search issub">
+											<div class="homepage-tile">
+												<div class="tile-content">
+													<span class="tile-search"></span>
+													<div class="tile-search-flyout">
+														<form action="/gov/search" id="mobile_menu_search_form_543" method="get" name="mobile_menu_search_form_543">
+															<input aria-label="Search default_collection" autocomplete="off" class="mobile-menu-searchbox placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 543)" type="text">
+															<div class="hiddenVals" style="display:none">
+																<span class="site">theme_10_collection</span> <span class="client">theme_10_frontend</span> <input name="id" value="3610728B0FC142458338578D37774BE8" type="hidden">
+															</div>
+														</form>
+													</div>
+												</div>
+												<table class="ss-gac-m" id="mobile_menu_search_suggest_543" style="visibility: hidden;"></table>
+											</div>
+										</div><span class="level-trigger"></span>
+
+
+
+										<div class="Sports, Recreation, Arts &amp; Culture issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_sportsrec.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_543" method="get" name="menu_suggestion_form_543">
+												<input aria-label="Search theme_10_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 543)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_10_collection</span> <span class="client">theme_10_frontend</span> <input name="id" value="3610728B0FC142458338578D37774BE8" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_543" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Sports, Recreation, Arts &amp; Culture</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_7E0910AE24054217AFE2E62D117A2687">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/sports-culture/sports">Sports</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/sports-culture/recreation">Recreation</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/sports-culture/arts-culture">Arts &amp; Culture</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/sports-culture/events-hosting">Event Hosting</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/sports-culture/gambling-fundraising">Gambling &amp; Fundraising</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+									</li><!-- Output subtheme navigation links only if this is a theme page or deeper -->
+
+
+									<li class="hassub clearfix environmental">
+										<a href="http://www2.gov.bc.ca/gov/content/environment">Environmental Protection &amp; Sustainability</a>
+
+											<div class="Environmental Protection &amp; Sustainability issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_environment.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_553" method="get" name="menu_suggestion_form_553">
+												<input aria-label="Search theme_11_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 553)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_11_collection</span> <span class="client">theme_11_frontend</span> <input name="id" value="CC87D3202359407F8A5C1DBEADC22A0F" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_553" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Environmental Protection &amp; Sustainability</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_8C53E2851B294D8AA18340E4C6A54D7D">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/environment/climate-change">Climate Change</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/environment/pesticides-pest-management">Pesticides &amp; Pest Management</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems">Plants, Animals &amp; Ecosystems</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/environment/waste-management">Waste Management</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/environment/air-land-water">Air, Land &amp; Water</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/environment/research-monitoring-reporting">Research, Monitoring &amp; Reporting</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/environment/natural-resource-stewardship">Natural Resource Stewardship</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+
+
+										<div class="mobile-menu-search issub">
+											<div class="homepage-tile">
+												<div class="tile-content">
+													<span class="tile-search"></span>
+													<div class="tile-search-flyout">
+														<form action="/gov/search" id="mobile_menu_search_form_553" method="get" name="mobile_menu_search_form_553">
+															<input aria-label="Search default_collection" autocomplete="off" class="mobile-menu-searchbox placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 553)" type="text">
+															<div class="hiddenVals" style="display:none">
+																<span class="site">theme_11_collection</span> <span class="client">theme_11_frontend</span> <input name="id" value="CC87D3202359407F8A5C1DBEADC22A0F" type="hidden">
+															</div>
+														</form>
+													</div>
+												</div>
+												<table class="ss-gac-m" id="mobile_menu_search_suggest_553" style="visibility: hidden;"></table>
+											</div>
+										</div><span class="level-trigger"></span>
+
+
+
+										<div class="Environmental Protection &amp; Sustainability issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_environment.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_553" method="get" name="menu_suggestion_form_553">
+												<input aria-label="Search theme_11_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 553)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_11_collection</span> <span class="client">theme_11_frontend</span> <input name="id" value="CC87D3202359407F8A5C1DBEADC22A0F" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_553" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Environmental Protection &amp; Sustainability</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_8C53E2851B294D8AA18340E4C6A54D7D">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/environment/climate-change">Climate Change</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/environment/pesticides-pest-management">Pesticides &amp; Pest Management</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems">Plants, Animals &amp; Ecosystems</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/environment/waste-management">Waste Management</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/environment/air-land-water">Air, Land &amp; Water</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/environment/research-monitoring-reporting">Research, Monitoring &amp; Reporting</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/environment/natural-resource-stewardship">Natural Resource Stewardship</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+									</li><!-- Output subtheme navigation links only if this is a theme page or deeper -->
+
+
+									<li class="hassub clearfix farming">
+										<a href="http://www2.gov.bc.ca/gov/content/industry">Farming, Natural Resources &amp; Industry</a>
+
+
+										<div class="Farming, Natural Resources &amp; Industry issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_farmingindustry.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_555" method="get" name="menu_suggestion_form_555">
+												<input aria-label="Search theme_12_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 555)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_12_collection</span> <span class="client">theme_12_frontend</span> <input name="id" value="EA290C5F07E04D849502A930F680EA7F" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_555" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Farming, Natural Resources &amp; Industry</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_A389E49687F74532A306249A234EDF29">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/industry/agriculture-seafood">Agriculture &amp; Seafood</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/industry/construction-industry">Construction Industry</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/industry/electricity-alternative-energy">Electricity &amp; Alternative Energy</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/industry/forestry">Forestry</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining">Mineral Exploration &amp; Mining</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/industry/natural-gas-oil">Natural Gas &amp; Oil</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/industry/natural-resource-use">Natural Resource Use</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+
+
+										<div class="mobile-menu-search issub">
+											<div class="homepage-tile">
+												<div class="tile-content">
+													<span class="tile-search"></span>
+													<div class="tile-search-flyout">
+														<form action="/gov/search" id="mobile_menu_search_form_555" method="get" name="mobile_menu_search_form_555">
+															<input aria-label="Search default_collection" autocomplete="off" class="mobile-menu-searchbox placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 555)" type="text">
+															<div class="hiddenVals" style="display:none">
+																<span class="site">theme_12_collection</span> <span class="client">theme_12_frontend</span> <input name="id" value="EA290C5F07E04D849502A930F680EA7F" type="hidden">
+															</div>
+														</form>
+													</div>
+												</div>
+												<table class="ss-gac-m" id="mobile_menu_search_suggest_555" style="visibility: hidden;"></table>
+											</div>
+										</div><span class="level-trigger"></span>
+										
+
+										<div class="Farming, Natural Resources &amp; Industry issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_farmingindustry.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_555" method="get" name="menu_suggestion_form_555">
+												<input aria-label="Search theme_12_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 555)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_12_collection</span> <span class="client">theme_12_frontend</span> <input name="id" value="EA290C5F07E04D849502A930F680EA7F" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_555" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Farming, Natural Resources &amp; Industry</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_A389E49687F74532A306249A234EDF29">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/industry/agriculture-seafood">Agriculture &amp; Seafood</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/industry/construction-industry">Construction Industry</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/industry/electricity-alternative-energy">Electricity &amp; Alternative Energy</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/industry/forestry">Forestry</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining">Mineral Exploration &amp; Mining</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/industry/natural-gas-oil">Natural Gas &amp; Oil</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/industry/natural-resource-use">Natural Resource Use</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+									</li><!-- Output subtheme navigation links only if this is a theme page or deeper -->
+
+
+
+									<li class="hassub clearfix employment">
+										<a href="http://www2.gov.bc.ca/gov/content/employment-business">Employment, Business &amp; Economic Development</a>
+										
+											<div class="Employment, Business &amp; Economic Development issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_employment.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_557" method="get" name="menu_suggestion_form_557">
+												<input aria-label="Search theme_13_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 557)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_13_collection</span> <span class="client">theme_13_frontend</span> <input name="id" value="2F755F92ED224D02AD29E2EDA5EA0328" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_557" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Employment, Business &amp; Economic Development</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_820A75B4A1AF426C9450E4ADF0D1D783">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/employment-business/business">Business</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/employment-business/job-seekers-employees">Job Seekers &amp; Employees</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/employment-business/employers">Employers</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice">Employment Standards &amp; Workplace Safety</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/employment-business/economic-development">Economic Development</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/employment-business/international-investment-and-trade">International Investment &amp; Trade</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/employment-business/investment-capital">Investment Capital</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+
+
+										<div class="mobile-menu-search issub">
+											<div class="homepage-tile">
+												<div class="tile-content">
+													<span class="tile-search"></span>
+													<div class="tile-search-flyout">
+														<form action="/gov/search" id="mobile_menu_search_form_557" method="get" name="mobile_menu_search_form_557">
+															<input aria-label="Search default_collection" autocomplete="off" class="mobile-menu-searchbox placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 557)" type="text">
+															<div class="hiddenVals" style="display:none">
+																<span class="site">theme_13_collection</span> <span class="client">theme_13_frontend</span> <input name="id" value="2F755F92ED224D02AD29E2EDA5EA0328" type="hidden">
+															</div>
+														</form>
+													</div>
+												</div>
+												<table class="ss-gac-m" id="mobile_menu_search_suggest_557" style="visibility: hidden;"></table>
+											</div>
+										</div><span class="level-trigger"></span>
+
+
+										<div class="Employment, Business &amp; Economic Development issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_employment.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_557" method="get" name="menu_suggestion_form_557">
+												<input aria-label="Search theme_13_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 557)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_13_collection</span> <span class="client">theme_13_frontend</span> <input name="id" value="2F755F92ED224D02AD29E2EDA5EA0328" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_557" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Employment, Business &amp; Economic Development</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_820A75B4A1AF426C9450E4ADF0D1D783">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/employment-business/business">Business</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/employment-business/job-seekers-employees">Job Seekers &amp; Employees</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/employment-business/employers">Employers</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice">Employment Standards &amp; Workplace Safety</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/employment-business/economic-development">Economic Development</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/employment-business/international-investment-and-trade">International Investment &amp; Trade</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/employment-business/investment-capital">Investment Capital</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+									</li><!-- Output subtheme navigation links only if this is a theme page or deeper -->
+
+
+									<li class="hassub clearfix tourism">
+										<a href="http://www2.gov.bc.ca/gov/content/tourism-immigration">Tourism &amp; Immigration</a>
+									
+									<div class="Tourism &amp; Immigration issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_tourism.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_562" method="get" name="menu_suggestion_form_562">
+												<input aria-label="Search theme_14_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 562)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_14_collection</span> <span class="client">theme_14_frontend</span> <input name="id" value="9DF0542A58C34D15829D07C5CD4286AC" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_562" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Tourism &amp; Immigration</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_D6E183CFBFED46B282F80342BA3F69D0">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/tourism-immigration/immigrating-to-bc">Immigrating to B.C.</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/tourism-immigration/new-residents">New Residents</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/tourism-immigration/travel">Travelling in B.C.</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/tourism-immigration/tourism-resources">Tourism Resources</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+
+
+										<div class="mobile-menu-search issub">
+											<div class="homepage-tile">
+												<div class="tile-content">
+													<span class="tile-search"></span>
+													<div class="tile-search-flyout">
+														<form action="/gov/search" id="mobile_menu_search_form_562" method="get" name="mobile_menu_search_form_562">
+															<input aria-label="Search default_collection" autocomplete="off" class="mobile-menu-searchbox placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 562)" type="text">
+															<div class="hiddenVals" style="display:none">
+																<span class="site">theme_14_collection</span> <span class="client">theme_14_frontend</span> <input name="id" value="9DF0542A58C34D15829D07C5CD4286AC" type="hidden">
+															</div>
+														</form>
+													</div>
+												</div>
+												<table class="ss-gac-m" id="mobile_menu_search_suggest_562" style="visibility: hidden;"></table>
+											</div>
+										</div><span class="level-trigger"></span>
+
+
+										<div class="Tourism &amp; Immigration issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_tourism.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_562" method="get" name="menu_suggestion_form_562">
+												<input aria-label="Search theme_14_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 562)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_14_collection</span> <span class="client">theme_14_frontend</span> <input name="id" value="9DF0542A58C34D15829D07C5CD4286AC" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_562" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Tourism &amp; Immigration</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_D6E183CFBFED46B282F80342BA3F69D0">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/tourism-immigration/immigrating-to-bc">Immigrating to B.C.</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/tourism-immigration/new-residents">New Residents</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/tourism-immigration/travel">Travelling in B.C.</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/tourism-immigration/tourism-resources">Tourism Resources</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+									</li><!-- Output subtheme navigation links only if this is a theme page or deeper -->
+
+
+
+									<li class="hassub clearfix family">
+										<a href="http://www2.gov.bc.ca/gov/content/family-social-supports">Family &amp; Social Supports</a>
+										
+
+										<div class="Family &amp; Social Supports issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_familysocial.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_569" method="get" name="menu_suggestion_form_569">
+												<input aria-label="Search theme_15_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 569)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_15_collection</span> <span class="client">theme_15_frontend</span> <input name="id" value="C2674D9D2EE3408FBE2D43FAD6893DBD" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_569" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Family &amp; Social Supports</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_FD488413D1B74C5B931B2F6B0E00C61D">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/family-social-supports/seniors">Seniors</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/family-social-supports/income-assistance">Income Assistance</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/family-social-supports/services-for-people-with-disabilities">Services for People with Disabilities</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children">Caring for Young Children</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/family-social-supports/fostering">Fostering</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/family-social-supports/youth-and-family-services">Youth &amp; Family Services</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/family-social-supports/data-monitoring-quality-assurance">Data, Monitoring &amp; Quality Assurance</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+
+
+
+										<div class="mobile-menu-search issub">
+											<div class="homepage-tile">
+												<div class="tile-content">
+													<span class="tile-search"></span>
+													<div class="tile-search-flyout">
+														<form action="/gov/search" id="mobile_menu_search_form_569" method="get" name="mobile_menu_search_form_569">
+															<input aria-label="Search default_collection" autocomplete="off" class="mobile-menu-searchbox placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 569)" type="text">
+															<div class="hiddenVals" style="display:none">
+																<span class="site">theme_15_collection</span> <span class="client">theme_15_frontend</span> <input name="id" value="C2674D9D2EE3408FBE2D43FAD6893DBD" type="hidden">
+															</div>
+														</form>
+													</div>
+												</div>
+												<table class="ss-gac-m" id="mobile_menu_search_suggest_569" style="visibility: hidden;"></table>
+											</div>
+										</div><span class="level-trigger"></span>
+										
+
+										<div class="Family &amp; Social Supports issub" style="background-image:url('/custom/themes/customer_front_end/images/thememenu_familysocial.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_569" method="get" name="menu_suggestion_form_569">
+												<input aria-label="Search theme_15_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 569)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">theme_15_collection</span> <span class="client">theme_15_frontend</span> <input name="id" value="C2674D9D2EE3408FBE2D43FAD6893DBD" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_569" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Family &amp; Social Supports</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_FD488413D1B74C5B931B2F6B0E00C61D">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/family-social-supports/seniors">Seniors</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/family-social-supports/income-assistance">Income Assistance</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/family-social-supports/services-for-people-with-disabilities">Services for People with Disabilities</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children">Caring for Young Children</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/family-social-supports/fostering">Fostering</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/family-social-supports/youth-and-family-services">Youth &amp; Family Services</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/family-social-supports/data-monitoring-quality-assurance">Data, Monitoring &amp; Quality Assurance</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+									</li><!-- Output subtheme navigation links only if this is a theme page or deeper -->
+
+
+
+									<li class="hassub clearfix data">
+										<a href="http://www2.gov.bc.ca/gov/content/data">Data</a>
+									
+
+	<div class="Data issub" style="background-image:url('/custom/themes/customer_front_end/images/33B415908F1A46C08EC267887CC2501D.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_600" method="get" name="menu_suggestion_form_600">
+												<input aria-label="Search default_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 600)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">default_collection</span> <span class="client">data_frontend</span> <input name="id" value="3BABFFCCDAC74CDDBB56C987DDF4AD04" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_600" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Data</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_1AE507FCE6A943199E9D2F8A7748B2B5">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/data/bc-data-catalogue">B.C. Data Catalogue</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/data/statistics">Statistics</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/data/geographic-data-services">Geographic Data</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/data/open-data">Open Data</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/data/about-data-management">Data Management in B.C.</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+
+										
+
+										<div class="mobile-menu-search issub">
+											<div class="homepage-tile">
+												<div class="tile-content">
+													<span class="tile-search"></span>
+													<div class="tile-search-flyout">
+														<form action="/gov/search" id="mobile_menu_search_form_600" method="get" name="mobile_menu_search_form_600">
+															<input aria-label="Search default_collection" autocomplete="off" class="mobile-menu-searchbox placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 600)" type="text">
+															<div class="hiddenVals" style="display:none">
+																<span class="site">default_collection</span> <span class="client">data_frontend</span> <input name="id" value="3BABFFCCDAC74CDDBB56C987DDF4AD04" type="hidden">
+															</div>
+														</form>
+													</div>
+												</div>
+												<table class="ss-gac-m" id="mobile_menu_search_suggest_600" style="visibility: hidden;"></table>
+											</div>
+										</div><span class="level-trigger"></span>
+
+
+										<div class="Data issub" style="background-image:url('/custom/themes/customer_front_end/images/33B415908F1A46C08EC267887CC2501D.png')">
+											<form action="/gov/search" class="menu_suggestion_form" id="menu_suggestion_form_600" method="get" name="menu_suggestion_form_600">
+												<input aria-label="Search default_collection" autocomplete="off" class="searchbox menu-searchbox form-control placeholder" name="q" onkeyup="searchBoxKeypress(event, 50, 600)" type="text">
+												<div class="search-trigger"></div>
+												<div class="hiddenVals" style="display:none">
+													<span class="site">default_collection</span> <span class="client">data_frontend</span> <input name="id" value="3BABFFCCDAC74CDDBB56C987DDF4AD04" type="hidden">
+												</div>
+												<table class="ss-gac-m" id="menu_search_suggest_600" style="visibility: hidden;"></table>
+											</form>
+											<h2 class="hidden-xs">Data</h2>
+											<ul class="secondLevel childMenu nav navbar-nav" id="child_1AE507FCE6A943199E9D2F8A7748B2B5">
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/data/bc-data-catalogue">B.C. Data Catalogue</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/data/statistics">Statistics</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/data/geographic-data-services">Geographic Data</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/data/open-data">Open Data</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+												<li>
+													<a href="http://www2.gov.bc.ca/gov/content/data/about-data-management">Data Management in B.C.</a> <span class="no-trigger visible-xs-block"></span>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				
+				<!-- <div class="col-sm-8 col-md-7 col-lg-6 header-main-right col-sm-push-4 col-md-push-5 col-lg-push-6"> -->
+				<div class="d-flex justify-content-end col">
+					<div id="header-links" role="navigation">
+						<ul class="inline nav navbar-nav">
+							<li data-order="0" id="replicantData_90ACCB09540A4FF3B65B5B52EA115802">
+								<a href="http://www2.gov.bc.ca/gov/content/careers-myhr" target="_self">Careers &amp; MyHR</a>
+							</li>
+							<li data-order="1" id="replicantData_C55AC040D74F4A51A47D75BDB2371256">
+								<a href="http://www2.gov.bc.ca/gov/content/home/services-a-z" target="_self">Services A-Z</a>
+							</li>
+							<li data-order="2" id="replicantData_0198598E0CB947648ED30C3CF56C9951">
+								<a href="http://www2.gov.bc.ca/gov/content/home/organizations-a-z" target="_self">Organizations A-Z</a>
+							</li>
+							<li data-order="3" id="replicantData_451F364B8E104B39B2D0B7802832168D">
+								<a href="http://www2.gov.bc.ca/gov/content/home/forms-a-z" target="_self">Forms A-Z</a>
+							</li>
+							<li data-order="4" id="replicantData_57EF1691C18741BF9EF0A99FDFE1D7D6">
+								<a href="https://news.gov.bc.ca/" target="_self">News</a>
+							</li>
+							<li data-order="5" id="replicantData_2A1C50FD421A499C849E8D0CFBCEB1A2">
+								<a href="http://www2.gov.bc.ca/gov/content/home/contact-us" target="_self">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+
+
+				</div>
+			</div>
+			<div class="row navigationRibbon hidden-xs" role="navigation">
+				<div class="level2Navigation">
+					<div class="container">
+						<a class="current" href="http://www2.gov.bc.ca/gov/content/careers-myhr/job-seekers">Job Seekers</a> <a href="http://www2.gov.bc.ca/gov/content/careers-myhr/all-employees">All Employees</a> <a href="http://www2.gov.bc.ca/gov/content/careers-myhr/hiring-managers">Hiring Managers</a> <a href="http://www2.gov.bc.ca/gov/content/careers-myhr/managers-supervisors">Managers &amp; Supervisors</a> <a href="http://www2.gov.bc.ca/gov/content/careers-myhr/forms-tools">Forms &amp; Tools</a> <a href="http://www2.gov.bc.ca/gov/content/careers-myhr/about-the-bc-public-service">About the BC Public Service</a> <a href="http://www2.gov.bc.ca/gov/content/careers-myhr/search">Careers &amp; MyHR Search</a>
+					</div>
+				</div>
+				<div class="level3Navigation">
+					<div class="container">
+						<a href="http://www2.gov.bc.ca/gov/content/careers-myhr/job-seekers/current-job-postings">Current Job Postings</a> <a href="http://www2.gov.bc.ca/gov/content/careers-myhr/job-seekers/featured-careers">Featured Careers</a> <a href="http://www2.gov.bc.ca/gov/content/careers-myhr/job-seekers/internship-co-op-opportunities">Internship &amp; Co-op Opportunities</a> <a href="http://www2.gov.bc.ca/gov/content/careers-myhr/job-seekers/about-competencies">About Competencies</a> <a href="http://www2.gov.bc.ca/gov/content/careers-myhr/job-seekers/application-process">The Application Process</a> <a href="http://www2.gov.bc.ca/gov/content/careers-myhr/job-seekers/what-the-bc-public-service-offers-you">What the BC Public Service Offers You</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<script>
+	   // if there is no level 3 navigation, do not display the blue arrow for the current level 2 nav item
+	   if(jQuery(".level3Navigation a").length == 0) {
+	       jQuery(".level2Navigation a.current").css("background-image", "none");
+	   }
+	</script>
+	 <!-- googleon:all -->
+
+	<div class="template container" id="subthemeTemplate">
+		<!-- googleoff:all -->
+		<div id="breadcrumbContainer" role="navigation">
+			<ol class="breadcrumb">
+				<li>
+					<a href="http://www2.gov.bc.ca/gov/content/home">Home</a>
+				</li>
+				<li>
+					<a href="http://www2.gov.bc.ca/gov/content/careers-myhr">Careers &amp; MyHR</a>
+				</li>
+			</ol>
+		</div><a id="main-content-anchor"></a> <!-- googleon:all -->
+		<div class="row" lang="en">
+			<div class="contentPageMainColumn keywordHighlight col-md-12" id="main-content" role="main">
+<!--TALENT ATS HERE-->
+
+<div id="hrdesign-area">
+<!--client_top file-->
+						<div id="ats_content" class="container"><!--wrapping the content of the page for the external portal to help cdev's define styles specific to ATS content-->
+		
+			<a href="#hua_desktop" id="jump_to_content" class="visually-hidden-focusable mar-lft h3">Jump to main content</a>
+
+			<div id="safari_fix" class="master_top_safari_fix"><span id="safari_alert"></span><span id="safari_notice">Attention Safari users: This site requires cookies to function. Please click <a href="#" onclick="openATS() ;">here</a> to accept the cookie. Cookies will be used strictly for the functioning of the site.</span></div>
+<div id="hua_wrapper" class="notLoggedIn"> 	<div class="container-fluid container-header row">
+				<div id="company_logo" class="col-lg-8 col-md-8 col-sm-8 col-xs-7"><img src="https://bcpublicservice.hua.hrsmart.com/custom/themes/customer_front_end/images/social-media-logo.jpg" alt="BCPublicService"></div>
+		        <div class="container-fluid col-lg-4 col-md-4 col-sm-4 col-xs-5 text-right ">
+            <!-- CALENDAR/NOTIFICATION/SEARCH/USER-ICON -->
+        <div class="order-3 dual-collapse2" id="hua_utility_menu_bar">
+            <ul class="nav" id="mini-nav">
+                                                                                                            </ul>
+                                </div>
+</div>
+
+<script>
+    (function () {
+        jQuery('#mini-nav > li[data-bs-toggle="tooltip"]').each(function () {
+            const el = bootstrap.Tooltip.getOrCreateInstance(jQuery(this), {
+                trigger: 'hover',
+                placement: 'bottom',
+                delay: {"show": 400, "hide": 0}
+            });
+
+            jQuery(this)
+                .click(() => {
+                    let dropdownElem = jQuery(this).children('ul');
+                    // remove hover when we are hovering the dropdown-menu
+                    dropdownElem.mouseenter(function() {
+                        el.hide();
+                        el.disable();
+                    });
+                    el.hide();
+                    el.disable()
+                })
+                .mouseleave(() => el.enable());
+        });
+    }());
+
+	if(typeof dtmTheme !== "undefined") {
+		dtmTheme.getTheme();
+	}
+
+	jQuery('.dropdown-menu #theme-color, .dropdown-menu #theme-mode').on({ "click":function(e){
+      	e.stopPropagation();
+	}});
+
+	function hideDropdown()
+	{
+		jQuery(".dropend > .dropdown-menu.show").dropdown("hide");
+	}
+
+	function alterDropdownPosition()
+	{
+		var themePosition = jQuery('.dropend > a.dropdown-item.dropdown-toggle.dropdown-arrow').offset().top - 52;
+
+		jQuery('.dropend > .dropdown-menu').css({"top":"-"+themePosition+"px"});
+		jQuery('.dropend > .dropdown-menu').css({"width":""});
+	}
+
+</script>
+
+	    </div>
+
+	<div class="display-table">
+		<div id="navmenu-left" class=" notLoggedIn">
+				<!-- BEGIN the MENU //-->
+						</div>
+		<!-- ** End of the Header -->
+                        
+        
+        
+    <script>
+    if(jQuery('#language-select').length){
+       jQuery('#mini-nav #language-select>a.dropdown-toggle').on('keydown', function(e){
+         if (jQuery('#language-select').hasClass('open')) {
+            jQuery('#language-dropdown').toggleClass('isOpen');
+            if (jQuery('#language-dropdown').hasClass('isOpen')) {
+             jQuery('#language-dropdown li.active a').focus();
+          }
+          }
+      });
+    }
+     </script>
+    
+    <div class="container container-jobs" id="nav-wrapper">
+        <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation" id="topmenu">
+            <div class="">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#topmenu-collapse">
+                    <span class="visually-hidden">Toggle navigation</span>
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="topmenu-collapse">
+                <ul class="nav navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                        <a class="nav-link" href="/hr/ats/JobSearch/index"><span class="fas fa-search"></span> Job Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/hr/ats/JobSearch/viewAll"><span class="fas fa-briefcase"></span> View All Jobs</a>
+                    </li>
+                                                                                                                                                                
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                                                                    <li class="nav-item">
+                            <a class="nav-link" href="/hr/ats/JobSeeker/createAccount"><span class="fas fa-plus"></span> Create Account</a>
+                        </li>
+                                            <li class="nav-item">
+                        <a class="nav-link" href="/"><span class="fas fa-user"></span> Log in</a>
+                    </li>
+                    
+					                    <li class="dropdown dropdown-right nav-item">
+                        <a href="#" class="dropdown-toggle helpMenuItem nav-link" data-bs-toggle="dropdown"><span class="far fa-question-circle"></span> Help <b class="caret"></b></a>
+                        <ul class="dropdown-menu with-arrow" role="menu">
+                            <li class="nav-item"><a class="nav-link" href="#" onclick="window.open( '/help_core.php?noheader=1&amp;page=/ats/JobSearch/search&amp;title=', 'smarty_dialog_1', 'width=600,height=550,resizable=yes,scrollbars=yes,statusbar=0,locationbar=0,menubar=0,personalbar=0,toolbar=0');" title="Help on this Page">Help on this Page</a></li>
+                                                    </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+        
+					<div id="successOrFail" class="alert-float-container" aria-live="polite">
+								
+
+<script type="text/javascript">
+	var success_txt = "<i class=\"fas fa-check\"></i> <strong>Success:</strong> ";
+	var failed_txt = "<i class=\"fas fa-exclamation-triangle\"></i> <strong>Error:</strong> ";
+	var remove_alert_timeout = 0;
+
+	
+        var checkDownloadFile = "/hr/hua/Attachments/checkDownloadAttachment";
+        var alertFileMissing = "File no longer exists. Please refresh the page.";
+	function display_success( msg, apply_to_parent )
+	{
+		remove_alert(apply_to_parent, 'success');
+		remove_alert(apply_to_parent, 'failed');
+
+		display_alert( msg, 'success', apply_to_parent );
+		if (apply_to_parent)
+		// {
+		// 	opener.set_remove_alert_timer();
+		// }
+		// else
+		// {
+		// 	set_remove_alert_timer();
+		// }
+		window.scrollTo(0,0);
+	}
+
+	function display_failed( msg, apply_to_parent )
+	{
+		remove_alert(apply_to_parent, 'failed');
+
+		display_alert( msg, 'failed', apply_to_parent );
+		window.scrollTo(0,0);
+	}
+
+	function set_remove_alert_timer(uuid)
+	{
+		
+
+		
+				var timeoutLength = 4000;
+
+
+		
+
+		if (uuid)
+		{
+			// tfs1974770, areas that can call the ajax function renderAlert will have UUIDs so we can dismiss them individually
+			remove_alert_timeout = setTimeout(function () {
+				if (opener) {
+					opener.jQuery("#" + uuid).parent().remove();
+				} else {
+					jQuery("#" + uuid).parent().remove();
+				}
+			}, timeoutLength);
+		}
+		else
+		{
+			remove_alert_timeout = setTimeout('remove_alert(0,"success")', timeoutLength);
+		}
+
+		window.scrollTo(0,0);
+	}
+
+	function remove_alert(apply_to_parent, alert_type)
+	{
+		var successOrFail = ( opener && apply_to_parent ) ? opener.document.getElementById('successOrFail') : document.getElementById('successOrFail');
+		successOrFail.fixWithIFrame = null;
+
+		if(opener && apply_to_parent)
+		{
+			display_alert('', alert_type, apply_to_parent);
+		}
+		var alertContainer = alert_type+'Container';
+		var element =  ( opener && apply_to_parent ) ? opener.document.getElementById(alertContainer) : document.getElementById(alertContainer);
+
+		if(element)
+		{
+            var pattern = new RegExp(alert_type);
+            if(successOrFail.innerHTML.match(pattern))
+            {
+                successOrFail.removeChild(element);
+          }
+		}
+	}
+
+	function display_alert( msg_txt, msg_type, apply_to_parent )
+	{
+		let alertUUID = "alert_" + crypto.randomUUID();
+
+		jQuery.ajax({
+			url: "/hr/hua/AjaxResponse/renderAlert",
+			method: "POST",
+			data: {
+				"type": msg_type,
+				"text": msg_txt,
+				"uuid": alertUUID
+			},
+			success: function (alertHtml) {
+				if (opener && apply_to_parent)
+				{
+					opener.jQuery("#successOrFail").append(alertHtml);
+					opener.set_remove_alert_timer(alertUUID);
+				}
+				else
+				{
+					jQuery(document).find("#successOrFail").append(alertHtml);
+					set_remove_alert_timer(alertUUID);
+				}
+			},
+			complete: function () {
+				window.scrollTo(0,0);
+			}
+		});
+	}
+
+	
+</script>
+<script type="text/javascript" src="/js_includes/atlas/downloadFileChecker.js"></script>
+<script>
+	
+	(function(){
+		document.getElementsByTagName('iframe').onload = function() {
+			jQuery(window).scrollTop(0);
+		};
+	})();
+	
+
+	</script>
+
+<script>
+	
+	(function() {
+		function debounce(func, wait, immediate) {
+			let timeout;
+			return function() {
+				const context = this;
+				const args = arguments;
+				const later = function() {
+					timeout = null;
+					if (!immediate) func.apply(context, args);
+				};
+				const callNow = immediate && !timeout;
+				clearTimeout(timeout);
+				timeout = setTimeout(later, wait);
+				if (callNow) func.apply(context, args);
+			};
+		}
+
+		jQuery(document).ready(function() {
+			const element = jQuery('.alert-float-container');
+			const offset = element.offset().top;
+
+			setTimeout(() => {
+				element.find('.alert.d-none').removeClass('d-none');
+			}, 400);
+
+			const handleScroll = debounce(function() {
+				const scrollTop = jQuery(window).scrollTop();
+				if (scrollTop > offset) {
+					element.addClass('alert-float-container-fixed');
+				} else {
+					element.removeClass('alert-float-container-fixed');
+				}
+			}, 0);
+
+			jQuery(window).scroll(handleScroll);
+		});
+	})();
+	
+</script>
+
+			</div>
+		
+		<!-- Begin flex sidebar-main-container -->
+		<div id="sidebar-main-container" class="">
+
+					<!--  Begin hua_main page -->
+		<div class="flex-grow-1" id="hua_main_page"> 		<div id="page-index" class="page-body slide-left" data-bs-role="page">
+			<!-- BEGIN HUA_DESKTOP AREA -->
+			<div id="hua_desktop" class="hua_desktop">
+
+																	
+					<script type="text/javascript">
+					function getCookie(c_name)
+					{
+						var i,x,y,ARRcookies=document.cookie.split(";");
+						var hassessioncookie = 0;
+						for (i=0;i<ARRcookies.length;i++)
+						{
+							x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+							y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+							x=x.replace(/^\s+|\s+$/g,"");
+							if (x.indexOf('csrf') !== -1) {
+								hassessioncookie = 1;
+								}
+						}
+						var browser = navigator.userAgent;
+						if (browser.toLowerCase().indexOf('safari') > 0 && browser.toLowerCase().indexOf('chrome') <= 0) {
+							if ((self != top) && hassessioncookie == 0) {
+								document.getElementById("safari_fix").style.display="block";
+								document.getElementById("hua_wrapper").style.opacity="0.5";
+							}
+						}
+					}
+					getCookie(name);
+					function openATS(){
+						var atswin = window.open("/ats/","","width=100, height=100");
+						 function closeIt(){
+							atswin.window.close();
+							//jQuery('#safari_fix').hide();
+							document.getElementById("safari_notice").innerHTML = '<a onclick="location.reload(true);"><strong><span class="text-success">Success: Click Here To <span class="text-lowercase">Refresh</span></span></strong> <i class="fas fa-refresh text-success"></i></a>';
+						}
+					  setTimeout(closeIt, 1000);
+					}
+
+					</script>
+					
+								
+			<div id="app_main_id" class="app_main_id">
+			<!-- Begin actual content -->
+
+
+				
+<script>
+	
+	(function() {
+		if(jQuery.trim(jQuery("h2.pull-left").text()).length == 0){
+			jQuery.trim(jQuery("h2.pull-left").hide());
+			jQuery(".right-inner-addon").addClass("right-inner-addon-margin");
+		}
+	})();
+	
+</script>
+<div class="dtm-main-content container-fluid  notLoggedIn">
+	
+			<div class="row page-header-row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		<h1 class="nowrap">Results</h1>
+	</div>
+    <div class="col-sm-6 col-xs-12"><div class="page-options float-md-end"><a href="/hr/ats/JobSearch/index" class="btn btn-secondary" data-bs-original-title="Search Again">Search Again</a></div></div></div>
+
+<div class="container-fluid">
+	<ul class="nav nav-tabs nav-tabs-wide nav-li-margin job-search-nav">
+                      			<li role="presentation"><a href="/hr/ats/JobSearch/index/searchType:quick">Quick Job Search</a></li>
+									<li role="presentation"><a href="/hr/ats/JobSearch/index/searchType:advanced">Advanced Job Search</a></li>
+									<li class="active" role="presentation"><a href="#">Results</a></li>
+					  	</ul>
+</div>
+
+
+
+
+<div id="shareBox" class="share-search well mar-top pad-all text-center collapse show">
+	<a href="#shareBox" class="close float-end text-decoration-none mr-15" data-bs-toggle="collapse" role="button" title="Close">
+		<span aria-hidden="true">×</span>
+		<span class="visually-hidden">Close</span>
+	</a>
+		<div class="form-group row">
+<label class="control-label col-sm-12 text-center" for="field_textfield_6911135c5bdef">Want to Share This Search?</label><div class="cell_input col-sm-12" id="display_textfield_6911135c5bdef"><div class="form-control-static"><div class="dhtml_editor_render"><span id="search_string_results"><a href="#" id="search_string_anchor">Click Here</a></span></div></div></div>
+</div>
+
+</div>
+
+<div class="jobSearchResultsGridContainer">
+    <div class="containerPagination row pagination-wrapper"><div class="columnLeftPagination col-xs-12 col-sm-6"><ul class="pagination pagination-sm"><li class="paginateFirst_div disabled"><span class="grayedArrows"><i class="fas fa-angle-double-left"></i></span></li> <li class="paginatePrev_div disabled"><span class="grayedArrow"><i class="fa fa-angle-left"></i></span></li> <li class="disabled"><span class="paginateGrayedNumbers">1</span></li><li class="paginateNext_div disabled"><span class="grayedArrow"><i class="fa fa-angle-right"></i></span></li> <li class="paginateLast_div disabled"><span class="grayedArrows"><i class="fas fa-angle-double-right"></i></span></li> </ul>
+</div><div class="columnRightPagination col-xs-12 col-sm-6 atlPag"><nav aria-label="paginationSummary"><div class="pagination_displaying displaycount">Displaying 1 - 3 of 3</div><button type="button" name="" id="dropdownMenuButton" value="25" data-bs-toggle="dropdown" class="btn btn-light dropdown-toggle">
+ 25
+</button><ul class="dropdown-menu pagination-menu dropdown-menu-end" style="width: 45.7812px;"><li class="page-item">
+					<a class="dropdown-item paginateFirst" href="/hr/ats/JobSearch/search/jobSearchPaginationExternal_pageSize:10/jobSearchPaginationExternal_page:1">10</a>
+					</li><li class="page-item disabled">
+						<a class="dropdown-item paginateFirst" href="#">25</a>
+					</li><li class="page-item">
+					<a class="dropdown-item paginateFirst" href="/hr/ats/JobSearch/search/jobSearchPaginationExternal_pageSize:50/jobSearchPaginationExternal_page:1">50</a>
+					</li><li class="page-item">
+					<a class="dropdown-item paginateFirst" href="/hr/ats/JobSearch/search/jobSearchPaginationExternal_pageSize:100/jobSearchPaginationExternal_page:1">100</a>
+					</li></ul><div class="displaycount">per page</div></nav></div></div><div class="card rounded mb-3 " id="ribbon_tabbed_interface_page_jobSearchResultsGrid"><div class="card-header d-flex justify-content-between align-items-center"><h3 class="card-title">Jobs</h3></div>
+<div class="card-body " id="ribbon_body_section_jobSearchResultsGrid"><div id="ribbon_permanent_section_jobSearchResultsGrid"></div>
+<div class="notes-container jobSearchResultsGrid_gridsection" id="ribbon_expanded_section_jobSearchResultsGrid_gridcard"><div class="table-responsive"><table id="jobSearchResultsGrid_table" class="datatable table table-fixed-header"><thead class="header">
+<tr> 			<th scope="col" class="th_uncolored"><a href="/hr/ats/JobSearch/search/jobSearchPaginationExternal_sort:orgLevelTranslation.translation" class="sortable">Ministry/Organization</a></th>
+ 			<th scope="col" class="th_uncolored"><a href="/hr/ats/JobSearch/search/jobSearchPaginationExternal_sort:ats_requisition_code" class="sortable">Req. #</a></th>
+ 			<th scope="col" class="th_uncolored"><a href="/hr/ats/JobSearch/search/jobSearchPaginationExternal_sort:ats_requisition_title" class="sortable">Job Title</a></th>
+ 
+ 			<th scope="col" class="th_uncolored"><a href="/hr/ats/JobSearch/search/jobSearchPaginationExternal_sort:hua_union_name" class="sortable">Union</a></th>
+ 
+ 			<th scope="col">Work Options</th>
+ 			<th scope="col">Location</th>
+ 			<th scope="col" class="th_uncolored"><a href="/hr/ats/JobSearch/search/jobSearchPaginationExternal_sort:ats_requisition_visible_posted_date" class="sortable">Date Opened</a></th>
+					 
+ 			<th scope="col">Close Date</th>
+ 
+ 	 </tr>
+</thead><tbody>
+<tr> 			<td>BC Pension Corp</td>
+ 			<td>121608</td>
+ 			<td><a href="/hr/ats/Posting/view/121608"> <span>Band C - Board Officer</span>
+ </a></td>
+ 
+ 			<td>N/A</td>
+ 
+ 			<td></td>
+ 			<td> Victoria, BC, CA V9B 6X2<br>
+ </td>
+ 			<td>11/7/2025</td>
+					 
+ 			<td>11/26/2025</td>
+ 
+ 	 </tr><tr> 			<td>Liquor Distribution Branch</td>
+ 			<td>121599</td>
+ 			<td><a href="/hr/ats/Posting/view/121599"> <span>COMM O 21R - Senior Communications Officer,*Closing Date amended*</span>
+ </a></td>
+ 
+ 			<td>GEU</td>
+ 
+ 			<td>Hybrid</td>
+ 			<td> Burnaby, BC, CA V3J 1N3<br>
+ </td>
+ 			<td>11/7/2025</td>
+					 
+ 			<td>11/27/2025</td>
+ 
+ 	 </tr><tr> 			<td>Elections BC</td>
+ 			<td>121522</td>
+ 			<td><a href="/hr/ats/Posting/view/121522"> <span>ADMN O 21R - Indigenous Outreach Specialist</span>
+ </a></td>
+ 
+ 			<td>N/A</td>
+ 
+ 			<td></td>
+ 			<td> Victoria, BC, CA V9B 6X2<br>
+ </td>
+ 			<td>10/31/2025</td>
+					 
+ 			<td>11/25/2025</td>
+ 
+ 	 </tr>
+</tbody><thead class="header-copy header-fixed d-none hidden" style="width: 1215px;">
+<tr> 			<th scope="col" class="th_uncolored" style="width: 181.219px; min-width: 181.219px;"><a href="/hr/ats/JobSearch/search/jobSearchPaginationExternal_sort:orgLevelTranslation.translation" class="sortable">Ministry/Organization</a></th>
+ 			<th scope="col" class="th_uncolored" style="width: 61.1719px; min-width: 61.1719px;"><a href="/hr/ats/JobSearch/search/jobSearchPaginationExternal_sort:ats_requisition_code" class="sortable">Req. #</a></th>
+ 			<th scope="col" class="th_uncolored" style="width: 464.734px; min-width: 464.734px;"><a href="/hr/ats/JobSearch/search/jobSearchPaginationExternal_sort:ats_requisition_title" class="sortable">Job Title</a></th>
+ 
+ 			<th scope="col" class="th_uncolored" style="width: 61.5px; min-width: 61.5px;"><a href="/hr/ats/JobSearch/search/jobSearchPaginationExternal_sort:hua_union_name" class="sortable">Union</a></th>
+ 
+ 			<th scope="col" style="width: 93.5625px; min-width: 93.5625px;">Work Options</th>
+ 			<th scope="col" style="width: 168.109px; min-width: 168.109px;">Location</th>
+ 			<th scope="col" class="th_uncolored" style="width: 97.7188px; min-width: 97.7188px;"><a href="/hr/ats/JobSearch/search/jobSearchPaginationExternal_sort:ats_requisition_visible_posted_date" class="sortable">Date Opened</a></th>
+					 
+ 			<th scope="col" style="width: 86.9844px; min-width: 86.9844px;">Close Date</th>
+ 
+ 	 </tr>
+</thead></table></div></div>
+</div></div></div>
+
+	<hr class="hr-wide">
+	<h3>Search Notification</h3>
+			<p>Login to save this search as a Search Notification.</p>
+	
+	
+
+			
+</div> <!-- end dtm-main-content -->
+</div>
+</div><!-- END OF THE DIV 'app_main_id' -->
+<!-- END HUA_DESKTOP AREA -->
+<!-- END MAIN PAGE -->
+<div class="clear"></div>
+<footer id="hua_footer">
+<div class="page-end col-xs-12 hidden-md hidden-lg hidden-xl text-end">
+</div>
+<div class="text-sm col-xs-12 text-end">
+v18.3.0
+</div>
+<div class="text-sm col-xs-12 text-end">
+Last sync: 2025-11-09 22:15:04
+</div>
+
+
+
+
+
+</footer><!-- END footer -->
+</div><!-- END page-index-->
+</div><!-- END hua_main_page -->
+</div><!-- END sidebar-main-container -->
+</div><!-- END display-table -->
+</div><!-- END hua_wrapper -->
+
+					</div><!--closing ats_content. Wrapping the content of the page for the external portal to help cdev's define styles specific to ATS content-->
+										</div>
+
+
+
+
+
+
+
+
+
+
+<!--TALENT ATS ENDS HERE-->	
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+	
+		<div id="footerWrapper">
+			<div id="footerToggle">
+				<a class="footerExpand" href="#"><img alt="Expand footer" src="/custom/themes/customer_front_end/images/footer_expandbutton_solid.png" title="Expand footer"></a> <a class="footerCollapse" href="#" style="display:none"><img alt="Collapse footer" src="/custom/themes/customer_front_end/images/footer_collapsebutton_solid.png" title="Collapse footer"></a>
+			</div>
+			<div id="footerCollapsible">
+				<div class="container" id="footerContainer">
+					<div class="row" id="footerMediaLinks">
+						<h2 class="pull-left">Connect With Us</h2>
+						<div class="col-xs-12 col-sm-9">
+							<ul class="inline">
+								<li data-order="0" id="replicantData_1609935C8708460794A8E89DB857A187">
+									<a href="https://news.gov.bc.ca/" target="_blank">BC Gov News</a>
+								</li>
+								<li data-order="1" id="replicantData_B17A9ACA5CC1446AB10B577F8E7A9D92">
+									<a href="https://www.facebook.com/BCProvincialGovernment" target="_blank">Facebook</a>
+								</li>
+								<li data-order="2" id="replicantData_22825D3BFB2143F18A212F34729EB0A5">
+									<a href="https://twitter.com/BCGovNews" target="_blank">Twitter</a>
+								</li>
+								<li data-order="3" id="replicantData_5BDAA4CF843E429AAF599551C6669E38">
+									<a href="https://www.flickr.com/photos/bcgovphotos/" target="_blank">Photos</a>
+								</li>
+								<li data-order="4" id="replicantData_80174741084340B3A67D96CA144A17DC">
+									<a href="https://www.youtube.com/user/ProvinceofBC" target="_blank">Videos</a>
+								</li>
+								<li data-order="5" id="replicantData_53EC245D7C1D47C6BDCC7DB87028DFC9">
+									<a href="https://news.gov.bc.ca/newsletters" target="_blank">Newsletters</a>
+								</li>
+								<li data-order="6" id="replicantData_2439F37713DD486EA2C0BF78D89B0053">
+									<a href="https://news.gov.bc.ca/connect#rss" target="_blank">RSS Feeds</a>
+								</li>
+							</ul>
+						</div>
+						<hr class="col-xs-12">
+					</div>
+					<div class="row hidden-xs" id="footerAZLinks">
+						<h2>Government A-Z</h2>
+						<div class="col-sm-4">
+							<ul class="bulleted">
+								<li data-order="0" id="replicantData_461EB6AD9D76408B82B694E9FBDEFE32">
+									<a href="http://www2.gov.bc.ca/gov/content/home/services-a-z" target="_self">Services A-Z</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="bulleted">
+								<li data-order="1" id="replicantData_F0EA3631778F4368BC0987587A9985B7">
+									<a href="http://www2.gov.bc.ca/gov/content/home/organizations-a-z" target="_self">Organizations A-Z</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="bulleted">
+								<li data-order="2" id="replicantData_4DC9D94C2FFD4FFBAEA035FE68828407">
+									<a href="http://www2.gov.bc.ca/gov/content/home/forms-a-z" target="_self">Forms A-Z</a>
+								</li>
+							</ul>
+						</div>
+						<hr class="hidden-md hidden-lg col-xs-12">
+					</div>
+					<div class="row hidden-xs" id="footerThemeLinks">
+						<h2>Services and Information Topics</h2>
+						<div class="col-sm-4">
+							<ul class="bulleted">
+								<li>
+									<a href="http://www2.gov.bc.ca/gov/content/governments">British Columbians &amp; Our Governments</a>
+								</li>
+								<li>
+									<a href="http://www2.gov.bc.ca/gov/content/health">Health</a>
+								</li>
+								<li>
+									<a href="http://www2.gov.bc.ca/gov/content/life-events">Birth, Adoption, Death, Marriage &amp; Divorce</a>
+								</li>
+								<li>
+									<a href="http://www2.gov.bc.ca/gov/content/education-training">Education &amp; Training</a>
+								</li>
+								<li>
+									<a href="http://www2.gov.bc.ca/gov/content/transportation">Driving &amp; Transportation</a>
+								</li>
+								<li>
+									<a href="http://www2.gov.bc.ca/gov/content/safety">Public Safety &amp; Emergency Services</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="bulleted">
+								<li>
+									<a href="http://www2.gov.bc.ca/gov/content/justice">Law, Crime &amp; Justice</a>
+								</li>
+								<li>
+									<a href="http://www2.gov.bc.ca/gov/content/taxes">Taxes &amp; Tax Credits</a>
+								</li>
+								<li>
+									<a href="http://www2.gov.bc.ca/gov/content/housing-tenancy">Housing &amp; Tenancy</a>
+								</li>
+								<li>
+									<a href="http://www2.gov.bc.ca/gov/content/sports-culture">Sports, Recreation, Arts &amp; Culture</a>
+								</li>
+								<li>
+									<a href="http://www2.gov.bc.ca/gov/content/environment">Environmental Protection &amp; Sustainability</a>
+								</li>
+								<li>
+									<a href="http://www2.gov.bc.ca/gov/content/industry">Farming, Natural Resources &amp; Industry</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="bulleted">
+								<li>
+									<a href="http://www2.gov.bc.ca/gov/content/employment-business">Employment, Business &amp; Economic Development</a>
+								</li>
+								<li>
+									<a href="http://www2.gov.bc.ca/gov/content/tourism-immigration">Tourism &amp; Immigration</a>
+								</li>
+								<li>
+									<a href="http://www2.gov.bc.ca/gov/content/family-social-supports">Family &amp; Social Supports</a>
+								</li>
+								<li>
+									<a href="http://www2.gov.bc.ca/gov/content/data">Data</a>
+								</li>
+							</ul>
+						</div>
+						<hr class=" col-xs-12">
+					</div>
+				</div>
+			</div>
+			<div id="footerAdminSection">
+				<div class="container" id="footerAdminLinksContainer">
+					<div class="row" id="footerAdminLinks">
+						<ul class="inline">
+							<li data-order="0" id="replicantData_64BB7AFB6346453E96CF3F8EFE745151">
+								<a href="http://www2.gov.bc.ca/gov/content/home" target="_self">Home</a>
+							</li>
+							<li data-order="1" id="replicantData_E65457FFB5BF4A589E1291B94B989557">
+								<a href="http://www2.gov.bc.ca/gov/content/about-gov-bc-ca" target="_self">About gov.bc.ca</a>
+							</li>
+							<li data-order="2" id="replicantData_2E18DFD9524A4C95A9601ABF261EC70E">
+								<a href="http://www2.gov.bc.ca/gov/content/home/disclaimer" target="_self">Disclaimer</a>
+							</li>
+							<li data-order="3" id="replicantData_F960821F16BB43799D89D309EB9C1318">
+								<a href="http://www2.gov.bc.ca/gov/content/home/privacy" target="_self">Privacy</a>
+							</li>
+							<li data-order="4" id="replicantData_0123F79F761A47EDB9B7DE8FE4EB591A">
+								<a href="http://www2.gov.bc.ca/gov/content/home/accessibility" target="_self">Accessibility</a>
+							</li>
+							<li data-order="5" id="replicantData_68A5C36D97E445EDB9C87F10D9C3472F">
+								<a href="http://www2.gov.bc.ca/gov/content/home/copyright" target="_self">Copyright</a>
+							</li>
+							<li data-order="6" id="replicantData_5C329F040B414B62A8802DFC7072C39E">
+								<a href="http://www2.gov.bc.ca/gov/content/home/contact-us" target="_self">Contact Us</a>
+							</li><!-- viewport toggle - set view port cookie and reload current page -->
+							<li class="mobileToggle hidden-lg hidden-md">
+								<a href="javascript:location.reload();" onclick="document.cookie = 'forseLargeViewport=true; path=/';" target="_self">Desktop View</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<script>
+  jQuery('#uploadresumeattachmentform i.fa-arrow-circle-o-up').removeClass("fa-arrow-circle-o-up").addClass("fa-arrow-circle-o-down");
+</script>
+
+
+
+
+<script type="text/javascript" async="1">
+
+// <!-- Snowplow starts plowing - Standalone vE.2.14.0 -->
+ 
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+ 
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+ 
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+ 
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","https://www2.gov.bc.ca/StaticWebResources/static/sp/sp-2-14-0.js","snowplow"));
+ 
+var collector = 'spt.apps.gov.bc.ca';
+ 
+window.snowplow('newTracker','rt',collector, {
+ 
+  appId: 'Snowplow_standalone_HRS',
+ 
+  cookieLifetime: 86400 * 548,
+ 
+  platform: 'web',
+ 
+  post: true,
+ 
+  forceSecureTracker: true,
+ 
+  contexts: {
+ 
+   webPage: true,
+ 
+   performanceTiming: true
+ 
+  }
+ 
+});
+ 
+window.snowplow('enableActivityTracking', 30, 30); // Ping every 30 seconds after 30 seconds
+ 
+window.snowplow('enableLinkClickTracking');
+ 
+window.snowplow('trackPageView');
+ 
+// <!-- Snowplow stops plowing -->
+</script>
+<!--client_bottom file-->
+						 				</div> 						
+		
+				<script type="text/javascript">
+			
+			//Event.observe(window,'load',function(){
+			DomReady.ready( function() {
+				// If Javascript is enabled, and a block has a class "noscript", then hide it ("hide only if JS enabled")
+				$$('.noscript').each(function(el) {
+					el.setStyle({'display':'none'});
+				});
+				// If Javascript is enabled, and a block has a class "script", then show it ("show only if JS enabled")
+				$$('.script').each(function(el) {
+					el.setStyle({'display':'inline'});
+				});
+			});
+			
+		</script>
+
+						
+		
+				<script type="text/javascript" src="/js_includes/global.NEWUI.js"></script>
+		<script type="text/javascript">
+
+			
+			DomReady.ready( function()
+			{
+				find_text_boxes();
+
+				// Set autocomplete="off" for elements with the autocomplete_off class
+				autocompleteOff();
+
+				// Disable clicks on disabled items
+				jQuery(".disabled>a").on("click", function(e){e.preventDefault();});
+
+			});
+			
+
+					</script>
+
+				
+		<script>
+		if (1 > jQuery('div.instruction-container').length) {
+
+			var helpInlineToggle = document.getElementById('help-inline-toggle');
+
+			if(helpInlineToggle)
+			{
+				helpInlineToggle.style.display = 'none';
+			}
+		}
+		</script>
+		
+							
+		
+						
+		<div><script type="text/javascript" src="/js_includes/handy-scroll/handy-scroll.js"></script><script type="text/javascript" src="/js_includes/deltek_internal_floatingScrollbar.js"></script><script type="text/javascript" src="/js_includes/table-fixed-header.js"></script><script type="text/javascript" src="/js_includes/jquery/jquery.floatingscrollbar.js"></script><script type="text/javascript">
+
+                        jQuery(document).ready(function() {
+                                var buttonWidth = jQuery('#dropdownMenuButton').outerWidth(); // get the size of the button
+                                jQuery('ul.dropdown-menu.pagination-menu').css('width', buttonWidth + 'px');  // set the size of the dropdown-menu
+                        });
+                window.expandTranslated = 'Expand';window.collapseTranslated = 'Collapse';window.expandAllTranslated = 'Expand All Notes';window.collapseAllTranslated = 'Collapse All Notes';</script><script type="text/javascript" src="/js_includes/atlas/ribbonExpandableContent.js"></script><script type="text/javascript">	
+		jQuery('#search_string_anchor').on('click', function () {
+			
+									jQuery('#search_string_results').html('<img src="/images/standard/loading_24x24.gif" alt="Generating" /> Generating Sharing URL...').load('/hr/ats/JobSearch/share/eNpLtDK0qi62MrJSKk9Usi62MjS1Ugooys9KTS5R8E9Ly0xOLVKyrgVcMNzKC_A,');
+			
+		});
+
+		jQuery('#toggle_agent_form').click(function () {
+			jQuery('#save_as_agent_div').toggle();
+		});
+	
+	</script></div>
+
+		
+
+
+
+		<script type="text/javascript">
+ var csrfpTokenName = 'f39962b823a9c9f267cfbb19069a2d6acsrfp';
+</script>
+<script type="text/javascript" src="https://bcpublicservice.hua.hrsmart.com/csrf/js/csrfprotector.js"></script>
+<script type="text/javascript">
+window.onload = function() {
+	csrfprotector_init();
+};
+</script>
+
+	
+<div class="fl-scrolls fl-scrolls-hidden" style="width: 1215px; left: 345px;"><div style="width: 1215px;"></div></div></body></html>

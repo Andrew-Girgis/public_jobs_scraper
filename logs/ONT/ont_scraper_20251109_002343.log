@@ -1,0 +1,17 @@
+2025-11-09 00:23:43,828 - __main__ - INFO - ================================================================================
+2025-11-09 00:23:43,828 - __main__ - INFO - Ontario (ONT) Job Scraper Starting
+2025-11-09 00:23:43,829 - __main__ - INFO - ================================================================================
+2025-11-09 00:23:44,090 - __main__ - INFO - Launching Chromium browser (headless=False)
+2025-11-09 00:23:45,492 - __main__ - INFO - Starting Ontario job scraping workflow
+2025-11-09 00:23:45,493 - __main__ - INFO - Loaded 43 job keywords from /Users/agirgis/Downloads/public_jobs_scraper/list-of-jobs.txt
+2025-11-09 00:23:45,493 - __main__ - INFO - Navigating to https://www.gojobs.gov.on.ca/Search.aspx
+2025-11-09 00:23:47,205 - __main__ - INFO - Total pages to scrape: 1
+2025-11-09 00:23:47,205 - __main__ - INFO - Processing page 1/1
+2025-11-09 00:23:48,258 - __main__ - INFO - Scraping search page 1
+2025-11-09 00:23:48,303 - __main__ - INFO - Found 0 job listings on page 1
+2025-11-09 00:23:48,304 - __main__ - INFO - Found 0 matches on page 1
+2025-11-09 00:23:48,304 - __main__ - INFO - Total matches found: 0
+2025-11-09 00:23:48,304 - __main__ - INFO - Successfully scraped 0 jobs
+2025-11-09 00:23:48,304 - __main__ - INFO - Scraping complete. Total jobs scraped: 0
+2025-11-09 00:23:48,304 - __main__ - INFO - Closing browser
+2025-11-09 00:23:48,460 - __main__ - INFO - Ontario Job Scraper finished

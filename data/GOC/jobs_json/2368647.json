@@ -1,0 +1,69 @@
+{
+  "poster_id": "2368647",
+  "url": "https://psjobs-emploisfp.psc-cfp.gc.ca/psrs-srfp/applicant/page1800?poster=2368647",
+  "title": "You will leave the GC Jobs Web site",
+  "department": null,
+  "branch": null,
+  "city": null,
+  "province": null,
+  "location_raw": null,
+  "classification_group": null,
+  "classification_level": null,
+  "classification_raw": null,
+  "closing_date": null,
+  "closing_time_raw": null,
+  "date_modified": null,
+  "salary_min": null,
+  "salary_max": null,
+  "salary_raw": null,
+  "who_can_apply": null,
+  "employment_types": null,
+  "positions_to_fill": null,
+  "language_requirements_raw": null,
+  "is_external_link": true,
+  "external_redirect_url": "https://www.canada.ca/en/security-intelligence-service/corporate/csis-jobs/available-jobs/project-manager.html",
+  "external_job_title": "Project Manager",
+  "search_title": "Project Manager",
+  "search_type": "production",
+  "scraped_at": "2025-11-09T03:55:38.653328+00:00",
+  "structure_type": "external_redirect",
+  "details": {
+    "sections": {
+      "work_environment": "",
+      "duties": "",
+      "important_messages": "",
+      "operational_requirements": "",
+      "conditions_of_employment": "",
+      "how_to_apply": "",
+      "equity_diversity_inclusion": "",
+      "our_commitment": "",
+      "preference": "",
+      "organization_information": "",
+      "other_information": "",
+      "intent_of_process": "",
+      "reference_number": "",
+      "selection_process_number": ""
+    },
+    "qualifications": {
+      "essential": {
+        "education": [],
+        "experience": [],
+        "knowledge": [],
+        "abilities": [],
+        "competencies": [],
+        "personal_suitability": []
+      },
+      "asset": {
+        "education": [],
+        "experience": [],
+        "knowledge": [],
+        "abilities": [],
+        "competencies": [],
+        "personal_suitability": []
+      }
+    },
+    "contact": {
+      "contacts": []
+    }
+  }
+}

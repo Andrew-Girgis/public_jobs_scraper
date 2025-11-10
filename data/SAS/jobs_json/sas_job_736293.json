@@ -1,0 +1,66 @@
+{
+  "job_posting": {
+    "source": {
+      "jurisdiction": "Saskatchewan",
+      "job_board": "Government of Saskatchewan",
+      "url": "https://govskpsc.taleo.net/careersection/10180/jobdetail.ftl?job=736293&lang=en"
+    },
+    "metadata": {
+      "job_title": "Senior Labour Relations Consultant",
+      "employment_type": "Permanent Full-time",
+      "location": "SK-Rgna-Regina",
+      "ministry": "033 Public Service Commission",
+      "salary_range": "$8650-$11243",
+      "salary_min": 8650.0,
+      "salary_max": 11243.0,
+      "salary_frequency": "Monthly",
+      "grade": "MCP.08.",
+      "hours_of_work": "M - Monthly Out of Scope",
+      "number_of_openings": 1,
+      "closing_date": null
+    },
+    "ministry_description": "About Us",
+    "the_opportunity": {
+      "intro": "As the Senior Labour Relations Consultant your responsibilities will include:",
+      "responsibilities": ""
+    },
+    "responsibilities_breakdown": {
+      "strategic_leadership_planning": "",
+      "technical_oversight": "",
+      "information_knowledge_management": "",
+      "stakeholder_engagement_collaboration": "",
+      "team_resource_management": ""
+    },
+    "qualifications": {
+      "the_ideal_candidate": "- knowledge of labour relations, labour and employment law principles, developments, and issues;\n- knowledge of trends and practices in collective bargaining, dispute/grievance resolution methodology and practice;\n- knowledge of Saskatchewan's labour relations issues and trends;\n- knowledge of Saskatchewan labour and employment legislation;\n- the proven ability to work effectively in a team-based environment with excellent interpersonal, organizational, analytic, and problem-solving skills;\n- a solid track record of building and maintaining credible, collaborative relationships by understanding, involving, engaging, and communicating to diverse clients and stakeholder groups;\n- the ability to be persuasive and tactful, and have well-developed written and oral communication, influencing and strong consultative skills; and,\n- experience with arbitration and collective bargaining processes.",
+      "intro": null,
+      "required_qualifications": [
+        "knowledge of labour relations, labour and employment law principles, developments, and issues;",
+        "knowledge of trends and practices in collective bargaining, dispute/grievance resolution methodology and practice;",
+        "knowledge of Saskatchewan's labour relations issues and trends;",
+        "knowledge of Saskatchewan labour and employment legislation;",
+        "the proven ability to work effectively in a team-based environment with excellent interpersonal, organizational, analytic, and problem-solving skills;",
+        "a solid track record of building and maintaining credible, collaborative relationships by understanding, involving, engaging, and communicating to diverse clients and stakeholder groups;",
+        "the ability to be persuasive and tactful, and have well-developed written and oral communication, influencing and strong consultative skills; and,",
+        "experience with arbitration and collective bargaining processes."
+      ],
+      "education_requirements": "Typically, the knowledge and abilities required for this position is obtained through a bachelor’s degree from a 4-year accredited university (e.g., a degree in Labour Relations, Business Administration, Commerce, Law, Social Sciences, Humanities, or a related field is desirable) with significant experience in Labour Relations and Human Resources."
+    },
+    "benefits": {
+      "what_we_offer": "",
+      "benefits_list": []
+    },
+    "additional": {
+      "diversity_statement": "We are committed to workplace diversity.",
+      "additional_notes": null
+    },
+    "full_description": "About Us\nThe\nPublic Service Commission\nis the central human resource agency for the Government of Saskatchewan. The Commission works with ministries to ensure effective workforce management by supporting delivery of foundational services such as staffing and classification, and strategic support including labour relations and organizational development.\nThe Employee and Labour Relations Branch of the Commission represents the government and certain agencies, boards and commissions in the negotiation of collective agreements and provides employee and labour relations services to management.\nThe Opportunity:\nAs the Senior Labour Relations Consultant your responsibilities will include:\nDaily use of your knowledge of trends and practices in collective bargaining, dispute/grievance resolution methodology and practice, Saskatchewan's labour relations issues and labour and employment legislation;\nBeing responsible for grievance resolution and arbitration, negotiations, contract administration and interpretation;\nFocusing on arbitration, drawing on your knowledge of arbitration preparation and presentation; and\nBeing actively involved in workplace health and safety, labour and employment legislation and human resource policy issues in the public service.\nOur Ideal Candidate\nOur candidate of choice must be client focused, team oriented, an excellent communicator and a problem solver who has:\nknowledge of labour relations, labour and employment law principles, developments, and issues;\nknowledge of trends and practices in collective bargaining, dispute/grievance resolution methodology and practice;\nknowledge of Saskatchewan's labour relations issues and trends;\nknowledge of Saskatchewan labour and employment legislation;\nthe proven ability to work effectively in a team-based environment with excellent interpersonal, organizational, analytic, and problem-solving skills;\na solid track record of building and maintaining credible, collaborative relationships by understanding, involving, engaging, and communicating to diverse clients and stakeholder groups;\nthe ability to be persuasive and tactful, and have well-developed written and oral communication, influencing and strong consultative skills; and,\nexperience with arbitration and collective bargaining processes.\nTypically, the knowledge and abilities required for this position is obtained through a bachelor’s degree from a 4-year accredited university (e.g., a degree in Labour Relations, Business Administration, Commerce, Law, Social Sciences, Humanities, or a related field is desirable) with significant experience in Labour Relations and Human Resources.\nThis position is located in Regina, SK, however, candidates outside Regina may be considered.\nThis competition may be used for current and future permanent and term opportunities."
+  },
+  "scraping_metadata": {
+    "job_id": "736293",
+    "scraped_at": "2025-11-09T14:45:22.135789",
+    "search_keyword": "Business Consultant",
+    "matched_keyword": "Business Consultant",
+    "match_score": 90
+  }
+}

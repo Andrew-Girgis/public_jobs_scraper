@@ -1,0 +1,132 @@
+{
+  "job_posting": {
+    "search_keyword": "Manager",
+    "source": {
+      "jurisdiction": "British Columbia",
+      "job_board": "BC Public Service",
+      "organization": "Attorney General",
+      "url": "https://bcpublicservice.hua.hrsmart.com/hr/ats/Posting/view/121151"
+    },
+    "metadata": {
+      "posting_title": "CLK ST 12R - Legal Assistant - Amended",
+      "posting_id": "121151",
+      "job_title": "CLK ST 12R - Legal Assistant - Amended",
+      "position_classification": "Clerk Stenographer R12",
+      "classification_code": "Clerk Stenographer R12",
+      "union": "GEU",
+      "work_options": "Hybrid",
+      "locations": [
+        "Campbell River, BC V9W 6Y7 CA (Primary)"
+      ],
+      "salary": {
+        "raw_text": "$54,387.32 - $61,395.95 annually",
+        "min_amount": 54387.32,
+        "max_amount": 61395.95,
+        "frequency": "per annum",
+        "currency": "CAD",
+        "temporary_market_adjustment": null
+      },
+      "close_date": "11/9/2025",
+      "close_time": "11:00 pm Pacific Time",
+      "job_type": "Regular Full Time",
+      "temporary_end_date": null,
+      "ministry_organization": "BC Public Service -> Attorney General",
+      "ministry_branch_division": "BC Prosecution Service",
+      "job_category": "Administrative Services, Court and Judicial Services"
+    },
+    "amendments": [],
+    "job_summary": {
+      "about_organization": {
+        "heading": null,
+        "body": []
+      },
+      "about_business_unit": {
+        "heading": null,
+        "body": []
+      },
+      "about_role": {
+        "heading": "Job Description",
+        "body": [
+          "The Team At the Campbell River Crown Counsel Office, you\u2019ll join an established team of professionals, including Legal Assistants, a Senior Legal Analyst, a Paralegal, Legal Office Manager, and Crown Counsel. This close-knit group promotes public safety, justice, and respect for the rule of law through fair and effective prosecutions and appeals. The team\u2019s strong communication and collaboration create a supportive environment where everyone works together to uphold these important values. The Role As a Legal Assistant, you will support Crown Counsel in preparing prosecution case files for court proceedings. Working under the supervision of Crown Counsel and the Office Manager, you will perform a variety of legal services in a high-profile and fast-paced office. Your role requires flexibility, teamwork, tact, diplomacy, communication, and strong organizational skills to ensure the efficient, accurate, and timely completion of responsibilities. Qualifications: Education and Experience Requirements",
+          "\u2022 Secondary school graduation or equivalent.\n\u2022 Experience working as an administrative or legal assistant in an office environment",
+          "Preference may be given to applicants with any of the following:",
+          "\u2022 Successful completion of an Administrative Assistant, Legal Assistant, or Paralegal certificate.\n\u2022 Experience working as a Legal Assistant in a legal office.\n\u2022 One year or more experience working as a Legal Assistant in a legal office.\n\u2022 Experience working within the criminal justice sector.\n\u2022 Experience working in the BC Prosecution Service.",
+          "For questions regarding this position, please contact Kathleen.Bethell@gov.bc.ca. About this Position: Amendment Nov. 5, 2025 - This posting has been extended. The posting will now close on Nov. 9, 2025 at 11:00 PM. There is 1 full time permanent position available. Flexible work options are available; this position may be able to work up to 2 days at home per week subject to an approved telework agreement. An eligibility list may be established to fill both current and/or future permanent vacancies. A Criminal Record Review Act Check (CRRA) and Enhanced Security Screening will be required. Employees of the BC Public Service must be located in BC at the time of employment.",
+          "Working for the BC Public Service: The BC Public Service is committed to creating a diverse workplace to represent the population we serve and to better meet the needs of our citizens. Consider joining our team and being part of an innovative, inclusive and rewarding workplace.",
+          "We are committed to ensuring that reasonable accommodations are available throughout the hiring process, including the assessment and selection stages. Please email the individual or contact listed on the posting if you require an accommodation to fully participate in the hiring process. The Indigenous Applicant Advisory Service is available to Indigenous (First Nations [status or non-status], Inuit or M\u00e9tis) applicants originating from the land now known as Canada, seeking work or already employed in the BC Public Service. Indigenous applicants can contact this service for personalized guidance on the BC Public Service hiring process including job applications and interviews. How to Apply: Your application must clearly demonstrate how you meet the job requirements listed above. Applicants who are selected to move forward in the hiring process may be assessed on their knowledge, skills, abilities, competencies and other position related requirements as outlined in the Job Profile at the bottom of the posting.",
+          "Cover Letter: NO - Please do not submit a cover letter as it will not be reviewed. Resume: YES - Ensure your resume includes your educational accomplishments, employment history including start and end dates (month and year) of your employment, and any relevant information that relates to the job to which you are applying.",
+          "Questionnaire: YES - You will need to complete a basic questionnaire to demonstrate how you meet the job requirements. Find more information on the recruitment process, including helpful tips and videos about the application process, visit the Your Job Application page of MyHR. Gain insights into the hiring journey by joining a Career Conversation. Applications will be accepted until 11:00 pm Pacific Time on the closing date of the competition. If you are experiencing technical difficulty applying, visit the Technical Assistance page of MyHR."
+        ]
+      },
+      "special_conditions": [],
+      "eligibility_list_note": null
+    },
+    "position_requirements": {
+      "heading": "Position requirements",
+      "education_and_experience": {
+        "required_paths": [],
+        "equivalency_statement": null,
+        "recent_experience_note": null
+      },
+      "required_experience_bullets": [
+        "Secondary school graduation or equivalent.",
+        "Experience working as an administrative or legal assistant in an office environment"
+      ],
+      "preferred_experience_bullets": [
+        "Successful completion of an Administrative Assistant, Legal Assistant, or Paralegal certificate.",
+        "Experience working as a Legal Assistant in a legal office.",
+        "One year or more experience working as a Legal Assistant in a legal office.",
+        "Experience working within the criminal justice sector.",
+        "Experience working in the BC Prosecution Service."
+      ]
+    },
+    "application_instructions": {
+      "heading": "Application instructions",
+      "evaluation_note": null,
+      "requirements": {
+        "cover_letter_required": true,
+        "resume_details_required": true,
+        "other_documents": []
+      },
+      "hr_contact": {
+        "name": null,
+        "title": null,
+        "email": null
+      },
+      "submission_method": {
+        "system_name": "BC Public Service Recruitment System",
+        "notes": []
+      },
+      "technical_help_contact": {
+        "email": "BCPSA.Hiring.Centre@gov.bc.ca",
+        "notes": []
+      },
+      "deadline_note": "Applications will be accepted until 11:00pm Pacific Time on the closing date of the competition."
+    },
+    "working_for_bc_public_service": {
+      "diversity_statement": "Working for the BC Public Service: The BC Public Service is committed to creating a diverse workplace to represent the population we serve and to better meet the needs of our citizens. Consider joining our team and being part of an innovative, inclusive and rewarding workplace.",
+      "flexible_work_statement": "For questions regarding this position, please contact Kathleen.Bethell@gov.bc.ca. About this Position: Amendment Nov. 5, 2025 - This posting has been extended. The posting will now close on Nov. 9, 2025 at 11:00 PM. There is 1 full time permanent position available. Flexible work options are available; this position may be able to work up to 2 days at home per week subject to an approved telework agreement. An eligibility list may be established to fill both current and/or future permanent vacancies. A Criminal Record Review Act Check (CRRA) and Enhanced Security Screening will be required. Employees of the BC Public Service must be located in BC at the time of employment.",
+      "indigenous_applicant_advisory_service": {
+        "available": true,
+        "description": "We are committed to ensuring that reasonable accommodations are available throughout the hiring process, including the assessment and selection stages. Please email the individual or contact listed on the posting if you require an accommodation to fully participate in the hiring process. The Indigenous Applicant Advisory Service is available to Indigenous (First Nations [status or non-status], Inuit or M\u00e9tis) applicants originating from the land now known as Canada, seeking work or already employed in the BC Public Service. Indigenous applicants can contact this service for personalized guidance on the BC Public Service hiring process including job applications and interviews. How to Apply: Your application must clearly demonstrate how you meet the job requirements listed above. Applicants who are selected to move forward in the hiring process may be assessed on their knowledge, skills, abilities, competencies and other position related requirements as outlined in the Job Profile at the bottom of the posting.",
+        "contact_email": null,
+        "contact_phone": null
+      },
+      "employer_value_proposition": []
+    },
+    "attachments": {
+      "job_description_files": [
+        {
+          "label": "121151 Job Profile CLK ST 12R Legal Assistant",
+          "path_or_url": "/display_document.php?noheader=1&file_id=174771&action=download&req_attachment_id=52788"
+        }
+      ]
+    }
+  },
+  "scraping_metadata": {
+    "job_id": "121151",
+    "scraped_at": "2025-11-09T17:48:08.548686",
+    "matched_keyword": "Manager",
+    "match_score": 100
+  }
+}

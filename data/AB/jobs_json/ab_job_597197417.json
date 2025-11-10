@@ -1,0 +1,160 @@
+{
+  "job_posting": {
+    "search_keyword": "Business Analyst",
+    "source": {
+      "jurisdiction": "Alberta",
+      "job_board": "Alberta Public Service Careers",
+      "company": "Government of Alberta",
+      "url": "https://jobpostings.alberta.ca/job/Edmonton-Data-Analyst/597197417/"
+    },
+    "header": {
+      "job_title": "Data Analyst",
+      "posting_date": "Nov 6, 2025",
+      "location_line": "Edmonton, AB",
+      "company_line": "Government of Alberta"
+    },
+    "job_information": {
+      "job_title": "Data Analyst",
+      "job_requisition_id": "76557",
+      "ministry": "Education and Childcare",
+      "location": "Edmonton",
+      "full_or_part_time": "Full Time",
+      "hours_of_work": "36.25 hours per week",
+      "permanent_or_temporary": "Permanent",
+      "scope": "Open Competition",
+      "closing_date": "November 20, 2025",
+      "classification": "Program Services 3",
+      "salary": {
+        "raw_text": "$2,849.89 to $3,738.14 bi-weekly ($74,382 - $97,565/year)",
+        "biweekly_min": 2849.89,
+        "biweekly_max": 3738.14,
+        "annual_min": 74382.0,
+        "annual_max": 97565.0,
+        "currency": "CAD",
+        "primary_frequency": "bi-weekly"
+      }
+    },
+    "diversity_and_inclusion": {
+      "statement": "The Government of Alberta is committed to a diverse and inclusive public service that reflects the population we serve to best meet the needs of Albertans. Consider joining a team where diversity, inclusion and innovation are valued and supported. For more information on diversity and inclusion, please visit: https://www.alberta.ca/diversity-inclusion-policy.aspx.",
+      "policy_url": "https://www.alberta.ca/diversity-inclusion-policy.aspx"
+    },
+    "ministry_overview": {
+      "heading": null,
+      "body": [
+        "Ministry of Education and Child Care",
+        "Alberta Education and Childcare supports students, parents, teachers and administrators from Early Childhood Services (ECS) through Grade 12. What we have heard from Albertans will help us as we move forward in developing our future direction—to ensure students can meet the challenges and embrace the opportunities of the 21st century.",
+        "To learn more about the Ministry of Education & Childcare, please visit: https://www.alberta.ca/education-and-childcare.",
+        "The Program Information, Evaluation and Performance Measurement (PEIPM) Unit provides data and information analysis and support for childcare, including data analytics, performance standards, internal audits and program reviews and strategic evaluation activities, all designed to improve program quality and outcomes for children and families."
+      ]
+    },
+    "role_responsibilities": {
+      "heading": "Role Responsibilities",
+      "tagline": "Responsibilities include",
+      "intro_paragraphs": [
+        "Reporting to the Manager, Research Evaluation and Reporting, the Data Analyst will support the Early Learning and Child Care (ELCC) Initiatives and will collect, analyze and prepare reports to measure outcomes and indicators. This position is key to supporting the evaluation of the ELCC initiative's effectiveness in increasing the accessibility, affordability and quality of early learning and childcare in Alberta, providing analysis on licensing, grants, spaces, enrollment, fees, subsidy, etc., in conjunction with external demographic data. The position will also collect and analyze data relevant to the outcomes and indicators identified in ELCC evaluation and measurement activities and the Federal/Provincial Child Care Agreements. This position is key to support the data collection, analysis and reporting function of the Ministry related to Early Learning and Child Care initiatives.",
+        "Please click on this link to view the job description for this position."
+      ],
+      "responsibility_groups": [],
+      "job_description_link_text": "link",
+      "job_description_url": "https://mydocs.wfd.alberta.ca/media/t50p52mr/jr76557_data-analyst_jd.pdf"
+    },
+    "aps_competencies": {
+      "heading": "APS Competencies",
+      "description": "Competencies are behaviors that are essential to reach our goals in serving Albertans. We encourage you to have an in depth understanding of the competencies that are required for this opportunity and to be prepared to demonstrate them during the recruitment process. This link will assist you with understanding competencies:https://www.alberta.ca/system/files/custom_downloaded_images/psc-alberta-public-service-competency-model.pdf.",
+      "competencies_url": "https://www.alberta.ca/system/files/custom_downloaded_images/psc-alberta-public-service-competency-model.pdf",
+      "items": [
+        "Creative Problem Solving - Expertly considers, develops and weighs implications of complex and technical compensation situations before proposing solutions.",
+        "Agility - Maintains an open perspective to changing priorities, timelines and unexpected and un-planned ad hoc requests from either internal or external partners.",
+        "Build Collaborative Environment - Strong interpersonal and facilitation skills to build capacity and develop effective working relationships with stakeholders internal and external to the ministry.",
+        "Systems Thinking - Maintains an awareness of current events and government priorities that may provide challenges and/or opportunities."
+      ]
+    },
+    "qualifications": {
+      "heading": "Qualifications",
+      "required": {
+        "education": [],
+        "experience": [],
+        "other": []
+      },
+      "equivalency": {
+        "text": "Directly related education or experience is considered on the basis of one year of education for one year of experience or one year of experience for one year of education. Knowledge and/or experience of the following are considered assets for this position: A Master's degree in a related field (e.g., Data Science, Economics, Statistics, Mathematics) is preferred. Proven experience with SQL — ability to write complex queries for data extraction, transformation, and validation. Demonstrated proficiency in Power BI, including data modeling and transformation (Power Query and DAX) and designing interactive dashboards and reports. Strong experience with Microsoft Excel, including advanced formulas, Power Query, Pivot Tables and data manipulation techniques. Hands-on experience with SharePoint data integration, including building and maintaining connections to SharePoint lists and libraries. Hands-on experience with Databricks, including performing data transformations, and integrating with SQL and Power BI for advanced analytics and reporting. Hands-on experience with Novi Survey, including designing surveys, managing deployment, and collecting and exporting data for analysis. Experience working with large and complex datasets from multiple sources. Strong analytical and problem-solving skills, with the ability to interpret data and translate insights into actionable recommendations. Excellent attention to detail, data accuracy, and quality assurance practices. Knowledge of evaluation and research practices, including knowledge of data visualization for non-technical audiences. Excellent verbal and written communication skills. https://www.alberta.ca/alberta-public-service-minimum-recruitment-standards .",
+        "rules": []
+      },
+      "assets": {
+        "heading": "Assets",
+        "items": []
+      },
+      "minimum_recruitment_standards_url": "https://www.alberta.ca/alberta-public-service-minimum-recruitment-standards"
+    },
+    "notes": {
+      "heading": "Notes",
+      "employment_term": "There is one permanent, full-time position working 36.25 hours per week, Monday to Friday.",
+      "location_reminder": null,
+      "assessment_info": [],
+      "security_screening": [],
+      "reuse_competition_note": [],
+      "costs_note": [
+        "Any costs associated with obtaining the required documents/checks as noted or interview travel expenses, will be the responsibility of the candidate. Out-of-province applicants can obtain the required documents/checks from the province they currently reside in."
+      ],
+      "benefits_and_resources_links": [
+        {
+          "label": "https://www.alberta.ca/advantages-",
+          "url": "https://www.alberta.ca/advantages-working-for-alberta-public-service.aspx"
+        },
+        {
+          "label": "https://www.pspp.ca",
+          "url": "https://www.pspp.ca/"
+        },
+        {
+          "label": "alberta-public-service-benefits",
+          "url": "https://www.alberta.ca/alberta-public-service-benefits"
+        },
+        {
+          "label": "professional-development-support-directive",
+          "url": "https://www.alberta.ca/professional-development-support-directive"
+        },
+        {
+          "label": "researchapscareers.alberta.ca",
+          "url": "https://researchapscareers.alberta.ca"
+        }
+      ]
+    },
+    "how_to_apply": {
+      "heading": "How To Apply",
+      "instructions": [
+        "Applicants are advised to provide information that clearly and concisely demonstrates how their qualifications meet the advertised requirements, including education, experience, and relevant examples of required competencies.",
+        "Candidates are required to apply for a job online. Please visit",
+        "for more information. Please visit",
+        "Recruitment Principles",
+        ", for more information.",
+        "It is recommended applicants who have completed post-secondary studies from outside of Canada obtain an evaluation of their credentials from the International Qualifications Assessment Service (IQAS)(",
+        ") or from a recognized Canadian Credential Evaluator; please visit the Alliance of Credential Evaluation Services of Canada for more information",
+        "(",
+        ").",
+        "It is recommended that applicants include the assessment certificate from IQAS or any other educational assessment service as part of their application."
+      ],
+      "job_application_resources_url": "https://www.alberta.ca/job-application-resources#before",
+      "recruitment_principles_url": "https://www.alberta.ca/recruitment-principles",
+      "iqas_recommendation": {
+        "recommended": true,
+        "iqas_url": "https://www.alberta.ca/international-qualifications-assessment.aspx",
+        "alliance_url": "https://canalliance.org/en/default.html"
+      }
+    },
+    "closing_statement": {
+      "reuse_competition_note": "This competition may be used to fill future vacancies, across the Government of Alberta, at the same or lower classification level.",
+      "thanks_and_screening_note": "We thank all applicants for their interest. All applications will be reviewed to determine which candidates' qualifications most closely match the advertised requirements. Only individuals selected for interviews will be contacted.",
+      "contact": {
+        "name": null,
+        "email": "Rashi.Vaktania@gov.ab.ca"
+      },
+      "accommodation_note": "If you require any further information on this job posting or require an accommodation during the recruitment process, please contact Rashi Vaktania at"
+    }
+  },
+  "scraping_metadata": {
+    "job_id": "597197417",
+    "scraped_at": "2025-11-09T19:17:03.614590",
+    "matched_keyword": "Business Analyst",
+    "match_score": 100
+  }
+}

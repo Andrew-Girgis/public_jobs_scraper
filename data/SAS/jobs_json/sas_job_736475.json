@@ -1,0 +1,57 @@
+{
+  "job_posting": {
+    "source": {
+      "jurisdiction": "Saskatchewan",
+      "job_board": "Government of Saskatchewan",
+      "url": "https://govskpsc.taleo.net/careersection/10180/jobdetail.ftl?job=736475&lang=en"
+    },
+    "metadata": {
+      "job_title": "Director, Research and Analysis",
+      "employment_type": null,
+      "location": null,
+      "ministry": null,
+      "salary_range": null,
+      "salary_min": null,
+      "salary_max": null,
+      "salary_frequency": null,
+      "grade": null,
+      "hours_of_work": null,
+      "number_of_openings": null,
+      "closing_date": null
+    },
+    "ministry_description": null,
+    "the_opportunity": {
+      "intro": null,
+      "responsibilities": null
+    },
+    "responsibilities_breakdown": {
+      "strategic_leadership_planning": null,
+      "technical_oversight": null,
+      "information_knowledge_management": null,
+      "stakeholder_engagement_collaboration": null,
+      "team_resource_management": null
+    },
+    "qualifications": {
+      "the_ideal_candidate": null,
+      "intro": null,
+      "required_qualifications": [],
+      "education_requirements": null
+    },
+    "benefits": {
+      "what_we_offer": null,
+      "benefits_list": []
+    },
+    "additional": {
+      "diversity_statement": null,
+      "additional_notes": null
+    },
+    "full_description": null
+  },
+  "scraping_metadata": {
+    "job_id": "736475",
+    "scraped_at": "2025-11-09T14:34:45.724936",
+    "search_keyword": "Business Analyst",
+    "matched_keyword": "Junior Research Analyst",
+    "match_score": 90
+  }
+}

@@ -1,0 +1,41 @@
+2025-11-09 01:02:22,181 - __main__ - INFO - ================================================================================
+2025-11-09 01:02:22,181 - __main__ - INFO - Ontario (ONT) Job Scraper Starting
+2025-11-09 01:02:22,181 - __main__ - INFO - ================================================================================
+2025-11-09 01:02:22,330 - __main__ - INFO - Launching Chromium browser (headless=False)
+2025-11-09 01:02:22,831 - __main__ - INFO - Starting Ontario job scraping workflow
+2025-11-09 01:02:22,833 - __main__ - INFO - Loaded 43 job keywords from /Users/agirgis/Downloads/public_jobs_scraper/list-of-jobs.txt
+2025-11-09 01:02:22,836 - __main__ - INFO - Navigating to https://www.gojobs.gov.on.ca/Search.aspx
+2025-11-09 01:02:24,370 - __main__ - INFO - Scrolling page like a human
+2025-11-09 01:02:26,305 - __main__ - INFO - Page scrolled successfully
+2025-11-09 01:02:26,305 - __main__ - INFO - Selecting search filters
+2025-11-09 01:02:26,899 - __main__ - INFO - Opened job category dropdown
+2025-11-09 01:02:28,266 - __main__ - INFO - ✓ Selected 'All job categories' checkbox
+2025-11-09 01:02:28,777 - __main__ - INFO - Checkbox checked state: True
+2025-11-09 01:02:29,163 - __main__ - INFO - Closed job category dropdown
+2025-11-09 01:02:29,667 - __main__ - INFO - Scrolling to Search button
+2025-11-09 01:02:30,508 - __main__ - INFO - Search button is now in view
+2025-11-09 01:02:30,599 - __main__ - INFO - Saved screenshot before search: /Users/agirgis/Downloads/public_jobs_scraper/data/ONT/search_html/before_search_20251109_010230.png
+2025-11-09 01:02:30,599 - __main__ - INFO - Clicking Search button to load job results
+2025-11-09 01:02:30,642 - __main__ - INFO - Search submitted successfully
+2025-11-09 01:02:30,643 - __main__ - INFO - Waiting for search results to load...
+2025-11-09 01:02:38,662 - __main__ - INFO - Search results loaded successfully
+2025-11-09 01:02:38,743 - __main__ - INFO - Saved screenshot after search: /Users/agirgis/Downloads/public_jobs_scraper/data/ONT/search_html/after_search_20251109_010238.png
+2025-11-09 01:02:38,781 - __main__ - INFO - Total pages to scrape: 11
+2025-11-09 01:02:38,781 - __main__ - INFO - Processing page 1/11
+2025-11-09 01:02:38,781 - __main__ - INFO - Scraping search page 1
+2025-11-09 01:02:43,432 - __main__ - INFO - Found 10 job listings on page 1
+2025-11-09 01:02:43,434 - __main__ - INFO - Checking job 1/10: '201 - Operations Supervisor, Water And Wastewater (1)'
+2025-11-09 01:02:43,438 - __main__ - INFO - Checking job 2/10: 'Actuary (1)'
+2025-11-09 01:02:43,444 - __main__ - INFO - Checking job 3/10: 'Ambulance Communications Officer (Irregularly Scheduled/On-Call) (3)'
+2025-11-09 01:02:43,449 - __main__ - INFO - Checking job 4/10: 'Assessment Biologist (1)'
+2025-11-09 01:02:43,453 - __main__ - INFO - Checking job 5/10: 'Consultation and Aboriginal Treaty Rights Advisor (2)'
+2025-11-09 01:02:43,457 - __main__ - INFO - Checking job 6/10: 'Crown Counsel (1)'
+2025-11-09 01:02:43,460 - __main__ - INFO - Checking job 7/10: 'Crown Counsel (1)'
+2025-11-09 01:02:43,464 - __main__ - INFO - Checking job 8/10: 'District Resource Liaison Specialist (1)'
+2025-11-09 01:02:43,467 - __main__ - INFO - Checking job 9/10: 'Program Evaluation and Performance Measurement Specialist (2)'
+2025-11-09 01:02:43,470 - __main__ - INFO - Checking job 10/10: 'Social Worker (1)'
+2025-11-09 01:02:43,472 - __main__ - INFO - Found 0 matches on page 1
+2025-11-09 01:02:45,477 - __main__ - INFO - Processing page 2/11
+2025-11-09 01:02:45,494 - __main__ - INFO - Clicking pagination link for page 2
+2025-11-09 01:02:47,537 - __main__ - INFO - Scraping search page 2
+2025-11-09 01:02:51,534 - __main__ - INFO - Closing browser

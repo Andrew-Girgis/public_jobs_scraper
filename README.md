@@ -143,8 +143,10 @@ public_jobs_scraper/
 │
 ├── list-of-jobs.txt              ← 44 technical job categories monitored
 ├── requirements.txt              ← Software dependencies
+├── README.md                     ← Project documentation
 │
 ├── src/                          ← Data collection modules
+│   ├── main.py                   ← Batch runner for all scrapers
 │   ├── GOC/                      ← Government of Canada (Federal)
 │   ├── BC/                       ← British Columbia
 │   ├── AB/                       ← Alberta
@@ -154,13 +156,15 @@ public_jobs_scraper/
 │   ├── NS/                       ← Nova Scotia
 │   └── [UK, AUS]/                ← International modules (Q1 2026)
 │
-├── data/                         ← Collected job postings
+├── data/                         ← Generated job data (local only, not in git)
 │   ├── BC/jobs_json/
 │   ├── AB/jobs_json/
 │   └── [other jurisdictions]/
 │
-└── logs/                         ← Collection activity logs
+└── logs/                         ← Collection activity logs (local only, not in git)
 ```
+
+*Note: `data/` and `logs/` directories are excluded from version control as they contain generated output.*
 
 ---
 

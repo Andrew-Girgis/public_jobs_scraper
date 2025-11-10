@@ -3,7 +3,6 @@
 ## Executive Summary
 
 This research project systematically collects and analyzes technical government job postings across Canada, the United Kingdom, and Australia to understand differences in position classifications, compensation structures, and qualification requirements. The automated data collection system currently covers seven Canadian jurisdictions (federal and provincial), with 158 validated technical positions across 44 job categories.
----
 
 ## Research Objective
 

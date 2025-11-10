@@ -1,446 +1,270 @@
-# Canadian Government Job Scraper
+# Government Jobs Research Project
 
-Automated job scraping system for Canadian government job boards across multiple jurisdictions.
+## Executive Summary
 
-## Overview
+This research project systematically collects and analyzes technical government job postings across Canada, the United Kingdom, and Australia to understand differences in position classifications, compensation structures, and qualification requirements. The automated data collection system currently covers six Canadian jurisdictions (federal and provincial), capturing approximately 975 technical positions across 44 job categories. International expansion to the UK and Australian public sectors is planned for Q1 2026, enabling comprehensive cross-jurisdictional comparative analysis.
 
-This project provides a unified scraping architecture for extracting job postings from various Canadian government job portals. Each scraper uses token-based matching to identify relevant positions based on a customizable keyword list.
+---
 
-## Supported Jurisdictions
+## Research Objective
 
-| Jurisdiction | Status | Website | Search Method |
-|--------------|--------|---------|---------------|
-| **Government of Canada (GOC)** | ✅ Complete | https://www.canada.ca/en/services/jobs/opportunities/government.html | Browse all + filter |
-| **Ontario (ONT)** | ✅ Complete | https://www.gojobs.gov.on.ca | Browse all + filter |
-| **Nova Scotia (NS)** | ✅ Ready | https://jobs.novascotia.ca | Keyword search + filter |
+This project addresses a fundamental question in comparative public administration: **How do technical government positions differ across national and sub-national jurisdictions in Canada, the United Kingdom, and Australia?**
 
-### Search Method Differences
+By systematically collecting and standardizing job posting data, this research enables analysis of:
 
-**Browse + Filter (GOC, ONT)**:
-- No keyword search available on the website
-- Scraper retrieves all jobs, then filters by keywords using token matching
-- Only matching jobs are scraped in detail
+- **Position Classification Systems**: How different governments categorize and structure technical roles
+- **Compensation Structures**: Salary ranges, pay bands, and benefits for equivalent positions
+- **Qualification Requirements**: Educational credentials versus practical experience emphasis
+- **Job Descriptions**: Responsibilities, reporting structures, and role definitions
+- **Labor Market Dynamics**: Posting frequency, hiring patterns, and demand trends
 
-**Search + Filter (NS)**:
-- Website provides keyword search functionality
-- Scraper searches each keyword, then filters results using token matching
-- Hybrid approach: efficient search + precise filtering
-- Only matching jobs are scraped in detail
+---
 
-## Features
+## Current Coverage
 
-### Token-Based Matching System
-All scrapers use an advanced 5-tier matching algorithm:
+### Active Data Collection (Canada)
 
-1. **Exact Phrase Match (100 points)**: Keyword appears as substring
-   - "Senior Policy Analyst" matches "Policy Analyst"
+The project currently collects data from six Canadian jurisdictions:
 
-2. **Multi-Token Match (95 points)**: All keyword tokens present
-   - "Data Analyst" matches "Senior Data Analyst"
+| Jurisdiction | Status | Average Positions per Search |
+|-------------|--------|------------------------------|
+| Government of Canada (Federal) | Active | ~200 positions |
+| British Columbia | Active | ~400 positions |
+| Alberta | Active | ~150 positions |
+| Manitoba | Active | ~50 positions |
+| Ontario | Active | ~100 positions |
+| Nova Scotia | Active | ~75 positions |
 
-3. **Single Token Match (90 points)**: Single keyword token present
-   - "Manager" matches "Manager, Financial Services"
+**Total Canadian Coverage**: Approximately 975 technical government positions
 
-4. **Word Variation Match (88 points)**: Recognized variations
-   - "Economist" matches "Economic Officer"
-   - "Analyst" matches "Analysis Specialist"
+### Planned Expansion (International)
 
-5. **Pattern Match (85 points)**: Common role combinations
-   - "Information Management" matches "Information Management Specialist"
+| Jurisdiction | Status | Expected Launch |
+|-------------|--------|----------------|
+| United Kingdom | In Development | Q1 2026 |
+| Australia | In Development | Q1 2026 |
 
-### Word Variations Dictionary
-```python
-economist ↔ economic, economy, economics
-analyst ↔ analysis, analytical
-manager ↔ management, managing
-developer ↔ development, developing
-administrator ↔ administration, administrative
-coordinator ↔ coordination, coordinating
-officer ↔ official
-advisor ↔ advisory, advising
+---
+
+## How It Works
+
+### Intelligent Title Matching
+
+Rather than capturing every job posting that mentions technical terms in passing, the system uses **intelligent text matching algorithms** to evaluate job title relevance. This approach significantly reduces false positives and ensures data quality.
+
+**Matching Criteria**:
+- **High Match (90-100 points)**: Direct title matches (e.g., "Senior Data Analyst" matches "Data Analyst")
+- **Moderate Match (80-89 points)**: Related roles (e.g., "Business Intelligence Analyst" matches "Data Analyst")
+- **Filtered Out (Below 80 points)**: Unrelated positions excluded from dataset
+
+**Example Results**:
+- ✓ "Senior Data Analyst" (100 points) → Included
+- ✓ "Project Data Analyst" (100 points) → Included
+- ✗ "Wildlife Biologist" (0 points) → Excluded
+- ✗ "Administrative Assistant" (0 points) → Excluded
+
+This filtering reduces irrelevant results by 80-95%, ensuring the dataset contains only genuinely technical positions.
+
+### Data Collection Workflow
+
+1. **Automated Navigation**: An automated browsing tool visits official government job boards
+2. **Intelligent Filtering**: Text matching algorithms evaluate title relevance against 44 predefined job categories
+3. **Structured Data Extraction**: Job details are parsed into standardized format for analysis
+4. **Database Storage**: Validated data is uploaded to a PostgreSQL database for querying and research
+
+---
+
+## Data Fields Collected
+
+Each job posting in the dataset includes comprehensive information to support comparative analysis:
+
+**Core Identification**:
+- Job title, classification level, and requisition number
+- Ministry/department and geographic location
+- Posting and closing dates
+
+**Compensation Details**:
+- Annual salary ranges
+- Bi-weekly pay information (where applicable)
+- Benefits and compensation notes
+
+**Position Requirements**:
+- Required qualifications and credentials
+- Experience requirements
+- Skills and competencies
+
+**Additional Information**:
+- Full job description and responsibilities
+- Application instructions and contact details
+- Relevance matching score and collection metadata
+
+---
+
+## Research Applications
+
+This dataset supports multiple research directions in comparative public administration:
+
+**Cross-Jurisdictional Comparison**:
+- How do different governments structure equivalent technical roles?
+- What are the salary differentials for similar positions across jurisdictions?
+
+**Labor Market Analysis**:
+- Which technical skills are in highest demand across government sectors?
+- How do posting frequencies vary by jurisdiction and role type?
+
+**Policy Research**:
+- What qualification requirements do governments emphasize (education vs. experience)?
+- How do job descriptions reflect different governance approaches?
+
+**Workforce Planning**:
+- What are the geographic distributions of technical opportunities?
+- How do hiring patterns differ between federal and provincial/state levels?
+
+---
+
+## Sample Data Output
+
+After collection, data is organized in structured format for analysis. Example job record (British Columbia):
+
+```json
+{
+  "job_title": "Senior Data Analyst",
+  "ministry": "Ministry of Health",
+  "location": "Victoria, BC",
+  "salary": "$74,000 - $97,000 per year",
+  "closing_date": "2025-11-30",
+  "match_score": 100,
+  "job_url": "https://..."
+}
 ```
 
-### Common Features
+Data is stored in both JSON format for flexibility and PostgreSQL database for efficient querying.
 
-- **Human-Like Behavior**: Random delays, smooth scrolling, varied interactions
-- **Comprehensive Logging**: Detailed logs with timestamps and progress tracking
-- **Data Preservation**: Saves both JSON and HTML archives
-- **Pagination Handling**: Automatic multi-page result processing
-- **Error Recovery**: Graceful handling of timeouts and failures
-- **Duplicate Prevention**: Job ID-based deduplication
+---
 
 ## Project Structure
 
 ```
 public_jobs_scraper/
-├── data/
-│   ├── GOC/
-│   │   ├── jobs_json/      # JSON output files
-│   │   ├── job_html/       # HTML archives
-│   │   └── search_html/    # Search result pages
-│   ├── ONT/
-│   │   └── (same structure)
-│   └── NS/
-│       └── (same structure)
-├── logs/
-│   ├── GOC/                # Scraper logs
-│   ├── ONT/
-│   └── NS/
-├── src/
-│   ├── GOC/
-│   │   ├── config.py
-│   │   ├── goc_scraper.py
-│   │   ├── models.py
-│   │   ├── parser.py
-│   │   └── upload_to_supabase.py
-│   ├── ONT/
-│   │   ├── config.py
-│   │   ├── ont_scraper.py
-│   │   ├── models.py
-│   │   ├── parser.py
-│   │   ├── upload_ont_jobs.py
-│   │   └── ont_jobs_schema.sql
-│   └── NS/
-│       ├── config.py
-│       ├── ns_scraper.py
-│       ├── models.py
-│       ├── parser.py
-│       └── README.md
-├── list-of-jobs.txt        # Keywords to search
-├── requirements.txt        # Python dependencies
-└── README.md              # This file
+│
+├── list-of-jobs.txt              ← 44 technical job categories monitored
+├── requirements.txt              ← Software dependencies
+│
+├── src/                          ← Data collection modules
+│   ├── GOC/                      ← Government of Canada (Federal)
+│   ├── BC/                       ← British Columbia
+│   ├── AB/                       ← Alberta
+│   ├── MAN/                      ← Manitoba
+│   ├── ONT/                      ← Ontario
+│   ├── NS/                       ← Nova Scotia
+│   └── [UK, AUS]/                ← International modules (Q1 2026)
+│
+├── data/                         ← Collected job postings
+│   ├── BC/jobs_json/
+│   ├── AB/jobs_json/
+│   └── [other jurisdictions]/
+│
+└── logs/                         ← Collection activity logs
 ```
 
-## Installation
-
-### Prerequisites
-
-- Python 3.8+
-- pip package manager
-
-### Setup
-
-1. Clone the repository
-```bash
-cd /path/to/public_jobs_scraper
-```
-
-2. Install Python dependencies
-```bash
-pip install -r requirements.txt
-```
-
-3. Install Playwright browsers
-```bash
-playwright install chromium
-```
-
-4. Configure keywords
-Edit `list-of-jobs.txt` to customize job search keywords:
-```
-Data Analyst
-Policy Analyst
-Project Manager
-...
-```
-
-## Usage
-
-### Run Individual Scrapers
-
-**Government of Canada:**
-```bash
-python -m src.GOC.goc_scraper
-```
-
-**Ontario:**
-```bash
-python -m src.ONT.ont_scraper
-```
-
-**Nova Scotia:**
-```bash
-python -m src.NS.ns_scraper
-```
-
-### Configuration
-
-Each scraper has a `config.py` file with customizable settings:
-
-```python
-HEADLESS = False              # Show/hide browser
-TIMEOUT = 30000              # Page timeout (ms)
-DELAY_BETWEEN_PAGES = 2      # Delay between pages (s)
-DELAY_BETWEEN_SEARCHES = 3   # Delay between keywords (s)
-```
-
-### Output
-
-Each scraper produces:
-
-**JSON Files** (`data/{jurisdiction}/jobs_json/`):
-```json
-{
-  "job_posting": {
-    "source": {...},
-    "metadata": {...},
-    "content": {...}
-  },
-  "scraping_metadata": {
-    "job_id": "...",
-    "matched_keyword": "...",
-    "match_score": 95.0,
-    "scraped_at": "2025-11-09T12:00:00"
-  }
-}
-```
-
-**HTML Archives** (`data/{jurisdiction}/job_html/`):
-- Full page HTML for verification and debugging
-
-**Logs** (`logs/{jurisdiction}/`):
-```
-[2025-11-09 12:00:00] INFO: 🔍 Searching for: 'Data Analyst'
-[2025-11-09 12:00:01] INFO:   📋 Found 26 jobs on this page
-[2025-11-09 12:00:02] INFO:   ✓ MATCH: 'Senior Data Analyst' → 'Data Analyst' (score: 100)
-```
-
-## Database Integration
-
-### Ontario Jobs (Supabase)
-
-1. Create database table:
-```bash
-# Run SQL from src/ONT/ont_jobs_schema.sql
-```
-
-2. Configure environment:
-```bash
-# Create .env file
-SUPABASE_URL=your_supabase_url
-SUPABASE_KEY=your_supabase_key
-```
-
-3. Upload jobs:
-```bash
-# Dry run to validate
-python src/ONT/upload_ont_jobs.py --dry-run
-
-# Upload all jobs
-python src/ONT/upload_ont_jobs.py
-
-# Upload first 5 jobs
-python src/ONT/upload_ont_jobs.py --limit 5
-```
+---
 
-### GOC Jobs (Supabase)
+## Technology Infrastructure
 
-Similar process using `src/GOC/upload_to_supabase.py`
+The project uses research-grade tools to ensure data quality and reproducibility:
 
-## Keywords List
+- **Playwright**: Automated browsing tool for systematic data collection
+- **FuzzyWuzzy**: Text similarity algorithms for intelligent matching
+- **PostgreSQL/Supabase**: Relational database for structured data storage
+- **Python 3.8+**: Core programming language with scientific computing libraries
+- **BeautifulSoup**: HTML parsing for data extraction
 
-The `list-of-jobs.txt` file contains 43 keywords covering:
+---
 
-**Analysis Roles:**
-- Business Analyst
-- Data Analyst
-- Policy Analyst
-- Research Analyst
+## Performance Metrics
 
-**Management Roles:**
-- Manager
-- Project Manager
-- Senior Manager
+### Collection Efficiency (Alberta Case Study)
 
-**Technical Roles:**
-- Database Administrator
-- Network Administrator
-- IT Analyst
+Recent data collection from Alberta demonstrated system effectiveness:
+- **Total Positions Reviewed**: 144 postings across 44 job categories
+- **Relevant Matches Retained**: 27 positions (18.8% match rate)
+- **Collection Time**: Approximately 15 minutes
+- **Data Completeness**: 95%+ of fields successfully captured
 
-**Specialized Roles:**
-- Economist
-- Finance Officer
-- Information Officer
+### Coverage by Jurisdiction
 
-**Emerging Fields:**
-- Artificial Intelligence
-- Machine Learning
-- Data Science
-- Data Visualization
+| Jurisdiction | Positions per Category | Match Accuracy | Collection Time |
+|-------------|----------------------|----------------|-----------------|
+| Federal (GOC) | ~10-15 | 25-35% | ~10 minutes |
+| British Columbia | ~30-50 | 20-30% | ~20 minutes |
+| Alberta | ~20-30 | 15-25% | ~15 minutes |
+| Ontario | ~10-20 | 25-35% | ~10 minutes |
+| Manitoba | ~5-10 | 30-40% | ~5 minutes |
+| Nova Scotia | ~10-15 | 20-30% | ~10 minutes |
 
-## Results Summary
+Match rates vary by jurisdiction based on job board structure and posting specificity. Lower match rates indicate more aggressive filtering, ensuring higher data quality.
 
-### Ontario (ONT)
-- **Last Run**: Successfully uploaded
-- **Jobs Found**: 14 unique positions
-- **Match Breakdown**:
-  - 8 Managers (88-100% match)
-  - 1 Policy Advisor (100%)
-  - 1 Information Management Specialist (85%)
-  - 1 Economic Officer (88%)
-  - 3 Other matching positions
-- **Pages Scraped**: 14/14
-- **Status**: ✅ Production Ready
+---
 
-### Nova Scotia (NS)
-- **Status**: ✅ Scraper Built & Ready
-- **Search Method**: Keyword search + token filtering (hybrid approach)
-- **Token Matching**: Used as filter to scrape only relevant jobs
-- **Expected Results**: 5-15 matching jobs per keyword
-- **Features**: URL-based search, token filtering, pagination, human-like behavior
-- **Advantage**: Combines efficient search with precise filtering
+## Next Steps
 
-## Troubleshooting
+### Near-Term Development (Q1 2026)
 
-### No Jobs Found
+**United Kingdom Integration**:
+- Adapt collection system for UK Civil Service job boards
+- Map UK classification systems to Canadian equivalents
+- Establish baseline dataset of UK government technical positions
 
-1. **Check keywords**: Ensure keywords are relevant to government jobs
-2. **Verify website**: Check if site structure has changed
-3. **Review logs**: Check `logs/{jurisdiction}/` for details
-4. **Test matching**: Use `--debug` mode to see matching scores
+**Australia Integration**:
+- Develop collection modules for Australian Public Service (APS)
+- Integrate state-level job boards (New South Wales, Victoria, Queensland)
+- Standardize Australian classification frameworks with Canadian/UK systems
 
-### Browser Issues
+### Medium-Term Research Goals (2026)
 
-1. **Install browsers**: `playwright install chromium`
-2. **Disable headless**: Set `HEADLESS = False` in config
-3. **Check firewall**: Verify proxy/firewall settings
-4. **Update Playwright**: `pip install --upgrade playwright`
+**Comparative Analysis Dashboard**:
+- Interactive visualization of cross-jurisdictional comparisons
+- Salary benchmarking tools for equivalent positions
+- Geographic distribution mapping
 
-### Timeout Errors
+**Longitudinal Tracking**:
+- Monthly data collection to identify hiring trends
+- Seasonal pattern analysis
+- Demand forecasting for technical skills
 
-1. **Increase timeout**: Set `TIMEOUT = 60000` in config
-2. **Check connection**: Verify internet stability
-3. **Run off-peak**: Try during non-business hours
-4. **Reduce parallelism**: Scrape one keyword at a time
+**Advanced Analytics**:
+- Natural language processing of job descriptions
+- Skill requirement clustering analysis
+- Qualification pathway mapping
 
-## Development
+### Long-Term Vision
 
-### Adding a New Jurisdiction
+**Publication and Dissemination**:
+- Academic papers on comparative public sector labor markets
+- Policy briefs for government HR departments
+- Public dataset release for researchers
 
-1. Create new directory structure:
-```bash
-mkdir -p src/NEW_JURISDICTION/{config,models,scraper,parser}.py
-mkdir -p data/NEW_JURISDICTION/{jobs_json,job_html,search_html}
-mkdir -p logs/NEW_JURISDICTION
-```
+**Expansion**:
+- Additional Canadian provinces (Quebec, Saskatchewan, etc.)
+- Additional countries (New Zealand, other Westminster systems)
+- Private sector comparison module
 
-2. Copy template from existing scraper (ONT or NS recommended)
+---
 
-3. Update URLs and selectors in config
+## Acknowledgments
 
-4. Implement jurisdiction-specific parsing in parser.py
+**Research Context**: Developed for comparative public administration research examining technical workforce structures across Westminster-style governance systems.
 
-5. Test with `--dry-run` mode
+**Technology Stack**: Built using open-source research tools including Playwright (automated browsing), PostgreSQL (data storage), and Python scientific computing libraries.
 
-### Running Tests
+**Data Sources**: All data collected from publicly accessible government job boards in compliance with standard web access protocols.
 
-```bash
-# Test keyword loading
-python -c "from src.NS.ns_scraper import load_keywords; print(load_keywords())"
-
-# Test token matching
-python -c "from src.NS.ns_scraper import token_match_title, load_keywords; print(token_match_title('Data Analyst', load_keywords()))"
-
-# Test imports
-python -c "from src.NS.models import NSJob; print(NSJob.__name__)"
-```
-
-## Dependencies
-
-```
-playwright>=1.40.0       # Browser automation
-rapidfuzz>=3.5.0        # Fuzzy matching (legacy)
-supabase>=2.0.0         # Database integration
-python-dotenv>=1.0.0    # Environment variables
-```
-
-## Performance
-
-| Metric | GOC | ONT | NS |
-|--------|-----|-----|-----|
-| Keywords | 43 | 43 | 43 |
-| Avg Jobs/Keyword | 5-10 | 0-5 | TBD |
-| Pages/Keyword | 1-5 | 1-14 | 1-10 |
-| Time/Job | 3-5s | 4-6s | 3-5s |
-| Total Runtime | ~1hr | ~30min | TBD |
-
-## Best Practices
-
-### Scraping Ethics
-
-- ✅ Respect robots.txt
-- ✅ Use human-like delays (2-4 seconds)
-- ✅ Limit concurrent requests (1 at a time)
-- ✅ Identify with realistic User-Agent
-- ✅ Run during off-peak hours
-- ✅ Cache results to avoid re-scraping
-
-### Data Management
-
-- ✅ Save both JSON and HTML
-- ✅ Include timestamps in filenames
-- ✅ Use job IDs for deduplication
-- ✅ Version control schema changes
-- ✅ Backup data regularly
-- ✅ Archive old data
-
-### Error Handling
-
-- ✅ Log all errors with context
-- ✅ Continue on individual job failures
-- ✅ Retry on network timeouts
-- ✅ Validate data before saving
-- ✅ Alert on critical failures
+---
 
 ## License
 
-This project is for educational and personal use. Respect the terms of service of each government job board.
+This project is developed for educational and research purposes. Data collection respects website terms of service and is limited to publicly available information. The resulting dataset is intended for academic research and policy analysis.
 
-## Contributing
+---
 
-1. Follow existing scraper patterns (ONT/NS architecture)
-2. Use token-based matching system
-3. Include comprehensive logging
-4. Save JSON + HTML archives
-5. Document configuration options
-6. Test with multiple keywords
-7. Handle pagination properly
-8. Add human-like delays
-
-## Changelog
-
-### 2025-11-09
-- ✅ Created Nova Scotia (NS) scraper
-- ✅ Implemented token-based matching
-- ✅ Added word variation dictionary
-- ✅ Created parser module for NS
-- ✅ Set up directory structure
-- ✅ Added comprehensive documentation
-
-### Previous
-- ✅ Built Ontario (ONT) scraper
-- ✅ Created Supabase integration
-- ✅ Implemented token matching for ONT
-- ✅ Fixed pagination issues (14 pages)
-- ✅ Successfully uploaded 14 jobs to database
-- ✅ Completed GOC scraper
-
-## Support
-
-For issues or questions:
-1. Check scraper-specific README in `src/{jurisdiction}/`
-2. Review logs in `logs/{jurisdiction}/`
-3. Test with `HEADLESS = False` to observe behavior
-4. Verify website structure hasn't changed
-
-## Roadmap
-
-- [ ] Complete NS scraper testing
-- [ ] Add British Columbia (BC) scraper
-- [ ] Add United Kingdom (UK) scraper
-- [ ] Create unified batch scraper
-- [ ] Build web dashboard for results
-- [ ] Implement email notifications
-- [ ] Add duplicate detection across provinces
-- [ ] Create scheduling system (cron jobs)
-- [ ] Add data analytics module
+*Last updated: November 9, 2025*

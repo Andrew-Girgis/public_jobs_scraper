@@ -66,6 +66,11 @@ SCRAPERS = {
         'name': 'Nova Scotia',
         'module': 'src.NS.ns_scraper',
         'enabled': True
+    },
+    'UK': {
+        'name': 'United Kingdom',
+        'module': 'src.UK.uk_scraper',
+        'enabled': True
     }
 }
 

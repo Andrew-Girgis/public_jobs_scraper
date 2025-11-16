@@ -1,5 +1,5 @@
 """
-Data models for UK job scraper
+Data models for Victoria (Australia) job scraper
 """
 
 from dataclasses import dataclass, field
@@ -8,8 +8,8 @@ from datetime import datetime
 
 
 @dataclass
-class UKJob:
-    """UK job posting data structure"""
+class VICJob:
+    """Victoria government job posting data structure"""
     
     # Identification
     job_id: str
@@ -17,30 +17,28 @@ class UKJob:
     job_title: str
     job_url: str
     
-    # Company/Organization
-    company: str
+    # Organization
+    organization: str
     
     # Location
     location: str
     
-    # Dates
-    posting_date: str
-    closing_date: str
+    # Employment Details
+    work_type: str  # e.g., "Ongoing - Full-time"
+    grade: str  # e.g., "VPS 5"
+    occupation: str  # e.g., "IT and telecommunications"
     
-    # Job details
-    hours: str  # Full time, Part time, etc.
-    job_type: str  # Permanent, Contract, etc.
+    # Dates
+    posted_date: str
+    closing_date: str
     
     # Description
     summary: str
     description_html: str
     
     # Optional fields
-    remote_working: Optional[str] = None
     salary: Optional[str] = None
-    
-    # Tags/Categories
-    tags: List[str] = field(default_factory=list)
+    logo_url: Optional[str] = None
     
     # Matching metadata
     search_keyword: str = ""
@@ -53,7 +51,7 @@ class UKJob:
 
 
 @dataclass
-class UKScrapingMetadata:
+class VICScrapingMetadata:
     """Metadata for the scraping session"""
     
     scrape_date: str

@@ -1,5 +1,5 @@
 """
-UK Job Scraper for findajob.dwp.gov.uk
+Victoria (Australia) Job Scraper for careers.vic.gov.au
 """
 
 import logging
@@ -11,10 +11,8 @@ from typing import Tuple, Optional, List
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeout
 from fuzzywuzzy import fuzz
 
-from src.UK.config import (
+from src.VIC.config import (
     SEARCH_URL,
-    LOCATION_CODE,
-    RESULTS_PER_PAGE,
     HEADLESS,
     TIMEOUT,
     MATCH_THRESHOLD,
@@ -29,12 +27,12 @@ from src.UK.config import (
     LOGS_DIR,
     SCRAPER_VERSION
 )
-from src.UK.parser import parse_job_details, extract_job_count, parse_search_results
-from src.UK.models import UKScrapingMetadata
+from src.VIC.parser import parse_job_details, parse_search_results
+from src.VIC.models import VICScrapingMetadata
 
 # Set up logging
 LOGS_DIR.mkdir(parents=True, exist_ok=True)
-log_filename = LOGS_DIR / f"uk_scraper_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
+log_filename = LOGS_DIR / f"vic_scraper_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
 
 logging.basicConfig(
     level=logging.INFO,
@@ -122,41 +120,22 @@ def search_jobs(page, keyword: str) -> Tuple[int, List[dict]]:
         
         # Enter search keyword
         logger.info(f"  ⌨️  Entering search keyword: '{keyword}'")
-        search_input = page.locator('input[name="q"]#what')
+        search_input = page.locator('input#search-jobs-search-bar')
         search_input.wait_for(state="visible", timeout=TIMEOUT)
         search_input.fill(keyword)
         logger.info(f"    ✓ Keyword entered")
         
-        # Set location code (UK-wide) - try different selector patterns
-        logger.info(f"  📍 Setting location: UK-wide (code: {LOCATION_CODE})")
-        try:
-            # Try various location input selectors
-            location_input = page.locator('input[name="loc"]').first
-            if location_input.count() == 0:
-                location_input = page.locator('input#where').first
-            
-            if location_input.count() > 0:
-                location_input.fill(LOCATION_CODE)
-                logger.info(f"    ✓ Location entered")
-            else:
-                logger.info(f"    ⚠️  Location field not found, skipping...")
-        except Exception as e:
-            logger.warning(f"    ⚠️  Could not set location: {e}")
-        
-        # Submit search - try multiple selectors
+        # Click the correct "Search jobs" button
         logger.info(f"  🚀 Submitting search...")
         try:
-            # Try the submit button
-            submit_btn = page.locator('input[type="submit"]').first
-            if submit_btn.count() == 0:
-                submit_btn = page.locator('button[type="submit"]').first
-            
-            if submit_btn.count() > 0:
-                logger.info(f"    ✓ Submit button found, clicking...")
-                submit_btn.click()
+            # Look for the button with "Search jobs" text
+            search_button = page.locator('button:has-text("Search jobs")')
+            if search_button.count() > 0:
+                logger.info(f"    ✓ Found 'Search jobs' button, clicking...")
+                search_button.click()
             else:
-                # Alternative: press Enter on the search input
-                logger.info(f"    ⚠️  Submit button not found, pressing Enter instead...")
+                # Fallback: try pressing Enter
+                logger.info(f"    ⚠️  Button not found, pressing Enter instead...")
                 search_input.press("Enter")
         except Exception as e:
             logger.warning(f"    ⚠️  Click failed, pressing Enter: {e}")
@@ -168,64 +147,22 @@ def search_jobs(page, keyword: str) -> Tuple[int, List[dict]]:
         time.sleep(2)
         logger.info(f"    ✓ Search results loaded")
         
-        # Set results per page to maximum (50)
-        try:
-            logger.info(f"  ⚙️  Setting results per page to {RESULTS_PER_PAGE}...")
-            per_page_select = page.locator('select#per_page')
-            per_page_select.select_option(str(RESULTS_PER_PAGE))
-            page.wait_for_load_state("domcontentloaded")
-            time.sleep(2)
-            logger.info(f"  ✓ Results per page set successfully")
-        except Exception as e:
-            logger.warning(f"  ⚠️  Could not set results per page: {e}")
-        
         # Save search results HTML
         html_content = page.content()
         search_file = SEARCH_HTML_DIR / f"{keyword.replace(' ', '_')}_page1.html"
         search_file.write_text(html_content, encoding='utf-8')
         logger.info(f"  💾 Saved search HTML: {search_file.name}")
         
-        # Extract total job count
-        total_jobs = extract_job_count(html_content)
-        logger.info(f"  📊 Found {total_jobs} total jobs for '{keyword}'")
-        
         # Parse jobs from first page
         all_jobs = parse_search_results(html_content)
+        total_jobs = len(all_jobs)
+        logger.info(f"  📊 Found {total_jobs} total jobs for '{keyword}'")
         logger.info(f"  📋 Parsed {len(all_jobs)} jobs from page 1")
         
-        # Handle pagination
-        page_num = 2
-        while True:
-            try:
-                # Check for next page link
-                next_link = page.locator('a.pager-next')
-                if next_link.count() == 0:
-                    logger.info(f"  ✓ No more pages to process")
-                    break
-                
-                logger.info(f"  📄 Navigating to page {page_num}...")
-                next_link.click()
-                page.wait_for_load_state("domcontentloaded")
-                time.sleep(DELAY_BETWEEN_PAGES)
-                
-                # Save page HTML
-                html_content = page.content()
-                search_file = SEARCH_HTML_DIR / f"{keyword.replace(' ', '_')}_page{page_num}.html"
-                search_file.write_text(html_content, encoding='utf-8')
-                logger.info(f"    💾 Saved: {search_file.name}")
-                
-                # Parse jobs from current page
-                page_jobs = parse_search_results(html_content)
-                logger.info(f"    📋 Parsed {len(page_jobs)} jobs from page {page_num}")
-                all_jobs.extend(page_jobs)
-                
-                page_num += 1
-                
-            except Exception as e:
-                logger.info(f"  ✓ Reached last page or error: {e}")
-                break
+        # TODO: Handle pagination if needed
+        # Victoria site may have pagination - check if there's a "Next" or "Load more" button
         
-        logger.info(f"  ✓ Total jobs collected across all pages: {len(all_jobs)}")
+        logger.info(f"  ✓ Total jobs collected: {len(all_jobs)}")
         
         # Filter jobs using fuzzy matching
         logger.info(f"  🔬 Applying fuzzy matching filter (threshold: {MATCH_THRESHOLD})...")
@@ -318,7 +255,7 @@ def run_scraper():
     Main scraper function - orchestrates the entire scraping process.
     """
     start_time = time.time()
-    metadata = UKScrapingMetadata(
+    metadata = VICScrapingMetadata(
         scrape_date=datetime.now().isoformat(),
         keywords_searched=[],
         total_jobs_found=0,
@@ -329,7 +266,7 @@ def run_scraper():
     )
     
     logger.info("=" * 80)
-    logger.info("Starting UK Job Scraper")
+    logger.info("Starting Victoria (Australia) Job Scraper")
     logger.info(f"Version: {SCRAPER_VERSION}")
     logger.info(f"Keywords to search: {len(KEYWORDS)}")
     logger.info(f"Match threshold: {MATCH_THRESHOLD}")

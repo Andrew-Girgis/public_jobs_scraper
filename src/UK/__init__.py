@@ -1,3 +1,1 @@
-"""
-Nova Scotia (NS) job scraper package.
-"""
+"""UK Government Job Scraper Package"""

@@ -1,8 +1,8 @@
 """
-Upload UK Jobs to Supabase
+Upload Tasmania Jobs to Supabase
 
-This script reads JSON files from data/UK/jobs_json/ and uploads them
-to the Supabase database using the uk_jobs table schema.
+This script reads JSON files from data/TAS/jobs_json/ and uploads them
+to the Supabase database using the tas_jobs table schema.
 """
 
 import json
@@ -17,7 +17,7 @@ from bs4 import BeautifulSoup
 
 # Paths
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
-DATA_DIR = PROJECT_ROOT / "data" / "UK" / "jobs_json"
+DATA_DIR = PROJECT_ROOT / "data" / "TAS" / "jobs_json"
 
 # Load environment variables from .env file in project root
 load_dotenv(PROJECT_ROOT / ".env")
@@ -49,30 +49,41 @@ def get_supabase_client() -> Client:
     return create_client(SUPABASE_URL, SUPABASE_KEY)
 
 
-def parse_uk_date(date_str: Optional[str]) -> Optional[str]:
+def parse_tas_date(date_str: Optional[str]) -> Optional[str]:
     """
-    Parse UK date string to ISO format for database.
+    Parse Tasmania date string to ISO format for database.
     
     Args:
-        date_str: Date string (e.g., "27 June 2025", "1 January 2025")
+        date_str: Date string (e.g., "Monday 25 January, 2027 5:00 PM", "Thursday 20 November, 2025 11:55 PM")
     
     Returns:
-        ISO formatted date string or None
+        ISO formatted datetime string or None
     """
     if not date_str or date_str == "Not specified":
         return None
     
     try:
-        # Parse UK format: "27 June 2025"
-        dt = datetime.strptime(date_str.strip(), "%d %B %Y")
-        return dt.date().isoformat()
+        # Remove day of week if present (e.g., "Monday 25 January, 2027 5:00 PM" -> "25 January, 2027 5:00 PM")
+        date_clean = re.sub(r'^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s+', '', date_str.strip())
+        
+        # Parse Tasmania format: "25 January, 2027 5:00 PM"
+        dt = datetime.strptime(date_clean, "%d %B, %Y %I:%M %p")
+        return dt.isoformat()
     except ValueError:
         try:
             # Try alternative formats
-            for fmt in ["%B %d, %Y", "%Y-%m-%d", "%d/%m/%Y"]:
+            formats = [
+                "%d %B %Y %I:%M %p",  # Without comma
+                "%d %B, %Y",  # Date only with comma
+                "%d %B %Y",  # Date only without comma
+                "%B %d, %Y",  # Month first
+                "%Y-%m-%d",  # ISO format
+                "%d/%m/%Y",  # Day/Month/Year
+            ]
+            for fmt in formats:
                 try:
                     dt = datetime.strptime(date_str.strip(), fmt)
-                    return dt.date().isoformat()
+                    return dt.isoformat()
                 except ValueError:
                     continue
         except Exception:
@@ -83,45 +94,33 @@ def parse_uk_date(date_str: Optional[str]) -> Optional[str]:
 
 def parse_salary(salary_str: Optional[str]) -> Dict[str, Any]:
     """
-    Parse salary string to extract min, max, currency, and frequency.
+    Parse salary string to extract min and max.
     
     Args:
-        salary_str: Salary string (e.g., "£30,000 - £40,000 per annum", "£15.50 per hour")
+        salary_str: Salary string (e.g., "$74,783.00 to $80,835.00 per annum", "$99,482.00 to $104,352.00 per annum")
     
     Returns:
-        Dictionary with salary_min, salary_max, salary_currency, salary_frequency
+        Dictionary with salary_min, salary_max, salary_currency
     """
     result = {
         "salary_min": None,
         "salary_max": None,
-        "salary_currency": "GBP",
-        "salary_frequency": None
+        "salary_currency": "AUD"
     }
     
-    if not salary_str or salary_str == "Not specified":
+    if not salary_str:
         return result
     
-    # Extract currency
+    # Extract currency (default to AUD for Tasmania)
     if "£" in salary_str:
         result["salary_currency"] = "GBP"
     elif "$" in salary_str:
-        result["salary_currency"] = "USD"
+        result["salary_currency"] = "AUD"
     elif "€" in salary_str:
         result["salary_currency"] = "EUR"
     
-    # Extract frequency
-    salary_lower = salary_str.lower()
-    if "per annum" in salary_lower or "per year" in salary_lower or "annually" in salary_lower:
-        result["salary_frequency"] = "per annum"
-    elif "per hour" in salary_lower or "hourly" in salary_lower:
-        result["salary_frequency"] = "per hour"
-    elif "per month" in salary_lower or "monthly" in salary_lower:
-        result["salary_frequency"] = "per month"
-    elif "per week" in salary_lower or "weekly" in salary_lower:
-        result["salary_frequency"] = "per week"
-    
     # Extract salary amounts
-    # Pattern: £30,000 or £30000 or 30,000 or 30000
+    # Pattern: $30,000.00 or $30000 or 30,000 or 30000
     amounts = re.findall(r'[\£\$\€]?\s*(\d{1,3}(?:,\d{3})*(?:\.\d{2})?)', salary_str)
     amounts = [float(a.replace(',', '')) for a in amounts]
     
@@ -157,7 +156,7 @@ def html_to_text(html_str: Optional[str]) -> Optional[str]:
 
 def transform_job_data(job_json: Dict[str, Any]) -> Dict[str, Any]:
     """
-    Transform the UK job JSON structure into a flat structure for the database.
+    Transform the Tasmania job JSON structure into a flat structure for the database.
     
     Args:
         job_json: Raw job data from JSON file
@@ -168,9 +167,8 @@ def transform_job_data(job_json: Dict[str, Any]) -> Dict[str, Any]:
     # Parse salary
     salary_info = parse_salary(job_json.get("salary"))
     
-    # Parse dates
-    posting_date_parsed = parse_uk_date(job_json.get("posting_date"))
-    closing_date_parsed = parse_uk_date(job_json.get("closing_date"))
+    # Parse closing date
+    closing_date_parsed = parse_tas_date(job_json.get("closing_date"))
     
     # Convert description HTML to plain text for search
     description_text = html_to_text(job_json.get("description_html"))
@@ -191,23 +189,21 @@ def transform_job_data(job_json: Dict[str, Any]) -> Dict[str, Any]:
         "job_title": job_json.get("job_title"),
         
         # Source Information
-        "jurisdiction": "United Kingdom",
-        "job_board": "Find a Job (DWP)",
-        "company": job_json.get("company"),
+        "jurisdiction": "Tasmania, Australia",
+        "job_board": "Jobs Tasmania",
+        "agency": job_json.get("agency"),
         "url": job_json.get("job_url"),
         
-        # Location and Work Arrangement
+        # Location
+        "region": job_json.get("region"),
         "location": job_json.get("location"),
-        "remote_working": job_json.get("remote_working"),
         
         # Employment Details
-        "hours": job_json.get("hours"),
-        "job_type": job_json.get("job_type"),
+        "employment_type": job_json.get("employment_type"),
+        "award": job_json.get("award"),
         
         # Dates
-        "posting_date": job_json.get("posting_date"),
         "closing_date": job_json.get("closing_date"),
-        "posting_date_parsed": posting_date_parsed,
         "closing_date_parsed": closing_date_parsed,
         
         # Salary Information
@@ -215,15 +211,11 @@ def transform_job_data(job_json: Dict[str, Any]) -> Dict[str, Any]:
         "salary_min": salary_info["salary_min"],
         "salary_max": salary_info["salary_max"],
         "salary_currency": salary_info["salary_currency"],
-        "salary_frequency": salary_info["salary_frequency"],
         
         # Job Content
         "summary": job_json.get("summary"),
         "description_html": job_json.get("description_html"),
         "description_text": description_text,
-        
-        # Tags/Categories
-        "tags": job_json.get("tags", []),
         
         # Scraping Metadata
         "search_keyword": job_json.get("search_keyword"),
@@ -249,7 +241,7 @@ def upload_job(supabase: Client, job_data: Dict[str, Any]) -> bool:
     """
     try:
         # Use upsert to handle duplicates
-        response = supabase.table("uk_jobs").upsert(
+        response = supabase.table("tas_jobs").upsert(
             job_data,
             on_conflict="job_id"
         ).execute()
@@ -262,7 +254,7 @@ def upload_job(supabase: Client, job_data: Dict[str, Any]) -> bool:
 
 def upload_all_jobs(dry_run: bool = False):
     """
-    Upload all UK jobs from JSON files to Supabase.
+    Upload all Tasmania jobs from JSON files to Supabase.
     
     Args:
         dry_run: If True, only validate data without uploading
@@ -277,7 +269,7 @@ def upload_all_jobs(dry_run: bool = False):
         print(f"❌ No JSON files found in {DATA_DIR}")
         return
     
-    print(f"📊 Found {len(json_files)} UK job files")
+    print(f"📊 Found {len(json_files)} Tasmania job files")
     print()
     
     if dry_run:

@@ -1,17 +1,12 @@
 """
-Configuration for UK Job Scraper
+Configuration for Victoria (Australia) Job Scraper
 """
 
 from pathlib import Path
 
 # Base URL
-BASE_URL = "https://findajob.dwp.gov.uk"
-SEARCH_URL = f"{BASE_URL}/search"
-
-# Search parameters
-# Using location code 86383 which appears to be UK-wide
-LOCATION_CODE = "86383"
-RESULTS_PER_PAGE = 50  # Maximum results per page
+BASE_URL = "https://www.careers.vic.gov.au"
+SEARCH_URL = f"{BASE_URL}/"
 
 # Scraping settings
 HEADLESS = False
@@ -26,16 +21,16 @@ DELAY_BETWEEN_JOBS = 1  # Between job detail scrapes
 MATCH_THRESHOLD = 80
 
 # Data directories
-DATA_DIR = Path(__file__).parent.parent.parent / "data" / "UK"
+DATA_DIR = Path(__file__).parent.parent.parent / "data" / "VIC"
 HTML_DIR = DATA_DIR / "job_html"
 JSON_DIR = DATA_DIR / "jobs_json"
 SEARCH_HTML_DIR = DATA_DIR / "search_html"
-LOGS_DIR = Path(__file__).parent.parent.parent / "logs" / "UK"
+LOGS_DIR = Path(__file__).parent.parent.parent / "logs" / "VIC"
 
 # Scraper version
 SCRAPER_VERSION = "1.0.0"
 
-# Keywords file (UK-specific list without generic "Manager")
+# Keywords file (use same UK list without generic "Manager")
 KEYWORDS_FILE = Path(__file__).parent.parent.parent / "list-of-jobs-uk.txt"
 
 # Load keywords from file

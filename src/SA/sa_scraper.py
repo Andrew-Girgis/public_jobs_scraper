@@ -153,12 +153,9 @@ def scrape_job_details(page: Page, job_url: str, job_id: str) -> str:
         return ""
 
 
-def scrape_all(max_jobs: int = None):
+def main():
     """
     Main scraping function.
-    
-    Args:
-        max_jobs: Maximum number of jobs to scrape (for testing)
     """
     start_time = time.time()
     keywords = load_keywords()
@@ -197,11 +194,6 @@ def scrape_all(max_jobs: int = None):
                     
                     # Process each job
                     for job_idx, job_data in enumerate(jobs, 1):
-                        # Check if we've reached max_jobs limit
-                        if max_jobs and jobs_scraped >= max_jobs:
-                            logger.info(f"✅ Reached max_jobs limit ({max_jobs}). Stopping.")
-                            break
-                        
                         job_id = job_data['job_id']
                         job_title = job_data['job_title']
                         
@@ -263,10 +255,6 @@ def scrape_all(max_jobs: int = None):
                         
                         logger.info(f"   💾 Saved: {json_file.name}")
                     
-                    # Check if we've reached max_jobs limit
-                    if max_jobs and jobs_scraped >= max_jobs:
-                        break
-                    
                 except Exception as e:
                     logger.error(f"❌ Error processing keyword '{keyword}': {str(e)}")
                     errors += 1
@@ -309,8 +297,4 @@ def scrape_all(max_jobs: int = None):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Scrape SA Government Jobs")
-    parser.add_argument('--max-jobs', type=int, help='Maximum number of jobs to scrape (for testing)')
-    args = parser.parse_args()
-    
-    scrape_all(max_jobs=args.max_jobs)
+    main()

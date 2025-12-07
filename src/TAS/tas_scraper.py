@@ -242,7 +242,7 @@ def scrape_job_details(
         return False
 
 
-def run_scraper():
+def main():
     """Main scraper function"""
     start_time = time.time()
     
@@ -380,4 +380,4 @@ def run_scraper():
 
 
 if __name__ == "__main__":
-    run_scraper()
+    main()

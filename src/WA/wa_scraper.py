@@ -251,14 +251,11 @@ def save_job_data(job_data: WAJob) -> bool:
         return False
 
 
-def scrape_all(max_jobs: Optional[int] = None):
+def main():
     """
     Main unified scraping function.
     
     Workflow: Search → Fuzzy Match → Scrape → AI Extract → Save → Next Job
-    
-    Args:
-        max_jobs: Maximum number of jobs to scrape (for testing)
     """
     start_time = time.time()
     
@@ -363,11 +360,6 @@ def scrape_all(max_jobs: Optional[int] = None):
             logger.info("="*80 + "\n")
             
             for job_idx, job_data in enumerate(matched_jobs, 1):
-                # Check max_jobs limit
-                if max_jobs and stats['jobs_scraped'] >= max_jobs:
-                    logger.info(f"\n✅ Reached max_jobs limit ({max_jobs}). Stopping.")
-                    break
-                
                 job_id = job_data['job_id']
                 job_title = job_data['job_title']
                 
@@ -478,8 +470,4 @@ def scrape_all(max_jobs: Optional[int] = None):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Unified WA Government Jobs Scraper with AI Extraction")
-    parser.add_argument('--max-jobs', type=int, help='Maximum number of jobs to scrape (for testing)')
-    args = parser.parse_args()
-    
-    scrape_all(max_jobs=args.max_jobs)
+    main()

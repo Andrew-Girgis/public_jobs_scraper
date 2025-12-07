@@ -250,7 +250,7 @@ def scrape_job_details(page, job_info: dict, search_keyword: str, existing_ids: 
         return False
 
 
-def run_scraper():
+def main():
     """
     Main scraper function - orchestrates the entire scraping process.
     """
@@ -390,4 +390,4 @@ def run_scraper():
 
 
 if __name__ == "__main__":
-    run_scraper()
+    main()

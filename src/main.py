@@ -1,5 +1,5 @@
 """
-Main batch runner for all Canadian government job scrapers.
+Main batch runner for all government job scrapers.
 
 This script runs all jurisdiction scrapers sequentially or individually,
 with options for test runs and detailed progress tracking.
@@ -11,6 +11,7 @@ from datetime import datetime
 from pathlib import Path
 import time
 from typing import Dict, List, Optional
+from concurrent.futures import ProcessPoolExecutor, as_completed
 
 # Setup logging
 LOG_DIR = Path(__file__).parent.parent / "logs"
@@ -32,11 +33,13 @@ logger = logging.getLogger(__name__)
 
 # Scraper modules
 SCRAPERS = {
+    # Canada - Federal
     'GOC': {
         'name': 'Government of Canada (Federal)',
         'module': 'src.GOC.goc_scraper',
         'enabled': True
     },
+    # Canada - Provinces
     'BC': {
         'name': 'British Columbia',
         'module': 'src.BC.bc_scraper',
@@ -67,6 +70,38 @@ SCRAPERS = {
         'module': 'src.NS.ns_scraper',
         'enabled': True
     },
+    # Australia - States
+    'NSW': {
+        'name': 'New South Wales',
+        'module': 'src.NSW.nsw_scraper',
+        'enabled': True
+    },
+    'VIC': {
+        'name': 'Victoria',
+        'module': 'src.VIC.vic_scraper',
+        'enabled': True
+    },
+    'QLD': {
+        'name': 'Queensland',
+        'module': 'src.QLD.qld_scraper',
+        'enabled': True
+    },
+    'SA': {
+        'name': 'South Australia',
+        'module': 'src.SA.sa_scraper',
+        'enabled': True
+    },
+    'WA': {
+        'name': 'Western Australia',
+        'module': 'src.WA.wa_scraper',
+        'enabled': True
+    },
+    'TAS': {
+        'name': 'Tasmania',
+        'module': 'src.TAS.tas_scraper',
+        'enabled': True
+    },
+    # United Kingdom
     'UK': {
         'name': 'United Kingdom',
         'module': 'src.UK.uk_scraper',
@@ -144,20 +179,25 @@ def run_scraper(jurisdiction_code: str, test_mode: bool = False) -> Dict:
         }
 
 
-def run_batch(jurisdictions: Optional[List[str]] = None, test_mode: bool = False):
+def run_batch(jurisdictions: Optional[List[str]] = None, test_mode: bool = False, parallel: bool = False, max_workers: int = 4):
     """
-    Run multiple scrapers in sequence.
+    Run multiple scrapers in sequence or parallel.
     
     Args:
         jurisdictions: List of jurisdiction codes to run. If None, runs all enabled.
         test_mode: If True, runs in test mode (quick validation)
+        parallel: If True, runs scrapers in parallel using ProcessPoolExecutor
+        max_workers: Number of parallel workers (only used if parallel=True)
     """
     logger.info("")
     logger.info("=" * 80)
-    logger.info("CANADIAN GOVERNMENT JOB SCRAPER - BATCH RUN")
+    logger.info("GOVERNMENT JOB SCRAPER - BATCH RUN")
     logger.info("=" * 80)
     logger.info(f"Start time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     logger.info(f"Test mode: {test_mode}")
+    logger.info(f"Execution mode: {'PARALLEL' if parallel else 'SEQUENTIAL'}")
+    if parallel:
+        logger.info(f"Max workers: {max_workers}")
     logger.info(f"Log file: {log_file}")
     logger.info("")
     
@@ -172,15 +212,49 @@ def run_batch(jurisdictions: Optional[List[str]] = None, test_mode: bool = False
     logger.info(f"Total scrapers: {len(to_run)}")
     logger.info("")
     
-    # Run each scraper
+    # Run scrapers (parallel or sequential)
     results = []
     overall_start = time.time()
     
-    for i, jurisdiction in enumerate(to_run, 1):
-        logger.info(f"\n[{i}/{len(to_run)}] Running {SCRAPERS[jurisdiction]['name']}...")
-        result = run_scraper(jurisdiction, test_mode)
-        results.append(result)
-        logger.info("")
+    if parallel:
+        # Parallel execution using ProcessPoolExecutor
+        logger.info(f"⚡ Starting {max_workers} worker processes...\n")
+        
+        with ProcessPoolExecutor(max_workers=max_workers) as executor:
+            # Submit all jobs to the pool
+            future_to_jurisdiction = {
+                executor.submit(run_scraper, jurisdiction, test_mode): jurisdiction
+                for jurisdiction in to_run
+            }
+            
+            completed = 0
+            # Process results as they complete (dynamic pool)
+            for future in as_completed(future_to_jurisdiction):
+                jurisdiction = future_to_jurisdiction[future]
+                completed += 1
+                
+                try:
+                    result = future.result()
+                    results.append(result)
+                    
+                    status = "✓" if result['success'] else "✗"
+                    logger.info(f"[{completed}/{len(to_run)}] {status} {SCRAPERS[jurisdiction]['name']} - {result.get('elapsed_time_formatted', 'N/A')}")
+                    
+                except Exception as e:
+                    logger.error(f"[{completed}/{len(to_run)}] ✗ {SCRAPERS[jurisdiction]['name']} crashed: {str(e)}")
+                    results.append({
+                        'jurisdiction': jurisdiction,
+                        'name': SCRAPERS[jurisdiction]['name'],
+                        'success': False,
+                        'error': str(e)
+                    })
+    else:
+        # Sequential execution (original behavior)
+        for i, jurisdiction in enumerate(to_run, 1):
+            logger.info(f"\n[{i}/{len(to_run)}] Running {SCRAPERS[jurisdiction]['name']}...")
+            result = run_scraper(jurisdiction, test_mode)
+            results.append(result)
+            logger.info("")
     
     overall_elapsed = time.time() - overall_start
     
@@ -231,14 +305,20 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  # Run all scrapers
+  # Run all scrapers (sequential)
   python -m src.main
   
-  # Run specific jurisdictions
-  python -m src.main --jurisdictions AB BC ONT
+  # Run specific jurisdictions (sequential)
+  python -m src.main --jurisdictions BC WA SA
   
-  # Run in test mode (when implemented)
-  python -m src.main --test
+  # Run scrapers in parallel with 4 workers
+  python -m src.main --parallel --workers 4
+  
+  # Run specific scrapers in parallel
+  python -m src.main -j BC WA SA QLD -p -w 4
+  
+  # Test mode with parallel execution
+  python -m src.main -j BC WA -p -w 2 -t
   
   # List available scrapers
   python -m src.main --list
@@ -264,6 +344,19 @@ Examples:
         help='List available scrapers and exit'
     )
     
+    parser.add_argument(
+        '--parallel', '-p',
+        action='store_true',
+        help='Run scrapers in parallel (default: sequential)'
+    )
+    
+    parser.add_argument(
+        '--workers', '-w',
+        type=int,
+        default=4,
+        help='Number of parallel workers (default: 4, only used with --parallel)'
+    )
+    
     args = parser.parse_args()
     
     if args.list:
@@ -281,7 +374,9 @@ Examples:
     # Run the batch
     results = run_batch(
         jurisdictions=args.jurisdictions,
-        test_mode=args.test
+        test_mode=args.test,
+        parallel=args.parallel,
+        max_workers=args.workers
     )
     
     # Exit with error code if any scrapers failed
